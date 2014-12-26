@@ -2,6 +2,7 @@
 layout: post
 title: "test markdown"
 date: 2015-01-02 16:25:06 -0700
+tags: markdown
 comments: false
 ---
 ##MaHua是什么?

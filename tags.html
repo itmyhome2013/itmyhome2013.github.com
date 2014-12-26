@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="well" id="accordion">
+  <h2 class="center">{{ site.locals.tags }}</h2>
+  {% for tag in site.tags %} 
+		<div class="panel panel-success">
+		  <div class="panel-heading">
+			<h4 class="panel-title">
+			  <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+			  <span class="badge pull-right">{{ tag[1].size }}</span>
+			</h4>
+		  </div>
+		  <div id="{{ tag[0] }}" class="panel-collapse collapse">
+			{% for post in tag[1] %}
+			  <a  href='{{ post.url }}' class="list-group-item pjaxlink">
+				{{post.title}}
+			  </a>
+			{% endfor %}
+		  </div>
+		</div>
+  {% endfor %}
+</div>
+<script type="text/javascript">
+		 $(document).ready(function(){
+		    $("#tags").addClass("active").siblings().removeClass("active");
+	     }); 
+</script>

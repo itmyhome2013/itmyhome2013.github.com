@@ -8,7 +8,7 @@
         <div class="col-md-9">
           <div class="article">
             <div class="well">
-                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
+                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%Y年%m月%d日" }} - {{ page.title }}</a></h1>
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
@@ -25,10 +25,10 @@
           </div>
           <div class="pagination">
               {% if page.next %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
+                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一篇</a>
               {% endif %}
               {% if page.previous %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
+                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一篇</a>
               {% endif %}
 </div>
 
@@ -38,3 +38,8 @@
 
 {% include disqus-comments.html %}
 {% include footer.html %}
+<script type="text/javascript">
+		 $(document).ready(function(){
+		    $("#archive").addClass("active").siblings().removeClass("active");
+	     }); 
+</script>

@@ -2,6 +2,7 @@
 layout: post
 title: "hello world"
 date: 2015-01-01 16:25:06 -0700
+tags: markdown
 comments: false
 ---
 
