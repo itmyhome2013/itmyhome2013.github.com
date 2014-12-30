@@ -3,8 +3,10 @@ layout: post
 title: "Git入门教程"
 date: 2014-12-29 00:00:00 -0700
 tags: Git
+summary: 1、首先注册一个账号。2、注册成功以后，新建一个repository(仓库)。</br>3、下载安装客户端msysgit。4、创建版本库。5、把文件添加到版本库
 comments: false
 ---
+</br>
 ####**1、首先在 [***https://github.com/***](https://github.com/)  上注册一个账号.**
    
 ####**2、注册成功以后,新建一个repository(仓库).**

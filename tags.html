@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<div class="well" id="accordion">
+<div class="well row" id="accordion">
   <h2 class="center">{{ site.locals.tags }}</h2>
   {% for tag in site.tags %} 
-		<div class="panel panel-success">
+	<div class="col-md-6 ">
+		<div class="panel  panel-success">
 		  <div class="panel-heading">
 			<h4 class="panel-title">
 			  <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a>
@@ -20,6 +21,7 @@ layout: default
 			{% endfor %}
 		  </div>
 		</div>
+	</div>
   {% endfor %}
 </div>
 <script type="text/javascript">
