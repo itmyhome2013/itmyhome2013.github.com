@@ -10,7 +10,7 @@ comments: false
 
 有没有id_rsa和id_rsa.pub这两个文件,如果已经有了,可直接跳到下一步,如果没有
 
-打开Git Bash,创建SSH Key 
+打开Git Bash,创建SSH Key
 
 ```javascript
 $ ssh-keygen -t rsa -C "youremail@xxx.com"  
