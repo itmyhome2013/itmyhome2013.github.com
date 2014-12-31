@@ -25,6 +25,18 @@
 			
 
           </div>
+		 <div class="row">
+		     <div class="col-xs-12 col-md-10"></div>
+		     <div class="col-xs-6 col-md-2">
+					<!-- JiaThis Button BEGIN -->
+					<div class="jiathis_style">
+						<a class="jiathis_like_tsina"></a>
+					</div>
+					<script type="text/javascript"
+						src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+					<!-- JiaThis Button END -->
+			 </div>
+	 	 </div>
           <div class="pagination">
               {% if page.next %}
                 <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一篇</a>
@@ -33,7 +45,7 @@
                 <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一篇</a>
               {% endif %}
 		  </div>
-		  <!-- 多说评论框 start -->
+		    <!-- 多说评论框 start -->
 			<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="http://itmyhome.com/{{ page.url }}"></div>
 			<!-- 多说评论框 end -->
 			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
