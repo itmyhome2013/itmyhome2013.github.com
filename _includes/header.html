@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.jpg" />
     <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/js/main.js"></script>
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}/css/pygments.css" rel="stylesheet">
@@ -17,6 +18,7 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			   <!--<div class="container"> -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					  <span class="sr-only">Toggle navigation</span>
@@ -26,7 +28,7 @@
 					</button>
 					<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
 				  </div>
-				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <div class="collapse navbar-collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="{{ site.baseurl }}/">首页</a></li>
 						<!-- <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html">Links</a></li> -->
@@ -40,7 +42,14 @@
 						<li id="about"><a href="{{ site.baseurl }}/about.html">关于</a></li>
 					   
 					</ul>
+				
+					<ul class="nav navbar-nav">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				  </div>
+			  <!-- </div> -->
 			</div>
 		</div>
 	</div>

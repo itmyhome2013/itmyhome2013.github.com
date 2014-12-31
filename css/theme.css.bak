@@ -78,8 +78,8 @@ body {
 }
 
 .toTop {
-	width:28px;
-	height:28px;
+	width:32px;
+	height:30px;
 	background:#555;
 	background:rgba(85,85,85,0.3);
 	position:fixed;
