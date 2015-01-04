@@ -78,13 +78,13 @@ body {
 }
 
 .toTop {
-	width:28px;
-	height:28px;
+	width:25px;
+	height:25px;
 	background:#555;
 	background:rgba(85,85,85,0.3);
 	position:fixed;
 	bottom:80px;
-	right:150px;
+	right:165px;
 	text-align:center;
 	cursor:pointer;
 	display:none
