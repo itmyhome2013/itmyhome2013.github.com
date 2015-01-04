@@ -87,6 +87,7 @@ body {
 	right:165px;
 	text-align:center;
 	cursor:pointer;
+	border-radius: 5px;
 	display:none
 }
 .toTop a {

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var backToTopTxt = "▲", backToTopEle = $('<div class="toTop"></div>').appendTo($("body")).text(backToTopTxt).attr("title","Back top top").click(function() {
+    var backToTopTxt = "▲", backToTopEle = $('<div class="toTop"></div>').appendTo($("body")).text(backToTopTxt).attr("title","Back top").click(function() {
         $("html, body").animate({ scrollTop: 0 }, 120);
     }), backToTopFun = function() {
         var st = $(document).scrollTop(), winh = $(window).height();
