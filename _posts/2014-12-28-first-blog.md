@@ -1,5 +1,6 @@
 ---
 layout: post
+blog_id: "first-blog"
 title: "第一篇博客"
 date: 2014-12-28 00:00:00 -0700
 tags: 随笔

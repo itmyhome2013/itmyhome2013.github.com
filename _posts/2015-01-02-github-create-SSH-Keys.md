@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "github-create-SSH-Keys"
 title: "GitHub创建SSH Keys"
-date: 2014-12-30 00:00:00 -0700
+date: 2015-01-02 00:00:00 -0700
 tags: Git
 category: Git
 summary: 第一步：在用户主目录下,看有没有.ssh目录,如果有,再看看这个目录下。</br>第二步：登录GitHub 打开Settings,添加Key

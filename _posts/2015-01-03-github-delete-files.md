@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "github-delete-files"
 title: "GitHub删除文件"
-date: 2015-01-08 00:00:00 -0700
+date: 2015-01-03 00:00:00 -0700
 tags: Git
 category: Git
 summary: 一般情况下，通常可直接在文件管理器中直接把文件删了

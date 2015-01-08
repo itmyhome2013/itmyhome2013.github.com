@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "please-do-not-make-impulsive-person"
 title: "请不要做浮躁的人"
-date: 2014-12-30 00:00:00 -0700
+date: 2014-12-29 00:00:00 -0700
 tags: 随笔
 category: 程序人生
 summary: 不要看到别人的回复第一句话就说：给个代码吧！你应该想想为什么。

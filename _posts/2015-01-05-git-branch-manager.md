@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "git-branch-manager"
 title: "Git分支管理"
-date: 2015-01-08 00:00:00 -0700
+date: 2015-01-05 00:00:00 -0700
 tags: Git
 category: Git
 summary: 1、注册Git账号 2、创建SSH keys

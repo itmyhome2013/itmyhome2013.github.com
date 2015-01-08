@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "build-a-personal-site-on-github"
 title: "GitHub上搭建个人网站"
-date: 2015-01-08 00:00:00 -0700
+date: 2015-01-04 00:00:00 -0700
 tags: Git
 category: Git
 summary: 1、注册Git账号 2、创建SSH keys

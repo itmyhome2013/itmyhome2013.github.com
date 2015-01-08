@@ -1,7 +1,8 @@
 ---
 layout: post
+blog_id: "programmers-how-to-keep-healthy"
 title: "程序员如何留住健康"
-date: 2015-01-05 00:00:00 -0700
+date: 2014-12-30 00:00:00 -0700
 tags: 生活
 category: 程序人生
 summary: 相信大家已经注意到了，程序员的大部分时间都花在电脑桌前编程，这会损害程序员的健康。
