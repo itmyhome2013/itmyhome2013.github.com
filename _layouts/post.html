@@ -75,12 +75,10 @@
 {% include disqus-comments.html %}
 {% include footer.html %}
 <script type="text/javascript">
-		 $(document).ready(function(){
-		    $("#archive").addClass("active").siblings().removeClass("active");
-			
+		 window.onload = function(){
 			//实现等比缩放大图片 
 			var w = 800;//允许最大宽度 
-			$("img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+			$("img").each(function(){ //如果有很多图片，我们可以使用each()遍历 
 				var img_w = $(this).width();//图片实际宽度 
 				var img_h = $(this).height();//图片实际高度 
 				if(img_w>w){//如果图片宽度超出设置的允许最大宽度
@@ -88,7 +86,10 @@
 					$(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
 				} 
 			}); 
-			
+		 }
+		 $(document).ready(function(){
+		    $("#archive").addClass("active").siblings().removeClass("active");
+				
 			//为超链接加上target='_blank'属性
 			$('a[href^="http"]').each(function(){
 				 $(this).attr('target', '_blank');
