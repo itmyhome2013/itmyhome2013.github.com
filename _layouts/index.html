@@ -68,10 +68,10 @@
 
 <div id="container">
 	 <div class="col-md-6">
-		 <div id="myskipper" style="height:400px;">
-			 <div style="background-image: url(images/index/turns1.jpg)"></div>
-			 <div style="background-image: url(images/index/turns2.jpg)"></div>
-			 <div style="background-image: url(images/index/turns3.jpg)"></div>
+		 </br>
+		 </br>
+		 <div id="myskipper" style="height:300px;width:620px;">
+			<div><canvas id="m_cnvWoozyClockPresentation"></canvas></div>
 		 </div> 
 	 </div>
 	 <div class="col-md-6">
@@ -93,7 +93,14 @@
 </div>
 <script type="text/javascript">
 		 $(document).ready(function(){
-	         $("#myskipper").skippr(); 
+			//模拟时钟
+		    $('#m_cnvWoozyClockPresentation').woozyclock( {
+				    width : 630,
+				    height : 250,
+				    ticklength : 33,
+				    maindtype : 3
+			 });
+	        // $("#myskipper").skippr(); 
 	     }); 
   </script>
 {% include footer.html %}
