@@ -27,7 +27,7 @@ comments: false
 
 本教程默认你了解GitHub的基础之上 会使用基本命令，如果不了解 前三步可参考文章：
 
-[GitHub入门教程](http://blog.csdn.net/itmyhome1990/article/details/39579099)   [GitHub创建SSH Keys](http://blog.csdn.net/itmyhome1990/article/details/39668349)
+[GitHub入门教程](http://itmyhome.com/2015/01/git-tutorial/)   [GitHub创建SSH Keys](http://itmyhome.com/2015/01/github-create-SSH-Keys/)
 
 ###一、新建repository(仓库),如下
 
