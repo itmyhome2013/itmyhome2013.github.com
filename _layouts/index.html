@@ -93,6 +93,17 @@
 </div>
 <script type="text/javascript">
 		 $(document).ready(function(){
+			$('#contact').popover({
+				placement:'bottom', 
+				container: 'body',
+				html:true, 
+				content:'<p>QQ: 329795485</p><p>微博：weibo.com</p><p>微信：weixin.com</p>'
+			});
+
+			$("#contact").mouseover(function(){
+			  $(this).css("cursor","hand");
+			});
+			
 			//模拟时钟
 		    $('#m_cnvWoozyClockPresentation').woozyclock( {
 				    width : 630,
