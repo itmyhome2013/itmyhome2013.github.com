@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="well">
 	{% for category in site.categories %}
-		<h3>{{ category | first }}</h3>
+		<legend><h3>{{ category | first }}</h3></legend>
 		<ul class="arc-list">
 		    {% for post in category.last %}
 		        <li>{{ post.date | date: "%Y年%m月%d日" }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
