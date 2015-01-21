@@ -5,14 +5,15 @@ layout: default
 <div class="well">
 {%for post in site.posts %}
     {% unless post.next %}
-        <h1>{{ post.date | date: '%Y' }}</h1>
+		<legend><h4 style="color:red;">{{ post.date | date: '%Y' }}</h4></legend>
         <ul>
     {% else %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
         {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
             </ul>
-            <h1>{{ post.date | date: '%Y' }}</h1>
+			</br>
+            <legend><h4 style="color:red;">{{ post.date | date: '%Y' }}</h4></legend>
             <ul>
         {% endif %}
     {% endunless %}
