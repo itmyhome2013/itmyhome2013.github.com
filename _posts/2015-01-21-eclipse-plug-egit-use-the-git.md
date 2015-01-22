@@ -11,7 +11,7 @@ comments: false
 </br>
 ###一、安装EGit插件
 
-参考：MyEclipse8.5整合Git
+参考：[MyEclipse8.5整合Git](http://itmyhome.com/2015/01/git-integration-myeclipse8.5/)
 
 ###二、EGit配置
 
@@ -40,7 +40,7 @@ $ git config --global user.email "youEmail@example.com"
 </br>
 ####2：GitHub新建一个仓库
 
-创建成功之后跳转到如下页面,记住该HTTP地址：https://github.com/itmyline/mygit.git
+创建成功之后跳转到如下页面,记住该HTTP地址：`https://github.com/itmyline/mygit.git`
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/3.png)
 
