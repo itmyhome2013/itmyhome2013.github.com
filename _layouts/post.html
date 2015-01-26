@@ -8,7 +8,7 @@
         <div class="col-md-9">
           <div class="article">
             <div class="well">
-                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%Y年%m月%d日" }} - {{ page.title }}</a></h1>
+                <h1 style="font-size: 1.8em;"><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%Y年%m月%d日" }} - {{ page.title }}</a></h1>
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
@@ -19,7 +19,6 @@
 			<hr>
 			<div class="copyright_">
 			<p><strong>原创文章,转载请注明出处：</strong><a href='{{page.url}}'>itmyhome</a></p>
-			<!-- <p><strong>我参加了CSDN博客之星评选，感谢投我一票：</strong><a href='http://vote.blog.csdn.net/blogstar2014/details?username=itmyhome#content' target='_blank'>点击猛戳</a></p> -->
 			</div>
 			
             {% if page.comments %}
