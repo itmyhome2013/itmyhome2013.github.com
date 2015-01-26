@@ -1,6 +1,6 @@
 ---
 layout: post
-blog_id: "markdown-quick-start"
+blog_id: markdown-quick-start"
 title: "Markdown快速入门"
 date: 2015-01-26 00:00:00 -0700
 tags: markdown
