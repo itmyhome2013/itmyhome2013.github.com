@@ -128,12 +128,14 @@ comments: false
 }
 ```
 
+</br>
 来窥视一下修改之前和之后的对比
 
 ![License Badge]({{ site.baseurl}}/images/duoshuo/modifyago.png)
 
 ![License Badge]({{ site.baseurl}}/images/duoshuo/modifyafter.png)
 
-多少还算是有一点改观的(对于有洁癖的本博主 必须要有所改观)。
+</br>
+多少还算是有一点改观的(对于有洁癖的本博主 必须要有所改观o(╯□╰)o)
 
 参考资料：[多说自定义CSS 让你的多说评论动感起来](http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html)
