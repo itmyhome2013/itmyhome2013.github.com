@@ -1,0 +1,97 @@
+{% include header.html %}
+
+<div class="container container-left">
+	<div class="row">
+		<div class="col-md-3 hidden-xs">
+			{% include sidebar.html %}
+		</div>
+		<div class="col-md-9">
+			<div class="well">
+				<div class="row">
+					<div class="col-md-12 aside3-title">
+						<br>
+						<h3 id="#identifier">
+							我的书单
+						</h3>
+					</div>
+					<div class="col-md-12 aside3-content">
+						<div class="row">
+							{% for book in page.books %}
+							<div class="col-md-12">
+								<div class="panel panel-primary">
+									<div class="panel-heading">
+										{{ book.title }}
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-4 col-xs-6 center">
+												<img src="{{ book.cover }}" alt="cover" class="img-thumbnail">
+											</div>
+											<div class="col-md-8 col-xs-6">
+												<table class="table table-bordered">
+													<tbody>
+														<tr>
+															<td style="width: 80px;">
+																书名
+															</td>
+															<td>
+																{{ book.title }}
+															</td>
+														</tr>														
+														<tr>
+															<td>
+																笔记
+															</td>
+															<td>
+																{% if book.link == null %}
+																	<a href="javascript:alert('还木有写笔记呢^_^');"  title="{{ book.link }}">读书笔记</a>
+																{% elsif book.link != null %}
+																	<a href="{{ book.link }}"  target="_blank" title="{{ book.link }}">读书笔记</a>
+																{% endif %}
+																
+															</td>
+														</tr>
+														<tr>
+															<td>
+																状态
+															</td>
+															<td>
+																{% if book.status == '已读' %}
+																<span class="label label-success">{{ book.status }}</span> {% elsif book.status == '在读' %}
+																<span class="label label-info">{{ book.status }}</span>
+																{% elsif book.status == '未读' %}
+																<span class="label label-default">{{ book.status }}</span> {% endif %}
+															</td>
+														</tr>
+														<tr>
+															<td>
+																心得
+															</td>
+															<td>
+																{{ book.description }}
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+						<hr>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}
+
+<script type="text/javascript">
+		 $(document).ready(function(){
+		    $("#books").addClass("active").siblings().removeClass("active");
+	     }); 
+</script>
