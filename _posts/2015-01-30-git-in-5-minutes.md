@@ -2,7 +2,7 @@
 layout: post
 blog_id: git-in-5-minutes"
 title: "Git五分钟教程"
-date: 2015-01-19 00:00:00 -0700
+date: 2015-01-30 00:00:00 -0700
 tags: Git
 category: Git
 summary: 许多人认为Git太混乱或是复杂的版本控制系统，这篇文章是面向一些人想快速上手使用Git，对于大多数基本需求这篇文章涵盖了使用的70%至90%
