@@ -2,7 +2,7 @@
 layout: post
 blog_id: "jekyll-bootstrap-change-theme"
 title: "jekyll bootstrap更改主题theme"
-date: 2015-01-29 00:00:00 -0700
+date: 2015-01-24 00:00:00 -0700
 tags: jekyll
 category: jekyll
 summary: 由于JB版本0.2.X的主题,现在完全是模块化的。他们跟踪和单独版本的主题包。这让每个人都可以自由发布和共享主题。

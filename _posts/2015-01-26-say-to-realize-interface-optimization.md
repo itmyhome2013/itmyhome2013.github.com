@@ -2,7 +2,7 @@
 layout: post
 blog_id: "say-to-realize-interface-optimization"
 title: "多说实现界面优化"
-date: 2015-01-27 00:00:00 -0700
+date: 2015-01-26 00:00:00 -0700
 tags: duoshuo
 category: duoshuo
 summary: 之前就感觉这个默认的界面有点丑(当然是我自认为)，但又指不出来是哪里。本来的初衷只是想改一下评论框里的提示文字，Google百度了很多资料 楞是没找到。

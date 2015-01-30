@@ -2,7 +2,7 @@
 layout: post
 blog_id: markdown-quick-start"
 title: "Markdown快速入门"
-date: 2015-01-26 00:00:00 -0700
+date: 2015-01-27 00:00:00 -0700
 tags: markdown
 category: markdown
 summary: Markdown语法虽然很多，但真正用到的其实并不多，以下语法基本可以涵盖我们平常所使用到的

@@ -2,7 +2,7 @@
 layout: post
 blog_id: "jekyll-installed-on-windows"
 title: "Windows上安装Jekyll "
-date: 2015-01-26 00:00:00 -0700
+date: 2015-01-22 00:00:00 -0700
 tags: jekyll
 category: jekyll
 summary: jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器,它会根据网页源码生成静态文件。它提供了模板、变量、插件等功能,所以实际上可以用来编写整个网站。
