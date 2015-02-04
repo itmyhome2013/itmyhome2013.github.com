@@ -4,20 +4,34 @@ layout: default
 
 <div class="well">
 {%for post in site.posts %}
-    {% unless post.next %}
-		<legend><h4 style="color:red;">{{ post.date | date: '%Y' }}</h4></legend>
-        <ul>
+	{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
+	
+	{% if forloop.first %}
+	   <legend><h3 style="color:red;">{{ post.date | date: '%Y' }}</h3></legend>
+	   <h4 style="color:red;">&nbsp;&nbsp;{{this_month}}</h4>
+       <ul>
+    {% endif %}
+	
+	<li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%m月%d日" }} - {{ post.title }}</a></li>
+	{% if forloop.last %}
+      </ul>
     {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-            </ul>
-			</br>
-            <legend><h4 style="color:red;">{{ post.date | date: '%Y' }}</h4></legend>
-            <ul>
+      {% if this_year != next_year %}
+        </ul>
+        <legend><h3 style="color:red;">{{next_year}}</h3></legend>
+        <h4 style="color:red;">&nbsp;&nbsp;{{next_month}}</h4>	
+        <ul>
+      {% else %}    
+        {% if this_month != next_month %}
+          </ul>
+		  <h4 style="color:red;">&nbsp;&nbsp;{{next_month}}</h4>
+          <ul>
         {% endif %}
-    {% endunless %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%m月%d日" }} - {{ post.title }}</a></li>
+      {% endif %}
+    {% endif %}
 {% endfor %}
 </ul>
 </div>
