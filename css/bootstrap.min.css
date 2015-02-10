@@ -5563,9 +5563,10 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	border-top-color: #ddd
 }
 
+/*2015-02-10 修改标签显示样式*/
 .panel-default>.panel-heading .badge {
 	color: #f5f5f5;
-	background-color: #333
+	background-color: #AB9D9D
 }
 
 .panel-default>.panel-footer+.panel-collapse>.panel-body {
@@ -5576,9 +5577,10 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	border-color: #428bca
 }
 
+/*2015-02-10 修改读书title样式*/
 .panel-primary>.panel-heading {
-	color: #fff;
-	background-color: #428bca;
+	/* color: #fff; */
+	/* background-color: #428bca; */
 	border-color: #428bca
 }
 
@@ -5713,6 +5715,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	padding-bottom: 75%
 }
 
+/*2015-02-10背景显示样式为白色*/
 .well {
 	min-height: 20px;
 	padding: 19px;
