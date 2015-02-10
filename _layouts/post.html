@@ -94,6 +94,11 @@
 					$(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
 				} 
 			}); 
+			
+			//图片响应式设计
+			$("img[alt='License Badge']").each(function(){
+				$(this).addClass("img-responsive")
+			})
 		 }
 		 $(document).ready(function(){
 		    $("#archive").addClass("active").siblings().removeClass("active");
