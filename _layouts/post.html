@@ -16,9 +16,17 @@
             {{ content }}
             </div>
 			
-			<hr>
 			<div class="copyright_">
-			<p><strong>原创文章,转载请注明出处：</strong><a href='{{page.url}}'>itmyhome</a></p>
+				<p>
+					<fieldset>
+						<div class="form-group">
+						  <hr style="background-color: #ADADAD;height: 1px;opacity:0.5">
+						  版权声明：本文采用<a href='http://creativecommons.org/licenses/by-nc-sa/2.5/cn/'>BY-NC-SA</a>协议进行授权，转载<a href='{{site.url}}'>麦田技术博客</a>的文章请注明出处</br></br>
+						  原文地址：<a href='{{page.url}}'>{{site.url}}{{page.url}}</a>
+						</div>
+					  </fieldset>
+					
+				</p>
 			</div>
 			
             {% if page.comments %}
