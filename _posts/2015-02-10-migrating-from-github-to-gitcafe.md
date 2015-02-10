@@ -11,7 +11,7 @@ comments: false
 </br>
 一直困扰github的访问速度,最近提交一些代码,半天传不上去 最后无法连接,github也打不开。我也是怒了...
 
-准备把其中一个博客迁移到gitcafe先用着，体验一下。
+准备把其中一个博客迁移到gitcafe先用着，[体验一下](http://diary.itmyhome.com/)。
 
 </br>
 ###1、注册gitcafe账号并创建项目。项目名和用户名一致
@@ -59,4 +59,5 @@ hexo deploy
 
 </br>
 总感觉gitcafe用户界面用着不舒服，可能github用的习惯了。
+
 
