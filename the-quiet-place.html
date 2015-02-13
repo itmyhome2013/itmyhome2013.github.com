@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/Organization"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>一个安静的地方</title>
+	<meta name="description" content="have you ever noticed how many things require your attention?">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script src="js/jquery_the-quiet-place.js"></script>
+	<style>
+		/* Taken from HTML5 BOILERPLATE 5 normalize.css - www.html5boilerplate.com */
+		audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+		html { font-size: 100%; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+		body { margin: 0; font-size: 13px; line-height: 1.231; }
+		form { margin: 0; }
+		button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+		button, input { line-height: normal; *overflow: visible; }
+		button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+		button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+		/* Main styles */
+		html, body, #container, #wrap {width:100%; height:100%; cursor:default;}
+		body {background-color:#f9f9f9; color:#808080; text-shadow:0 1px #fff; text-align:center; font-family:Tahoma, Helvetica, sans-serif; font-size:13px;}
+		#container {width:700px; margin:-50px auto 0; position:relative;}
+		#wrap {height:0; position:absolute; top:50%; text-align:left;}
+		#wrap div {width:700px; position:absolute; font-size:18px; font-weight:bolder; opacity:0; display:none}
+		#wrap #first {opacity:1;}
+		#wrap .current {display:block !important;}
+		#wrap span {display:block; margin-top:20px; color:#a5a5a5; font-weight:normal; font-size:13px;}
+		#wrap div.relax .time {display:inline;}
+		#wrap div.relax .time2 {font-size:18px; font-weight:bolder; color:#808080;}
+		a, a:link, a:hover, a:visited, a:active {text-decoration:underline; color:#808080;}
+		a:hover {color:#1a1a1a;}
+		#ninety-sec, #donate {background:#1a1a1a; padding:5px 10px; position:absolute; bottom:20px; right:20px; box-shadow:0 0 10px #000; -moz-box-shadow:0 0 10px #000; border-radius:5px; -moz-border-radius:5px; color:#f9f9f9; text-shadow:0 1px #000; opacity:0.5; -o-transition:opacity 100ms linear; -ms-transition:opacity 100ms linear; -moz-transition:opacity 100ms linear; -webkit-transition:opacity 100ms linear; transition:opacity 100ms linear; text-decoration:none;}
+		#donate {position:relative; bottom:0; right:0; border:none; color:#ff9933; font-weight:bolder;}
+		#ninety-sec:hover, #donate:hover {opacity:1;}
+		#audio {position:absolute; top:-9999px; left:-9999px;}
+		#wrap #google_plus, #wrap #google_plus div, #fb1, #fb2 {width:auto; position:relative !important; opacity:1 !important; display:inline-block !important; margin:0 !important;}
+			</style>
+		<script type="text/javascript">
+	    var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2477810-17']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+ 
+	</script>   
+</head>
+<body>
+	<div id="audio"></div>
+	<div id="container">
+		<div id="wrap">
+			<div id="first" class="current">
+				这安静的地方需要你按动[空格]键来进行交互。<span>(现在，轻轻的按一下这个键。)</span>
+			</div>
+			<div>为了获得完整的体验，请把你的手机设置成静音模式，把电脑静音，然后按[F11]键，苹果机按[cmd+shift+f]键<span>
+				(同样，按[空格]键继续。)</span></div>
+			<div>说真的，请静音你的手机。否则，我们做的毫无意义。<span>(请严肃。请严肃，请严肃。不要担心 - 这里不是一个像那些会吓你一跳的地方。)</span></div>
+			<div id="music" itemprop="name">欢迎来到这安静的地方。</div>
+			<div>在这安静的地方，没有领导和上级<span>(没有他们冲你的大呼小叫)</span></div>
+			<div>也没有人人网的信息...</div>
+			<div>...或微博...</div>
+			<div style="font-size:22px;">...QQ...</div>
+			<div style="font-size:24px;">...优酷...</div>
+			<div style="font-size:28px;">...邮件...</div>
+			<div style="font-size:32px;">...msn...</div>
+			<div style="font-size:36px;">...等等...</div>
+			<div style="font-size:40px;">...等等...</div>
+			<div style="font-size:50px;">...等等...</div>
+			<div>...</div>
+			<div style="font-size:10px;">哦。</div>
+			<div itemprop="description">你是否发现有太多的东西需要你的注意？</div>
+			<div>你是否在想现在会错过所有这些重要的信息...</div>
+			<div>请忍住。</div>
+			<div>只需要几分钟。</div>
+			<div>让你的脑子清静一会儿。</div>
+			<div>我可以向你保证，你不遗漏任何非要立即处理的事情。</div>
+			<div>如果你还在担心，我可以把你的事情概况一下。</div>
+			<div>一些你不认识的”朋友“对最近发生的一些事情做了一些愚蠢的评论。<span>(或对你就最近发生的一些事情的看法做的一些愚蠢的评论)</span></div>
+			<div>你认为这完全是一场闹剧，不是吗？</div>
+			<div>一场关于我们人类究竟怎么了的闹剧。</div>
+			<div>然而，每一场闹剧，都反映着一丝真相。</div>
+			<div>这真相就是，随着使用所有的这些强大的社交工具，我们却忘记了另外一些东西。</div>
+			<div>我们忘记了休息...</div>
+			<div>...一次真正的休息。</div>
+			<div>在公园里散散步，在大山里赏赏景，何等的美好...</div>
+			<div>但是如果一直把手机带着身边，你实际上什么也做不了。</div>
+			<div>这些毫无意义的小东西一直在增加你的负担。</div>
+			<div>无意义。小。东西。</div>
+			<div>无意义。</div>
+			<div style="font-size:12px;">小。</div>
+			<div style="font-size:10px;">东西。</div>
+			<div>...一个朋友在你的的博客上留下了一条评论...</div>
+			<div style="font-size:22px;">...一个朋友赞了你的分享...</div>
+			<div style="font-size:26px;">...一个朋友分享了一个视频给你...</div>
+			<div style="font-size:30px;">...一个朋友上线了...</div>
+			<div style="font-size:34px;">...一个朋友邀请你参与一个活动...</div>
+			<div style="font-size:44px;">...一个朋友这...</div>
+			<div style="font-size:48px;">...一个朋友那...</div>
+			<div style="font-size:50px;">...一个朋友...</div>
+			<div style="font-size:60px;">...一个朋友...</div>
+			<div style="font-size:70px;">...一个朋友...</div>
+			<div style="font-size:80px;">毫无意义。</div>
+			<div style="font-size:90px;">小。</div>
+			<div style="font-size:10px;">事。</div>
+			<div>...</div>
+			<div>...</div>
+			<div>...放松...</div>
+			<div id="relax" class="relax">...放松 <span class="time time2">30</span> 秒...<span>(不要做任何事情。你可以做到。真的。死不了人。只是 <span class="time">30</span> 秒。)</span>
+			</div>
+			<div>...感觉好极了，不是吗？</div>
+			<div>:)</div>
+			<div>我很快将要向你说再见了。</div>
+			<div>你将回到你的各种消息里。</div>
+			<div>但在此之前，我只想给你一些建议。</div>
+			<div>时不时...</div>
+			<div>...停下所有要做的事情...</div>
+			<div>...进入这安静的地方。</div>
+			<div>...</div>
+			<div style="font-size:12px;">再见。</div>
+			<div style="font-size:12px;">.</div>
+						
+			<div id="final" style="display:none; font-size:12px;">we're back to normal. it is now safe to share:
+				<br><br>
+				返回 <a href="http://itmyhome.com" target="_blank">麦田技术博客 &raquo;</a> &nbsp
+	<!-- JiaThis Button BEGIN -->
+
+					
+			
+				<span style="font-size:10px;">(哦，请按[F11]键，苹果机上按[cmd+shift+f]键退出全屏模式)</span>
+							</div>
+		</div><!-- #wrap -->
+	</div><!-- #container -->
+	<script>
+		$(function() {
+			var $body = $('body'),
+			    $div = $('#wrap');
+			function play_music() {
+					$('#audio').html('<iframe width="2" height="2" src="http://static.youku.com/v1.0.0194/v/swf/player.swf?VideoIDS=XMzIyOTE2NjI4&ShowId=0&Cp=0&Light=on&THX=off&Tid=0&isAutoPlay=true&Version=/v1.0.0715&show_ce=1&winType=interior" frameborder="0" allowfullscreen="true"></iframe>');
+					$('#wrap > div').css('opacity', 0);
+			};
+			function move_on() {
+				var current = $div.children('.current').index() + 1;
+				if($body.hasClass('block')) return false;
+				if($body.hasClass('relaxing')) $('#relax').attr('id', '');
+				if(current == $div.children().length) return false;
+				if(current == 2) $('#ninety-sec').animate({ opacity: 0 }, 700).queue(function() { $(this).css('display', 'none').dequeue(); });
+				if($div.find('div:nth-child(' + current + ')').attr('id') == 'relax') {
+					$body.addClass('block relaxing');
+					$('span.time').each(function() {
+						var $this = $(this);
+						$this.text($this.text() - 1);
+					});
+					setInterval(function() {
+						$('span.time').each(function() {
+							var $this = $(this);
+							if($this.text() > 0) $this.text($this.text() - 1);
+						});
+					}, 1000);
+					$(document).delay(29000).queue(function() {
+						$body.removeClass('block');
+						move_on();
+					});
+					return false;
+				};
+				$div.find('div:nth-child(' + current + ')').removeClass('current').animate({ marginTop: 100, opacity: 0.5 }, 700).animate({ opacity: 0 }, 700);
+				$div.find('div:nth-child(' + (current + 1)  + ')').addClass('current').animate({ opacity: 1 }, 700);
+				if($div.find('div:nth-child(' + (current + 1) + ')').attr('id') == 'music') {
+					play_music();
+				};
+			};
+						$(document).keyup(function(event) {
+				if(event.which == 32) move_on();
+			})
+						$(document).bind('click', function() {
+				move_on();
+			});
+			$('#final').each(function() {
+				$(this).css('margin-top', -(($(this).height() / 2)-50));
+			});
+		});
+	</script>
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+	<![endif]-->
+
+ <script type="text/javascript" >
+		var jiathis_config={
+		data_track_clickback:true,
+		summary:"",
+		ralateuid:{
+			"tsina":"1758748503"
+		},
+		appkey:{
+			"tsina":"3878642337",
+			"tqq":"801004621"
+		},
+		hideMore:false
+	}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>              
+</body></html>
