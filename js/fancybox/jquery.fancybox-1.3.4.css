@@ -96,7 +96,7 @@
 #fancybox-close {
 	position: absolute;
 	top: -15px;
-	right: -15px;
+	right: -28px;
 	width: 30px;
 	height: 30px;
 	background: transparent url('fancybox.png') -40px 0px;
@@ -182,7 +182,7 @@
 
 #fancybox-right:hover span {
 	left: auto;
-	right: 20px;
+	right: 10px;
 }
 
 .fancybox-bg {
