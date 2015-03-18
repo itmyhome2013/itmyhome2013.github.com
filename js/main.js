@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    var backToTopTxt = "▲", backToTopEle = $('<div class="toTop"></div>').appendTo($("body")).text(backToTopTxt).attr("title","Back top").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 120);
+    var backToTopEle = $('<div id="fixedTools" class="hidden-xs hidden-sm"><a id="backtop" class="border-bottom" href="#">回顶部</a></div>')
+		.appendTo($("body")).click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 500);
     }), backToTopFun = function() {
         var st = $(document).scrollTop(), winh = $(window).height();
         (st > 200)? backToTopEle.show(): backToTopEle.hide();    

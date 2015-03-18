@@ -64,6 +64,8 @@ body {
 	border-radius: 5px;
 	background: #F5F5F5 ;
 }
+
+/*
 .backToTop {
     display: block;
     width: 40px;
@@ -112,6 +114,7 @@ body {
 .toTop a:hover {
 	background:#3d5998
 }
+*/
 
 /* Google logo 颜色 */
 .logo1 {
@@ -132,3 +135,37 @@ body {
 .logo6 {
 	color:red
 }
+
+
+/*回顶部 start*/
+
+#fixedTools {
+  position: fixed;
+  right: 156px;
+  bottom: 60px;
+  border: 1px solid #DDD;
+  background: #FFF;
+  width: 36px;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1.25;
+  z-index: 1000;
+}
+
+#fixedTools a {
+  padding: 10px;
+  display: block;
+  color: #999;
+}
+.border-bottom {
+  border-bottom: 1px solid #DDD;
+}
+
+#fixedTools a, a:hover, a:active, a:focus {
+  outline: 0;
+}
+#fixedTools a {
+  text-decoration: none;
+}
+
+/*回顶部 end*/
