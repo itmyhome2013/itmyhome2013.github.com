@@ -9,6 +9,12 @@
           <div class="article">
             <div class="well">
                 <h1 style="font-size: 1.8em;"><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%Y年%m月%d日" }} - {{ page.title }}</a></h1>
+				<h5>
+					<span id="busuanzi_container_page_pv" style="float:right;color:#00FF00;">
+						<span id="busuanzi_value_page_pv"></span>&nbsp;人阅读&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>
+				</h5>
+				
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
