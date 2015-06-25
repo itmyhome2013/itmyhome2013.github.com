@@ -5,7 +5,7 @@ title: "jQuery选择器之内容过滤选择器"
 date: 2015-06-10 00:00:00 -0700
 tags: jQuery
 category: jQuery
-summary: 本篇文章主要介绍jQuery选择器之基本过滤选择器,包括:empty、contains(text)、has(selector)、parent...
+summary: 本篇文章主要介绍jQuery选择器之内容过滤选择器,包括:empty、contains(text)、has(selector)、parent...
 comments: false
 ---
 </br>
