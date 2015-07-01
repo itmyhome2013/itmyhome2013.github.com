@@ -5,7 +5,7 @@ title: "Spring面试问答"
 date: 2015-07-01 00:00:00 -0700
 tags: Spring
 category: Spring
-summary: 本人收集了一些在大家在面试时被经常问及的关于Spring的主要问题
+summary: 本文收集了一些大家在面试时被经常问及的关于Spring的主要问题
 comments: false
 ---
 </br>
