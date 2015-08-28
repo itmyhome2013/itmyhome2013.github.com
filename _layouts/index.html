@@ -16,79 +16,68 @@
 			padding: 10px 0;
 		}
 </style>
-<div class="container">
-	<div class="row cvheader">
-		<div class="col-md-6">
-			<h1 class="text-primary">
-				程序员
-			</h1>
-			<p>
-				<span class="glyphicon glyphicon-paperclip"></span> 生命本来就是一束耀眼的花火...
-			</p>
-			
-		</div>
 
-		<div class="col-md-3">
-			<div class="row">
-
-				<div class="col-lg-4 col-md-4 col-xs-4">
-					<p id="contact" class="address text-center">
-						联系
-					</p>
-				</div>
-
-				<div class="col-lg-8 col-md-8 col-xs-8">
-					<p>
-						<span class="glyphicon glyphicon-envelope"></span> itmyhome@163.com
-					</p>
-					<p>
-						<span class="glyphicon glyphicon-user"></span> 329795485
-					</p>
-					<p>
-						<span class="glyphicon glyphicon-road"></span> 北京市海淀区
-					</p>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="col-md-3">
-			<p>
-				<!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
-				<img data-toggle="tooltip" data-placement="left" id="avatar" width="120px;" height="120px;"
-					title="hello" class="img-responsive img-rounded"
-					src="images/index/flower.jpg" alt="">
-			</p>
-		</div>
-		
-	</div>
-</div>
 
 
 <div id="container">
-	 <div class="col-md-6 hidden-xs">
-		 </br>
-		 </br>
-		 <div id="myskipper" style="height:300px;width:620px;">
-			<div><canvas id="m_cnvWoozyClockPresentation"></canvas></div>
-		 </div> 
-	 </div>
-	 <div class="col-md-6">
+	 <div class="col-md-8">
+			</br>
 			{% for post in paginator.posts %}
 			   {% if  post.codes != true %}
-				<div class="col-md-12">
+				<div class="col-md-12  blog-list-detail">
 						<h3><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
 						{% if site.comments == true and post.comments == true and site.disqus != '' %}
 						  <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
 						{% endif %}
 						<div class="content"> 
 							<p>{{ post.summary }}</p>
-							<h5><a href='{{post.url}}' title='Read more...'>Read more...</a></h5>
+							<h5><a href='{{post.url}}' title='Read more...'>显示更多</a></h5>
 						</div>
 				</div>
 			   {% endif %}
 			{% endfor %}		
 	 </div>  
+	  <div class="col-md-4">
+			<h3 class="text-primary">
+				大道至简
+			</h3>
+			<p>
+				<span class="glyphicon glyphicon-paperclip"></span> 生命本来就是一束耀眼的花火...
+			</p>
+			</br>
+			<h1 class="text-primary">
+				联系方式
+			</h1>
+			<p>
+				<span class="glyphicon glyphicon-envelope"></span> itmyhome@163.com
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-user"></span> 329795485
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-road"></span> 北京市海淀区
+			</p>
+			</br>
+			<h1 class="text-primary">
+				开源项目
+		    </h1>
+			<p>
+				<a href="http://blog.itmyhome.com/resume/" target="_blank">网页简历模板</a>
+			</p>
+			<p>
+				<a href="http://blog.itmyhome.com/id_number_verify/" target="_blank">JS校验身份证号</a>
+			</p>
+			<p>
+				<a href="http://itmyhome.com/countdown/" target="_blank">JS实现倒计时</a>
+			</p>
+			<p>
+				<a href="http://blog.itmyhome.com/grumble/" target="_blank">Tooltip控件</a>
+			</p>
+			<p>
+				<a href="http://itmyhome.com/clock/" target="_blank">HTML5时钟动画</a>
+			</p>
+		
+	 </div>
 </div>
 <script type="text/javascript">
 		 $(document).ready(function(){
