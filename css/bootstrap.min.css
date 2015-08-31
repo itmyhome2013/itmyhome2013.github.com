@@ -4061,7 +4061,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	}
 }
 
-@media (min-width:768px) {
+@media (min-width:968px) {
 	.navbar-header {
 		float: left
 	}
@@ -4081,7 +4081,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	overflow-y: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:968px) {
 	.navbar-collapse {
 		width: auto;
 		border-top: 0;
@@ -4121,7 +4121,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	margin-left: -15px
 }
 
-@media (min-width:768px) {
+@media (min-width:968px) {
 	.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse {
 		margin-right: 0;
 		margin-left: 0
@@ -4212,7 +4212,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	margin-top: 4px
 }
 
-@media (min-width:768px) {
+@media (min-width:968px) {
 	.navbar-toggle {
 		display: none
 	}
@@ -4228,7 +4228,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	line-height: 20px
 }
 
-@media (max-width:767px) {
+@media (max-width:967px) {
 	.navbar-nav .open .dropdown-menu {
 		position: static;
 		float: none;
@@ -4253,7 +4253,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	}
 }
 
-@media (min-width:768px) {
+@media (min-width:968px) {
 	.navbar-nav {
 		float: left;
 		margin: 0
