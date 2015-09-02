@@ -62,7 +62,8 @@ body {
 	padding: 10px 10px;
 	line-height: 1;
 	border-radius: 5px;
-	background: #F5F5F5 ;
+	/*background: #F5F5F5 ;  版权背景色由灰色改为白色 2015-09-02*/
+	background: #FFFFFF ;
 }
 
 /*
