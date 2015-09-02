@@ -5,7 +5,7 @@ title: "Java的几种对象解释"
 date: 2015-08-05 00:00:00 -0700
 tags: Java
 category: Java
-summary: PO：persistent object 持久对象,VO：value object 值对象
+summary: PO：persistent object 持久对象,VO：value object 值对象,DAO：data access object 数据访问对象
 comments: false
 ---
 </br>
