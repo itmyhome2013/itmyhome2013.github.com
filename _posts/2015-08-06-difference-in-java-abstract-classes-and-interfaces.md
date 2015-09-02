@@ -5,7 +5,7 @@ title: "详细解析Java中抽象类和接口的区别 "
 date: 2015-08-06 00:00:00 -0700
 tags: Java
 category: Java
-summary: 在Java语言中,abstract class和interface 是支持抽象类定义的两种机制。正是由于这两种机制的存在,才赋予了Java强大的面向对象能力
+summary: 在Java语言中,abstract class和interface 是支持抽象类定义的两种机制。正是由于这两种机制的存在,</br>才赋予了Java强大的面向对象能力
 comments: false
 ---
 </br>
