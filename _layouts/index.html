@@ -15,6 +15,9 @@
 			color: #fff;
 			padding: 10px 0;
 		}
+		.home-font {
+			font-size: 22px;
+		}
 </style>
 
 
@@ -25,7 +28,7 @@
 			{% for post in paginator.posts %}
 			   {% if  post.codes != true %}
 				<div class="col-md-12  blog-list-detail">
-						<h3><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+						<h4 class="home-font"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
 						{% if site.comments == true and post.comments == true and site.disqus != '' %}
 						  <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
 						{% endif %}
@@ -38,45 +41,98 @@
 			{% endfor %}		
 	 </div>  
 	  <div class="col-md-4">
-			<h3 class="text-primary">
-				大道至简
-			</h3>
-			<p>
-				<span class="glyphicon glyphicon-paperclip"></span> 生命本来就是一束耀眼的花火...
-			</p>
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<div class="thumbnail">
+					  <div class="caption">
+						 <div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12">
+									<h4 class="text-primary home-font">
+										大道至简
+									</h4>
+									<p>
+										<span class="glyphicon glyphicon-time"></span> 生命本来就是一束耀眼的花火...
+									</p>
+								</div>
+							</div>
+						</div>
+					   </div>
+				    </div>
+				</div>
+			</div>
 			</br>
-			<h1 class="text-primary">
-				联系方式
-			</h1>
-			<p>
-				<span class="glyphicon glyphicon-envelope"></span> itmyhome@163.com
-			</p>
-			<p>
-				<span class="glyphicon glyphicon-user"></span> 329795485
-			</p>
-			<p>
-				<span class="glyphicon glyphicon-road"></span> 北京市海淀区
-			</p>
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<div class="thumbnail">
+					  <div class="caption">
+							<div class="container-fluid">
+								<div class="row">
+								  <div class="col-md-6">
+									 <h4 class="text-primary home-font">
+										联系方式
+									 </h4>
+									 <p>
+										<span class="glyphicon glyphicon-user"></span> 329795485
+									 </p>
+									 <p>
+										<span class="glyphicon glyphicon-road"></span> 北京市海淀区
+									 </p>
+								  </div>
+								  <div class="col-md-6">
+									 </br>
+									 <img src="{{ site.baseurl}}/images/1.jpg" class="img-thumbnail" width="150px;" height="80px;">
+								  </div>
+								</div>
+							</div>
+					   </div>
+				    </div>
+				</div>	
+			</div>
 			</br>
-			<h1 class="text-primary">
-				开源项目
-		    </h1>
-			<p>
-				<a href="http://blog.itmyhome.com/resume/" target="_blank">网页简历模板</a>
-			</p>
-			<p>
-				<a href="http://blog.itmyhome.com/id_number_verify/" target="_blank">JS校验身份证号</a>
-			</p>
-			<p>
-				<a href="http://itmyhome.com/countdown/" target="_blank">JS实现倒计时</a>
-			</p>
-			<p>
-				<a href="http://blog.itmyhome.com/grumble/" target="_blank">Tooltip控件</a>
-			</p>
-			<p>
-				<a href="http://itmyhome.com/clock/" target="_blank">HTML5时钟动画</a>
-			</p>
-		
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<div class="thumbnail">
+						<div class="caption">
+							<div class="container-fluid">
+								<div class="row">
+								     <div class="col-md-6">
+										<h4 class="text-primary home-font">
+											开源项目
+										</h4>
+										<p>
+											<a href="http://blog.itmyhome.com/resume/" target="_blank">网页简历模板</a>
+										</p>
+										<p>
+											<a href="http://blog.itmyhome.com/id_number_verify/" target="_blank">JS校验身份证号</a>
+										</p>
+										<p>
+											<a href="http://itmyhome.com/countdown/" target="_blank">JS实现倒计时</a>
+										</p>
+										<p>
+											<a href="http://blog.itmyhome.com/grumble/" target="_blank">Tooltip控件</a>
+										</p>
+										<p>
+											<a href="http://itmyhome.com/clock/" target="_blank">HTML5时钟动画</a>
+										</p>
+								     </div>
+								     <div class="col-md-6">
+										<h4 class="text-primary home-font">
+											友情链接
+										</h4>
+										<p>
+											<a href="http://blog.it2048.cn/" target="_blank">极客导航</a>
+										</p>
+										<p>
+										</p>
+								     </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			</br>	
 	 </div>
 </div>
 <script type="text/javascript">
