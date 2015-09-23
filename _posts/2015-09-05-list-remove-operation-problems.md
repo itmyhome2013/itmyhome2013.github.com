@@ -42,7 +42,7 @@ public static void main(String[] args) {
 </br>
 ####解决方法：
 
-####一、每移除一个元素以后再把 i 移回来
+#####一、每移除一个元素以后再把 i 移回来
 
 ```
 for(int i = 0;i<list.size();i++){  
@@ -54,7 +54,7 @@ for(int i = 0;i<list.size();i++){
 ```
 
 </br>
-####二、使用iterator.remove()方法删除
+#####二、使用iterator.remove()方法删除
 
 ```java
 for(Iterator ite = list.iterator();ite.hasNext();){  
@@ -65,7 +65,7 @@ for(Iterator ite = list.iterator();ite.hasNext();){
 ```
 
 </br>
-####三、倒过来遍历list
+#####三、倒过来遍历list
 
 ```java
 for(int i = list.size()-1;i>=0;i--){  
