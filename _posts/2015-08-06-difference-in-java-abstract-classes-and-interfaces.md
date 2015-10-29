@@ -277,17 +277,11 @@ class AlarmDoor extends Door implements Alarm{
 </br>
 ####**小 结**
 
-+ 1、abstract class在Java语言中表示的是一种继承关系,一个类只能使用一次继承关系。
++ 1、abstract class在Java语言中表示的是一种继承关系,一个类只能使用一次继承关系。但是一个类却可以实现多个interface。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是一个类却可以实现多个interface。
++ 2、在abstract class中可以有自己的数据成员，也可以有非abstarct的成员方法，而在interface中，只能够有静态的不能被修改的数据成员(也就是必须是static final的，不过在 interface中一般不定义数据成员)，所有的成员方法都是abstract的。
 
-+ 2、在abstract class中可以有自己的数据成员，也可以有非abstarct的成员方法，而在interface中，只能够有静态的不能
-
-&nbsp;&nbsp;被修改的数据成员(也就是必须是static final的，不过在 interface中一般不定义数据成员)，所有的成员方法都是abstract的。
-
-+ 3、abstract class和interface所反映出的设计理念不同。其实abstract class表示的是"is-a"关系，
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interface&nbsp;&nbsp;表示的是"like-a"关系。
++ 3、abstract class和interface所反映出的设计理念不同。其实abstract class表示的是"is-a"关系，表示的是"like-a"关系。
 
 + 4、实现抽象类和接口的类必须实现其中的所有方法。抽象类中可以有非抽象方法。接口中则不能有实现方法。
 

@@ -5729,6 +5729,27 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.05)
 }
+ /*2015-10-29修改文章字体样式*/
+.well-article {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif
+ }
+
+ /*修改行间距*/
+ p {
+	margin: 0 0 10px;
+	line-height: 28px;
+ }
+
+ .post-content p{
+	margin:0 auto;
+ } 
 
 .well blockquote {
 	border-color: #ddd;
