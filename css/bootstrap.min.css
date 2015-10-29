@@ -5741,13 +5741,13 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif
  }
 
- /*修改行间距*/
+ 
  p {
 	margin: 0 0 10px;
-	line-height: 28px;
  }
-
+ /*修改行间距*/
  .post-content p{
+	line-height: 28px;
 	margin:0 auto;
  } 
 
