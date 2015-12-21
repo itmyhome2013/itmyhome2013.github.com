@@ -1209,7 +1209,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 sm
 }
 
 h1,.h1,h2,.h2,h3,.h3 {
-	margin-top: 30px; /*20151221 20px改为30px*/
+	margin-top: 20px;
 	margin-bottom: 10px
 }
 
@@ -1218,8 +1218,8 @@ h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2
 }
 
 h4,.h4,h5,.h5,h6,.h6 {
-	margin-top: 28px; /*20151221 10px改为28px*/
-	margin-bottom: 15px
+	margin-top: 10px;
+	margin-bottom: 10px
 }
 
 h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small {
@@ -5747,8 +5747,8 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
  }
  /*修改行间距*/
  .post-content p{
-	line-height: 22px;  /*28*/
-	/* margin:0 auto; */
+	line-height: 28px;
+	margin:0 auto;
  } 
 
 .well blockquote {
