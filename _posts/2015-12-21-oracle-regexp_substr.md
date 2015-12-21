@@ -46,19 +46,19 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
     </tr> 
     <tr> 
      <td>*</td> 
-     <td>Matches zero or more occurrences.</td> 
+     <td>匹配零个或多个.</td> 
     </tr> 
     <tr> 
      <td>+</td> 
-     <td>Matches one or more occurrences.</td> 
+     <td>匹配一个或多个出现.</td> 
     </tr> 
     <tr> 
      <td>?</td> 
-     <td>Matches zero or one occurrence.</td> 
+     <td>匹配零次或一次出现.</td> 
     </tr> 
     <tr> 
      <td>.</td> 
-     <td>Matches any character except NULL.</td> 
+     <td>匹配任何字符，除了空.</td> 
     </tr> 
     <tr> 
      <td>|</td> 
@@ -106,27 +106,27 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
     </tr> 
     <tr> 
      <td>\d</td> 
-     <td>Matches a digit character.</td> 
+     <td>匹配一个数字字符.</td> 
     </tr> 
     <tr> 
      <td>\D</td> 
-     <td>Matches a nondigit character.</td> 
+     <td>匹配一个非数字字符.</td> 
     </tr> 
     <tr> 
      <td>\w</td> 
-     <td>Matches a word character.</td> 
+     <td>匹配包括下划线的任何单词字符.</td> 
     </tr> 
     <tr> 
      <td>\W</td> 
-     <td>Matches a nonword character.</td> 
+     <td>匹配任何非单词字符.</td> 
     </tr> 
     <tr> 
      <td>\s</td> 
-     <td>Matches a whitespace character.</td> 
+     <td>匹配任何空白字符，包括空格、制表符、换页符等等.</td> 
     </tr> 
     <tr> 
      <td>\S</td> 
-     <td>matches a non-whitespace character.</td> 
+     <td>匹配任何非空白字符.</td> 
     </tr> 
     <tr> 
      <td>\A</td> 
@@ -200,5 +200,20 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
       <td>Whitespace characters are ignored. By default, whitespace characters are matched like any other character.</td>
     </tr>
 </table>
+
+#### Examples
+
+找出匹配的数字
+
+```sql
+SELECT REGEXP_SUBSTR ('hello my phone is 520 ', '[0-9]+') FROM dual; --520
+```
+
+下面这个例子返回指定第三次出现的字符
+
+```sql
+SELECT REGEXP_SUBSTR ('i like beijing tiananmen', '(\S*)(\s)', 1, 3)
+FROM dual;    --beijing
+```
 
 </br>
