@@ -1,31 +1,31 @@
 ---
 layout: post
-blog_id: "oracle-regexp_substr"
-title: "Oracle的REGEXP_SUBSTR函数简单用法 "
-date: 2015-12-21 00:00:00 -0700
+blog_id: "oracle-regexp_instr"
+title: "Oracle的REGEXP_INSTR函数简单用法"
+date: 2015-12-20 00:00:00 -0700
 tags: Oracle
 category: Oracle
-summary: REGEXP_SUBSTR延伸SUBSTR函数的功能，让你搜索一个正则表达式模式字符串。
+summary: REGEXP_INSTR函数让你搜索一个正则表达式模式字符串,它返回一个整数，指示开始或结束匹配的子位置。
 comments: false
 ---
 </br>
-REGEXP_SUBSTR延伸SUBSTR函数的功能，让你搜索一个正则表达式模式字符串。
+REGEXP_INSTR函数让你搜索一个正则表达式模式字符串。函数使用输入字符集定义的字符进行字符串的计算。
 
-这也类似于REGEXP_INSTR，而是返回子字符串的位置，它返回的子字符串本身。
+它返回一个整数，指示开始或结束匹配的子位置，这取决于return_option参数的值。如果没有找到匹配，则函数返回0。
 
 ###语法
 
-Oracle数据库中的REGEXP_SUBSTR函数的语法是：
+Oracle数据库中的REGEXP_INSTR函数的语法是：
 
 ```sql
-REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter ]]])
+REGEXP_INSTR (source_char, pattern [, position [, occurrence [, return_option [, match_parameter ] ] ]  ] )
 ```
 
 ###参数
 
 #### *source_char*
 
-搜索字符串。可以是任意的数据类型char，VARCHAR2，nchar，CLOB，NCLOB类型
+搜索值的字符表达式，可以是任何数据类型CHAR，VARCHAR2，NCHAR，NVARCHAR2，CLOB或NCLOB的。
 
 #### *pattern*
 
@@ -162,17 +162,26 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
     </tr> 
 </table>
 
+
 #### *position*
 
-可选。搜索在字符串中的开始位置。如果省略，默认为1，这是第一个位置的字符串。
+可选。搜索在字符串中的开始位置。如果省略，则默认为1，这是字符串中的第一个位置。
 
 #### *occurrence*
 
 可选。它是模式字符串中的第n个匹配位置。如果省略，默认为1。
 
+#### *return_option*
+
+可选  指定Oracle返回的位置：
+
+如果指定0，那么Oracle将返回出现的第一个字符的位置。这是默认的。
+
+如果指定1，则Oracle返回字符之后发生的位置。
+
 #### *match_parameter*
 
-可选。它允许你修改regexp_substr功能匹配的行为。它可以是以下的组合：
+可选。它允许你修改REGEXP_INSTR功能匹配的行为。它可以是以下的组合：
 
 <table class="table table-bordered table-striped table-condensed">
     <tr>
@@ -201,19 +210,66 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
     </tr>
 </table>
 
-#### Examples
 
-找出匹配的数字
+#### Examples 匹配单个字符
 
-```sql
-SELECT REGEXP_SUBSTR ('hello my phone is 520 ', '[0-9]+') FROM dual; --520
-```
-
-下面这个例子返回指定第三次出现的字符
+下面看一个最简单的情况，找到字符串中的第一个"e"字的位置。
 
 ```sql
-SELECT REGEXP_SUBSTR ('i like beijing tiananmen', '(\S*)(\s)', 1, 3)
-FROM dual;    --beijing
+SELECT REGEXP_INSTR ('hello itmyhome', 'e')
+FROM dual; 
+
+-- Result: 2
 ```
+
+下面这个例子给出一个字符串， "1"为开始位置 "2"是搜索第二个匹配的，"0"是return_option 返回出现的第一个字符位置
+
+"c"是区分大小写 ，所以将返回13
+
+```sql
+SELECT REGEXP_INSTR ('my is itMyhome', 'm', 1, 2, 0, 'c')
+FROM dual; 
+
+-- Result: 13
+```
+
+#### Examples 匹配多个字符
+
+我们将使用REGEXP_INSTR函数来匹配多字符模式。
+
+```sql
+SELECT REGEXP_INSTR ('World filled with love', 'with', 1, 1, 0, 'i')
+FROM dual;
+```
+
+这个例子将字符串中返回'with'的第一次出现,它将匹配一个词组。
+
+我们可以改变搜索的开始位置，以便我们执行搜索从字符串的中间开始。
+
+For example:
+
+```sql
+SELECT REGEXP_INSTR ('my name is itmyhome', 'my', 10, 1, 0, 'i')
+FROM dual;
+```
+
+这个例子将开始搜索"my"在字符串中的位置10。在这种情况下，在搜索之前，它会跳过字符串中的前9个字符。
+
+#### Examples 匹配多个备选
+
+下面的例子,我们将使用 | 模式。该|模式用于像一个"或"指定多个替代方案。
+
+For example:
+
+```sql
+SELECT REGEXP_INSTR ('Itmyhome', 'a|i|o|e|u')
+FROM dual;
+
+-- Result: 6
+```
+
+这个例子将返回6，因为它是搜索的第一个元音(a,i,o,e或u)字符串。由于我们没有指定match_parameter值时，
+
+REGEXP_INSTR函数将执行区分大小写的搜索，这意味着在"Itmyhome"的'I'将不匹配。
 
 </br>
