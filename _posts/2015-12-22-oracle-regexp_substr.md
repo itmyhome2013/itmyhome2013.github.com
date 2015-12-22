@@ -1,8 +1,8 @@
 ---
 layout: post
 blog_id: "oracle-regexp_substr"
-title: "Oracle的REGEXP_SUBSTR函数简单用法 "
-date: 2015-12-21 00:00:00 -0700
+title: "Oracle的REGEXP_SUBSTR函数简单用法"
+date: 2015-12-22 00:00:00 -0700
 tags: Oracle
 category: Oracle
 summary: REGEXP_SUBSTR延伸SUBSTR函数的功能，让你搜索一个正则表达式模式字符串。
