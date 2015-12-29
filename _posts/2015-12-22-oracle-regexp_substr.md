@@ -209,7 +209,7 @@ REGEXP_SUBSTR(source_char, pattern [, position [, occurrence [, match_parameter 
 SELECT REGEXP_SUBSTR ('hello my phone is 520 ', '[0-9]+') FROM dual; --520
 ```
 
-下面这个例子返回指定第三次出现的字符
+下面这个例子返回指定第三次出现的字符.
 
 ```sql
 SELECT REGEXP_SUBSTR ('i like beijing tiananmen', '(\S*)(\s)', 1, 3)
