@@ -2,7 +2,7 @@
 layout: post
 blog_id: "baidu-map-custom-labels-icon"
 title: "百度地图API 自定义标注图标"
-date: 2015-11-28 00:00:00 -0700
+date: 2015-11-25 00:00:00 -0700
 tags: 百度地图
 category: 百度地图
 summary: 通过Icon类可实现自定义标注的图标，下面示例通过参数MarkerOptions的icon属性进行设置,也可以使用marker.setIcon()方法。

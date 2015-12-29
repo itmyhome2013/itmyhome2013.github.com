@@ -2,7 +2,7 @@
 layout: post
 blog_id: "baidu-map-determine-whether-the-circular-inner-point"
 title: "百度地图API 判断点是否在圆形内"
-date: 2015-11-30 00:00:00 -0700
+date: 2015-11-27 00:00:00 -0700
 tags: 百度地图
 category: 百度地图
 summary: GeoUtils类提供若干几何算法，用来帮助用户判断点与矩形、圆形、多边形线,并提供计算折线长度和多边形的面积的公式。

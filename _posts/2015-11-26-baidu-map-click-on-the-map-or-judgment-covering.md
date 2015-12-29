@@ -2,7 +2,7 @@
 layout: post
 blog_id: "baidu-map-click-on-the-map-or-judgment-covering"
 title: "百度地图API 判断点击的是地图还是覆盖物"
-date: 2015-11-29 00:00:00 -0700
+date: 2015-11-26 00:00:00 -0700
 tags: 百度地图
 category: 百度地图
 summary: 在百度地图上圆形区域检索，返回圆形覆盖范围内的"公司"检索结果，并展示在地图上
