@@ -79,6 +79,13 @@ jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器
 
 或许是因为之前已经设置了镜像,而不需要再重新设置。
 
+检查jekyll是否安装成功
+
+```html
+C:\>jekyll -v
+jekyll 3.0.1
+```
+
 </br>
 ###Install Python
 
@@ -131,5 +138,21 @@ PS：如果是第一次安装jekyll,过程中可能会出现很多问题
 远不止`ERROR:  Could not find a valid gem 'jekyll' (>= 0), here is why:`这一个问题
 
 多多摸索就行了,大不了都卸了重装。
+
+### PS: jekyll升级记
+
+突然某一天jekyll server的时候挂了，百思不得其姐，最后发现可能(一定)是版本问题。
+
+网上找了各种方法，真是越添越乱，最后无奈Ruby、DevKit、jekyll、Python
+
+统统卸掉重装。Ruby和jekyll都有版本更新，升级为Ruby 2.2.3、jekyll 3.0.1
+
+有一个错误出现：
+
+`jekyll 3.0.1 | Error:  Permission denied - bind(2) for 127.0.0.1:4000`
+
+说明端口被占有，不只为何，打开_config.yml 在最后加入一行 port: 5001 (其他也可)问题解决
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2015-12-30 更新
 
 </br>
