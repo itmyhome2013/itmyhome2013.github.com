@@ -6612,6 +6612,13 @@ button.close {
 	}
 }
 
+/*Æ½°å½«Òþ²Ø 20160123*/
+@media (max-width:1150px) {
+	.hidden-xs-tablet {
+		display: none!important
+	}
+}
+
 @media (min-width:768px) and (max-width:991px) {
 	.hidden-sm {
 		display: none!important
