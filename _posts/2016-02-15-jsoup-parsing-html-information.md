@@ -11,22 +11,14 @@ comments: false
 <br>
 
 - <a href="#introduction">jsoup简介</a>
-
 - <a href="#major">jsoup的主要功能如下</a>
-
 - <a href="#document-input">文档输入</a>
-
 - <a href="#extract">数据抽取</a>
-
   * <a href="#extract">使用DOM方法来遍历一个文档</a>
-  
   * <a href="#selected">使用选择器语法来查找元素</a>
-  
   * <a href="#text-html">从元素抽取属性,文本和HTML</a>
-  
 - <a href="#update">修改数据</a> <a name="introduction"></a>
-  
-- <a href="#clean">HTML文档清理</a> 
+- <a href="#clean">HTML文档清理</a>  
 
 #### jsoup简介
 
@@ -77,7 +69,7 @@ jsoup会自动为这些URL加上一个前缀，也就是这个 baseURL。
 
 <a name="extract"></a>
 
-例如 <a href=/project>itmyhome</a> 会被转换成 <a href=http://itmyhome.com/project>itmyhome</a>。
+例如 `<a href=/project>itmyhome</a>` 会被转换成 `<a href=http://itmyhome.com/project>itmyhome</a>`。
 
 ### 数据抽取
 
