@@ -9,7 +9,7 @@ summary: 使用EasyUI做一个报表统计，需要合并表头为多级表头
 comments: false
 ---
 <br>
-使用EasyUI做一个报表统计，需要合并表头为多级表头，核心代码如下:
+使用EasyUI做一个报表统计，需要合并表头为多级表头，核心代码如下: 
 
 ```js
 $('#dg').datagrid({  
