@@ -25,6 +25,7 @@ Lombok 是一种 Java实用工具，可用来帮助开发人员消除Java的冗�
 + 打开 myeclipse.ini / eclipse.ini，在最后加上以下两行并保存：
 
 　　　-Xbootclasspath/a:lombok.jar
+
 　　　-javaagent:lombok.jar
   
 + 重启 myeclipse / eclipse 即可
@@ -58,7 +59,7 @@ public class User {
 
 #### Lombok 注解
 
-Lombok 注解可参看 <a href="http://projectlombok.org/features/index">帮助文档<a>
+Lombok 注解可参看 <a href="http://projectlombok.org/features/index">帮助文档</a>
 
 下面介绍几个常用的 lombok 注解
 
