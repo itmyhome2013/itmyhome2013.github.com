@@ -18,7 +18,7 @@ Lombok 是一种 Java实用工具，可用来帮助开发人员消除Java的冗�
 
 #### 安装 Lombok
 
-使用Lombok 首先要进行安装，本例介绍 myeclipse 的安装方法，首先 <a href="http://projectlombok.org/">官网下载lombok.jar<a>
+使用Lombok 首先要进行安装，本例介绍 myeclipse 的安装方法，首先官网下载 <a href="http://projectlombok.org/">lombok.jar<a>
 
 + 将 lombok.jar 复制到 myeclipse.ini / eclipse.ini 所在的文件夹目录下
 
