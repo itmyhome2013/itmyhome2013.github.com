@@ -96,4 +96,6 @@ function onClickCell(index, field) {
 </script>
 ```
 
+<a href="http://itmyhome.com/cell_editing_in_datagrid/" target="_blank">在线演示</a>
+
 <br>
