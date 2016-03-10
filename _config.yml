@@ -33,7 +33,6 @@ comments: true
 permalink: /:year/:month/:title
 paginate: 3
 
-highlighter: pygments
 kramdown:
   input: GFM
   syntax_highlighter: rouge
