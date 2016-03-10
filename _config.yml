@@ -37,4 +37,5 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+relative_permalinks: true
 exclude: ['README.md', 'LICENSE']
