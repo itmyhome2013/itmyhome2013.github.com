@@ -2,7 +2,7 @@
 layout: post
 blog_id: "cell-editing-in-datagrid"
 title: "EasyUI DataGrid 编辑单元格"
-date: 2016-02-26 00:00:00 -0700
+date: 2016-03-09 00:00:00 -0700
 tags: EasyUI
 category: EasyUI
 summary: 
