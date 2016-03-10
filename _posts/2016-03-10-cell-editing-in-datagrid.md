@@ -12,7 +12,7 @@ comments: false
 
 之前文章 <a href="http://blog.csdn.net/itmyhome1990/article/details/46971341" target="_blank">EasyUI DataGrid可编辑单元格 </a>实现可编辑单元格，如果有多列都需要可编辑 当点击一个单元格 则此整行都会进行编辑
 
-如下图：
+如下图： 
 
 ![License Badge]({{ site.baseurl}}/images/easyui/2.jpg)
 
