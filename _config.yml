@@ -36,7 +36,8 @@ paginate: 3
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  
+highlighter: rouge
 
 
 exclude: ['README.md', 'LICENSE']
