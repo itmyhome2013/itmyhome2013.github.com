@@ -2,7 +2,7 @@
 layout: post
 blog_id: "is-not-allowed-to-connect-to-this-mysql-server"
 title: "MySQL远程连接：Host 'x' is not allowed to connect to this MySQL server"
-date: 2016-03-25 00:00:00 -0700
+date: 2016-03-24 00:00:00 -0700
 tags: MySQL
 category: MySQL
 summary: 远程连接MySQL时发现如下错误,is not allowed to connect to this MySQL server
