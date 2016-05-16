@@ -46,9 +46,9 @@ comments: false
 ```
 
 
-在线演示：http://blog.itmyhome.com/layer/
+在线演示：<a href="http://blog.itmyhome.com/layer/">http://blog.itmyhome.com/layer/</a>
 
-layer官方：http://layer.layui.com/
+layer官方：<a href="http://layer.layui.com/">http://layer.layui.com/</a>
 
 <br>
 
