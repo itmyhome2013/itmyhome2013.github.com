@@ -8,8 +8,9 @@ category: Java
 summary: 反射是java语言的一个特性，它允许程序在运行时来进行自我检查并且对内部的成员进行操作。例如它允许一个java的类获取他所有的成员变量和方法并且显示出来。
 comments: false
 ---
-</br>
-###什么是反射：
+<br>
+
+#### 什么是反射：
 
 反射是java语言的一个特性，它允许程序在运行时来进行自我检查并且对内部的成员进行操作。例如它允许一个java的类获取
 
@@ -37,8 +38,7 @@ public class T {
 }
 ```
 
-</br>
-###Object类的支持
+#### Object类的支持
 
 在Object类中定义了以下的方法，此方法将被所有子类继承：
 
@@ -50,15 +50,13 @@ public  final  Class getClass()
 
 ![License Badge]({{ site.baseurl}}/images/java/09/1.png)
 
-</br>
-###Class类
+#### Class类
 
 Class本身表示一个类的本身，通过Class可以完整的得到一个类中的完整结构，包括此类中的方法定义，属性定义等。
 
 ![License Badge]({{ site.baseurl}}/images/java/09/2.png)
 
-</br>
-###实例化Class类对象
+#### 实例化Class类对象
 
 有三种方法实例化Class对象：
 
@@ -214,8 +212,7 @@ public class T {
 }
 ```
 
-</br>
-###反射机制的深入--取得类的结构
+#### 反射机制的深入--取得类的结构
 
 在实际开发中，以上的程序就是反射应用最多的地方，当然，反射机制所提供的功能远不止如此，还可以通过反射得到一个类
 
@@ -271,8 +268,7 @@ class Person implements IPerson{
 }
 ```
 
-</br>
-####取得类所实现的全部接口
+#### 取得类所实现的全部接口
 
 要想取得一个类所实现的全部接口，则必须使用Class类中的getInterfaces()方法，此方法定义如下：
 
@@ -296,8 +292,7 @@ public class T {
 }
 ```
 
-</br>
-####取得类所继承的父类
+#### 取得类所继承的父类
 
 一个类可以实现多个接口，但是只能继承一个父类，所以如果要想取得一个类的父类，可以直接使用Class类中的
 
@@ -321,8 +316,7 @@ public class T {
 }
 ```
 
-</br>
-####取得类中的全部构造方法
+#### 取得类中的全部构造方法
 
 ```java
 public class T {  
@@ -336,8 +330,7 @@ public class T {
 }
 ```
 
-</br>
-####取得类中的方法
+#### 取得类中的方法
 
 要想取得一个类中的全部方法，可以使用Class类中的getDeclaredMethods()方法，此方法返回一个Method类的对象数组，
 
@@ -364,8 +357,7 @@ public class T {
 }
 ```
 
-</br>
-####取得类中的属性
+#### 取得类中的属性
 
 <span style="color:red">public  Field[]  getFields()  得到实现的接口和父类中的公共属性</span>
 
@@ -390,4 +382,4 @@ public class T {
 }
 ```
 
-</br>
+<br>

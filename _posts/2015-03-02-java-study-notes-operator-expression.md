@@ -8,28 +8,25 @@ category: Java
 summary: 赋值运算符号、一元运算符、算术运算符、关系运算符、递增与递减运算符、逻辑运算符、位运算符
 comments: false
 ---
-</br>
-###赋值运算符号
+<br>
+
+#### 赋值运算符号
 
 ![License Badge]({{ site.baseurl}}/images/java/02/1.png)
 
-</br>
-###一元运算符
+#### 一元运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/2.png)
 
-</br>
-###算术运算符
+#### 算术运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/3.png)
 
-</br>
-###关系运算符
+#### 关系运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/4.png)
 
-</br>
-###递增与递减运算符
+#### 递增与递减运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/5.png)
 
@@ -64,8 +61,7 @@ y = 6
 	 --y = 5 ， y = 5 
 ```
 
-</br>
-###逻辑运算符
+#### 逻辑运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/6.png)
 
@@ -110,8 +106,7 @@ public class T {
 
 只要第一个条件满足，之后的程序代码都不在执行了。
 
-</br>
-###位运算符
+#### 位运算符
 
 ![License Badge]({{ site.baseurl}}/images/java/02/8.png)
 

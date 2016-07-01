@@ -8,8 +8,9 @@ category: Java
 summary: 在java.util包中定义了Date类，Date类本身使用非常简单，直接输出其实例化对象即可。
 comments: false
 ---
-</br>
-###一、Date类
+<br>
+
+#### 一、Date类
 
 在java.util包中定义了Date类，Date类本身使用非常简单，直接输出其实例化对象即可。
 
@@ -22,8 +23,7 @@ public class T {
 }
 ```
 
-</br>
-###二、Calendar类
+#### 二、Calendar类
 
 使用此类可以将日期精确到毫秒
 
@@ -51,8 +51,7 @@ public class T {
 }
 ```
 
-</br>
-###三、DateFormat类
+#### 三、DateFormat类
 
 此类是一个日期的格式化类，专门格式化日期的操作，因为java.util.Date类本身就已经包含了完整的日期，
 
@@ -81,8 +80,7 @@ public class T {
 }
 ```
 
-</br>
-###四、SimpleDateFormat类
+#### 四、SimpleDateFormat类
 
 ```java
 public class T2 {  
@@ -103,4 +101,5 @@ public class T2 {
     }  
 }
 ```
-</br>
+
+<br>

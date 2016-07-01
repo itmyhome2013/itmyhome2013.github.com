@@ -8,7 +8,8 @@ category: Java
 summary: 数组复制的方法是使用System类提供的arraycopy()方法，其语法如下：System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
 comments: false
 ---
-</br>
+<br>
+
 数组复制的方法是使用System类提供的`arraycopy()`方法，其语法如下：
 
 System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
@@ -28,7 +29,7 @@ public class T {
 }
 ```
 
-###Arrays类
+#### Arrays类
 
 对数组的一些基本操作，像排序、搜索与比较等都是很常见的。在java中提供了Array是类可以协助您作这几个操作，
 

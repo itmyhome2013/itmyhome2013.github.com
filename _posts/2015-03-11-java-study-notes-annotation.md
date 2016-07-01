@@ -8,15 +8,15 @@ category: Java
 summary: Annotation：在JDK1.5之后增加的一个新特性，这种特性被称为元数据特性，在JDK1.5之后称为注释，即：使用注释的方式加入一些程序的信息。java.lang.annotation Annotation接口是所有的Annotation都必须实现的接口。
 comments: false
 ---
-</br>
+<br>
+
 Annotation：在JDK1.5之后增加的一个新特性，这种特性被称为元数据特性，在JDK1.5之后称为注释，
 
 即：使用注释的方式加入一些程序的信息。
 
 java.lang.annotation Annotation接口是所有的Annotation都必须实现的接口。
 
-</br>
-####系统内建的Annotation
+#### 系统内建的Annotation
 
 在JDK1.5之后，系统中已经建立了如下的三个内建的Annotation类型，用户直接使用即可。
 
@@ -26,8 +26,7 @@ java.lang.annotation Annotation接口是所有的Annotation都必须实现的接
 
 + <span style="color:red">@SuppressWarnings：压制安全警告的Annotation</span>
 
-</br>
-####自定义Annotation
+#### 自定义Annotation
 
 Annotation定义格式：
 
@@ -120,8 +119,7 @@ public enum FormItemType {  //定义枚举类型
 }
 ```
 
-</br>
-###定义Annotation
+#### 定义Annotation
 
 ```java
 public @interface Meaning {  
@@ -138,8 +136,7 @@ class Demo{
 }
 ```
 
-</br>
-###Retention和RetentionPolicy
+#### Retention和RetentionPolicy
 
 在Annotation中，可以使用Retention定义个Annotation的保存范围，此Annotation的定义如下：
 
@@ -159,8 +156,7 @@ public @interface Meaning {
 
 内建Annotation的RetentionPolicy
 
-</br>
-###三个内建的Annotation的定义：
+#### 三个内建的Annotation的定义：
 
 <span style="color:red">Override定义采用的是@Retention(RetentionPolicy.SOURCE) 只能在源文件中出现</span>
 
@@ -242,8 +238,7 @@ public class T {
 }
 ```
 
-</br>
-###@Target
+#### @Target
 
 指示注释类型所适用的程序元素的种类。如果注释类型声明中不存在 Target 元注释，则声明的类型可以用在任一程序元素上。
 
@@ -253,4 +248,4 @@ ElementType的保存范围
 
 ![License Badge]({{ site.baseurl}}/images/java/11/3.png)
 
-</br>
+<br>

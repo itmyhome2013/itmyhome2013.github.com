@@ -8,8 +8,9 @@ category: Java
 summary: 由字符所组成的一串文字符号被称之为字符串。在java中字符串不仅仅是字符数组，而且是String类的一个实例，可以使用String类来构建。字符串的每个字符是使用Unicode字符来构建。
 comments: false
 ---
-</br>
-###String类
+<br>
+
+#### String类
 
 由字符所组成的一串文字符号被称之为字符串。`在java中字符串不仅仅是字符数组，而且是String类的一个实例`，
 
@@ -109,8 +110,7 @@ char name[] = {'i','t','m','y','h','o','m','e'};
 String s = new String(name);
 ```  
 
-</br>
-###不可变字符串
+#### 不可变字符串
 
 在java中使用字符串有一个非常重要的规则必须记得，一个字符串对象一旦被配置，它的内容就是固定不可变的。
 
@@ -132,13 +132,11 @@ System.out.println(str1==str2);
 
 当直接在程序中使用“”来包括一个字符串时，该字符串就会在String池中。
 
-</br>
-###StringBuilder类
+#### StringBuilder类
 
-参考 http://blog.csdn.net/itmyhome/article/details/7232340 
-
-</br>		
-###分离字符串
+参考 <a href="http://blog.csdn.net/itmyhome/article/details/7232340">http://blog.csdn.net/itmyhome/article/details/7232340</a>
+		
+#### 分离字符串
 
 可以使用String的split()进行分离字符串
 
@@ -161,6 +159,6 @@ for (int i = 0; i < s.length; i++) {
 ```
 
 以？和！作为分隔符。
-</br>	
-</br>
+
+<br>
 			

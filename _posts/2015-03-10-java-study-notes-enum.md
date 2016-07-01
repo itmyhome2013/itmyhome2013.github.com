@@ -8,7 +8,8 @@ category: Java
 summary: 所谓的枚举就是规定好了指定的取值范围，所有的内容只能从指定的范围中取得。
 comments: false
 ---
-</br>
+<br>
+
 在JDK1.5之前，java可以有两种方式定义新类型：类和接口。对于大部分面向对象编程来说，这两种方法看起来似乎足够了，
 
 但是在一些特殊情况下，这些方法就不适合。例如，想定义一个Color类，它只能有Red 、Green、Blue三种值，其他的任何值
@@ -59,8 +60,7 @@ interface Color{
 }
 ```
 
-</br>
-###定义一个枚举类型
+#### 定义一个枚举类型
 
 在JDK1.5之后，引入了一个新的关键字类型 enum，可以直接定义枚举类型，格式如下：
 
@@ -131,8 +131,7 @@ public class T {
 }
 ```
 
-</br>
-###Enum
+#### **Enum**
 
 从前面已经清楚的知道，使用enum关键字可以定义一个枚举，实际上此关键字表示的是 java.lang.Enum类型，
 
@@ -148,13 +147,11 @@ implements Comparable<E>, Serializable
 
 此类定义的时候使用了泛型机制,而且实现了Comparable接口以及Serializable接口,证明此中类型是可以比较,可以被序列化的。
 
-</br>
-####枚举类的主要方法
+#### 枚举类的主要方法
 
 ![License Badge]({{ site.baseurl}}/images/java/10/1.png)
 
-</br>
-####Enum类的构造方法：
+#### Enum类的构造方法：
 
 ```java
 protected  Enum(String name, int ordinal)
@@ -203,4 +200,4 @@ java.util.EnumSet和java.util.EnumMap是两个枚举集合。EnumSet保证集合
 
 而value则可以是任意类型
 
-</br>
+<br>

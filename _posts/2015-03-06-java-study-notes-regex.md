@@ -8,12 +8,13 @@ category: Java
 summary: 正则表达式可以方便的对数据进行匹配，可以执行更加复杂的字符串验证、拆分、替换等操作。
 comments: false
 ---
-</br>
+<br>
+
 正则表达式可以方便的对数据进行匹配，可以执行更加复杂的字符串验证、拆分、替换等操作。
 
 例如：现在要去判断一个字符串是否由数字组成，则可以有以下的两种做法
 
-####不使用正则表达式
+#### 不使用正则表达式
 
 ```java
 public class T {  
@@ -37,7 +38,7 @@ public class T {
 }
 ```
 
-####使用正则表达式
+#### 使用正则表达式
 
 ```java
 public class T {  
@@ -52,8 +53,7 @@ public class T {
 }
 ```
 
-</br>
-###Pattern、Matcher类
+#### Pattern、Matcher类
 
 这两个类为正则的核心操作类。这两个类都定义在java.util.regex包中.
 
@@ -135,8 +135,7 @@ public class T {
 }
 ```
 
-</br>
-###String类对正则的支持
+#### String类对正则的支持
 
 从之前的操作中，可以返现，很多的代码除了要求的字符串不同，使用的正则规则不同，基本上就没有什么特别的了。
 
@@ -161,8 +160,8 @@ public class T {
     }  
 }
 ```
-</br>
-####总结：
+
+#### 总结：
 
 <span style="color:red">1、使用正则可以方便的完成字符串的验证、拆分、替换等复杂功能。</span>
 
@@ -170,4 +169,4 @@ public class T {
 
 <span style="color:red">3、在一些正则应用的时候，对于一些敏感的字符要进行转义操作。</span>
 
-</br>
+<br>

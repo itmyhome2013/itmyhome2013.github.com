@@ -8,15 +8,15 @@ category: Java
 summary: 异常是导致程序中断运行的一种指令流,如果不对异常进行正确的处理,则可能导致程序的中断执行,造成不必要的损失.
 comments: false
 ---
-</br>
-###异常
+<br>
+
+#### 异常
 
 异常是导致程序中断运行的一种指令流，如果不对异常进行正确的处理，则可能导致程序的中断执行，造成不必要的损失，
 
 所以在程序的设计中必须要考虑各种异常的发生，并正确的做好相应的处理，这样才能保证程序正常的执行。
 
-</br>
-###异常类的继承结构
+#### 异常类的继承结构
 
 在整个java的异常结构中，实际上有以下两个最常用的类：Exception、Error，这两个类全都是Throwable的子类
 
@@ -26,8 +26,7 @@ Error：一般指的是JVM错误，程序中无法处理。
 
 ![License Badge]({{ site.baseurl}}/images/java/16/1.png)
 
-</br>
-###自定义异常类
+#### 自定义异常类
 
 只需要继承Exception就可以完成自定义异常类。因为在java中提供的都是标准的异常类（包括一些异常信息等等）
 
@@ -72,12 +71,9 @@ public class T3 {
 }
 ```
 
-</br>
-###几个常见的面试题：
+#### **几个常见的面试题：**
 
-####1、try {}里有一个return语句,那么紧跟在这个try后的finally{}里的code会不会被执行,什么时候被执行,
-
-####在return前还是后?
+##### **1、try {}里有一个return语句,那么紧跟在这个try后的finally{}里的code会不会被执行,什么时候被执行,在return前还是后?**
 
 会执行，在return之前。
 
@@ -127,8 +123,7 @@ try中的return语句调用的函数先于finally中调用的函数执行，也�
 
 <span style="color:red">finally语句后才真正开始返回。</span>
 
-</br>
-####2、final，finally，finalize的区别
+##### **2、final，finally，finalize的区别**
 
 final用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。
 
@@ -138,15 +133,13 @@ finalize是Object类的一个方法，在垃圾收集器执行的时候会调用
 
 其他资源回收,例如关闭文件等。JVM不保证此方法总被调用。
 
-</br>
-####3、运行时异常与一般异常有何异同？
+##### **3、运行时异常与一般异常有何异同？**
 
 异常表示程序运行过程中可能出现的非正常状态，运行时异常表示虚拟机的通常操作中可能遇到的异常，是一种常见运行错误。
 
 java编译器要求方法必须声明抛出可能发生的非运行时异常，但是并不要求必须声明抛出未被捕获的运行时异常。
 
-</br>
-####4、error和exception有什么区别？
+##### **4、error和exception有什么区别？**
 
 error表示恢复不是不可能但很困难的情况下的一种严重问题。比如内存溢出，不可能指望程序能出来这样的情况。
 
@@ -154,13 +147,11 @@ exception表示一种设计或实现问题。
 
 也就是说，它表示如果程序运行正常，从不会发生的情况。
  
-</br>
-####5、写出最常见的5个runtime exception
+##### **5、写出最常见的5个runtime exception**
 
 ClassCastException，IndexOutOfBoundsException，NullPointerException，ArithmeticException，IllegalArgumentException
 
-</br>
-####6、Java中的异常处理机制的简单原理和应用
+##### **6、Java中的异常处理机制的简单原理和应用**
 
 异常时指java程序运行时（非编译）所发生的非正常情况或错误，java使用面向对象的方式来处理异常，它把程序中发生的每个
 

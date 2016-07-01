@@ -8,8 +8,9 @@ category: Java
 summary: Java中主要有8中基本数据类型，分别是byte,short,int,long,char,boolean,float,double
 comments: false
 ---
-</br>
-###Java数据类型划分
+<br>
+
+#### Java数据类型划分
 
 ![License Badge]({{ site.baseurl}}/images/java/01/1.jpg)
 
@@ -21,13 +22,11 @@ comments: false
 
 浮点类型实际上就是表示小数。
 
-</br>
-###Java基本数据类型
+#### Java基本数据类型
 
 ![License Badge]({{ site.baseurl}}/images/java/01/2.png)
 
-</br>
-###数据的溢出
+#### 数据的溢出
 
 当整数的数据大小超出了可以表示的范围，而程序中又没有做数值范围的检查时，这个整型变量所输出的值将发生絮乱，
 
@@ -69,8 +68,7 @@ public class T {
 }  
 ```
 
-</br>
-###字符类型
+#### 字符类型
 
 字符类型在内存中占有2个字节，可以用来保存英文字母等字符。计算机处理字符类型时，是把这些字符当成不同的整数来看待，
 
@@ -87,13 +85,11 @@ public class T {
 }  
 ```
 
-</br>
-###常用的转义字符
+#### 常用的转义字符
 
 ![License Badge]({{ site.baseurl}}/images/java/01/3.png)
 
-</br>
-###浮点数类型与双精度浮点数类型
+#### 浮点数类型与双精度浮点数类型
 
 在日常生活中经常会使用到小数类型的数值，如身高，体重等需要精确的数值时，整数就不能满足程序设计者的要求了。
 
@@ -109,14 +105,12 @@ public class T {
 
 + 整数(1，2，3)的默认类型是int类型
 
-</br>
-###布尔类型
+#### 布尔类型
 
 布尔(boolean)类型的变量，只有 **true(真)** 和 **false(假)** 两种
 
-</br>
-###基本数据类型的默认值
+#### 基本数据类型的默认值
 
 ![License Badge]({{ site.baseurl}}/images/java/01/4.png)
 
-</br>
+<br>

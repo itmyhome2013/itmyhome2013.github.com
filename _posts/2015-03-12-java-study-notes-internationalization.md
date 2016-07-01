@@ -8,7 +8,8 @@ category: Java
 summary: 国际化的操作就是指一个程序可以同时适应多门语言，即：如果现在程序者是中国人，则会以中文为显示文字，如果现在程序的使用者是英国人，则会以英语为显示的文字，也就是说可以通过国际化操作，让一个程序适应各个国家的语言要求。
 comments: false
 ---
-</br>
+<br>
+
 国际化的操作就是指一个程序可以同时适应多门语言，即：如果现在程序者是中国人，则会以中文为显示文字，如果现在
 
 程序的使用者是英国人，则会以英语为显示的文字，也就是说可以通过国际化操作，让一个程序适应各个国家的语言要求。
@@ -19,7 +20,7 @@ comments: false
 
 所以在读取的时候通过其key找到对应的value
 
-####国际化实现的支持类
+#### 国际化实现的支持类
 
 如果要想实现java程序的国际化操作必须通过以下的三个类完成：
 
@@ -29,8 +30,7 @@ comments: false
 
 <span style="color:red">java.text.MessageFormat：格式化资源文件的占位字符串。</span>
 
-</br>
-###Local类
+#### Local类
 
 Local表示的是本地，实际上使用的是一个ISO编码的封装类。对于各个国家来说都存在一个唯一的编码，
 
@@ -42,8 +42,7 @@ Local表示的是本地，实际上使用的是一个ISO编码的封装类。对
 
 + 法语的编码：fr-FR
 
-</br>
-###ResourceBundle
+#### ResourceBundle
 
 此类是专门完成属性文件读取操作的，读取的时候直接指定文件名即可(此文件名称一般不需要指定后缀，
 
@@ -66,7 +65,7 @@ Local表示的是本地，实际上使用的是一个ISO编码的封装类。对
 
 下面通过一道程序来观察资源文件的使用，以及如何使用ResourceBundle读取资源文件。
 
-####message.properties
+#### message.properties
 
 ```diff
 info=HELLO  
@@ -91,8 +90,7 @@ PS：<span style="color:red">message.properties默认查找路径为classpath下
 Can't find bundle for base name message, locale zh_CH
 ```
 
-</br>
-###Java国际化程序实现
+#### Java国际化程序实现
 
 可以根据不同的国家输出不同国家的你好：
 
@@ -110,19 +108,19 @@ Can't find bundle for base name message, locale zh_CH
 
 法文：Message_fr_FR.properties
 
-####Message_zh_CN.properties
+##### **Message_zh_CN.properties**
 
 ```diff
 info=\u4f60\u597d
 ```
 
-####Message_en_US.properties
+##### **Message_en_US.properties**
 
 ```diff
 info=Hello
 ```
 
-####Message_fr_FR.properties
+##### **Message_fr_FR.properties**
 
 ```diff
 info=Bonjour
@@ -151,8 +149,7 @@ public class T {
 
 PS:<span style="color:red">以上中文属性如果是中文的话应该将其进行Unicode编码，这样可以避免一些系统所带来的乱码问题</span>
 
-</br>
-###处理动态文本
+#### 处理动态文本
 
 之前的资源文件中的所有内容实际上都是固定的，而如果现在有些内容，你好，XXX。那么此时就必须在资源文件中进行一些
 
@@ -194,8 +191,7 @@ public class T {
 }
 ```
 
-</br>
-###Java新特性，可变参数
+#### Java新特性，可变参数
 
 在JDK1.5之后java增加了新特性的操作，可以向方法中传递可变的参数，以前的定义的方法，实际上里面的参数都是固定个数的
 
@@ -215,7 +211,7 @@ public class T {
 }
 ```
 
-####使用一个类代替资源文件
+#### 使用一个类代替资源文件
 
 也可以直接使用一个类来存放所有的资源文件内容,但是,此类在操作的时候就必须有一个明显的注意点,<span style="color:red">必须继承ListResourceBundle</span>
 
@@ -268,4 +264,4 @@ public class T {
 
 <span style="color:red">**总结：国际化程序实现的思路：程序与显示相分离，根据不同的Locale指定的区域找到不同的资源文件并根据其key取得对应的value**</span>
 
-</br>
+<br>

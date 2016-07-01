@@ -8,8 +8,9 @@ category: Java
 summary: Proxy类是专门完成代理的操作类，可以通过此类为一个或多个接口动态地生成实现类
 comments: false
 ---
-</br>
-####InvocationHandler接口
+<br>
+
+#### InvocationHandler接口
 
 ```java
 public interface InvocationHandler{  
@@ -25,8 +26,7 @@ public interface InvocationHandler{
 
 <span style="color:red">Object   args[]：方法调用时所需要的参数</span>
 
-</br>
-####Proxy类
+#### Proxy类
 
 Proxy类是专门完成代理的操作类，可以通过此类为一个或多个接口动态地生成实现类，此类提供了如下的操作方法：
 
@@ -45,8 +45,7 @@ public static Object newProxyInstance(ClassLoader loader,
 
 <span style="color:red">InvocationHandler  h：得到InvocationHandler接口的子类实例</span>
 
-</br>
-####动态代理：
+#### 动态代理：
 
 ```java
 package com.itmyhome;  
@@ -91,4 +90,4 @@ public class T {
 }
 ```
 
-</br>
+<br>

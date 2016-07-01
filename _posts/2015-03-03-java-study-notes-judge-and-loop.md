@@ -8,8 +8,9 @@ category: Java
 summary: 程序的结构一般来说程序的结构包含有下面三种：顺序结构、选择结构、循环结构
 comments: false
 ---
-</br>
-###程序的结构
+<br>
+
+#### 程序的结构
 
 一般来说程序的结构包含有下面三种：
 
@@ -66,7 +67,6 @@ public class T {
 
 如果不写上此语句，则所有的操作将在第一个满足条件之后全部输出直到遇到break为止
 
-</br>
 ![License Badge]({{ site.baseurl}}/images/java/03/5.png)
 
 ```java
@@ -84,7 +84,6 @@ public class T {
 }
 ```
 
-</br>
 ![License Badge]({{ site.baseurl}}/images/java/03/6.png)
 
 ```java
@@ -101,7 +100,6 @@ public class T {
 }
 ```
 
-</br>
 ![License Badge]({{ site.baseurl}}/images/java/03/7.png)
 
 ```java
@@ -116,8 +114,7 @@ public class T {
 }
 ```
 
-</br>
-###中断语句
+#### 中断语句
 
 ![License Badge]({{ site.baseurl}}/images/java/03/8.png)
 
@@ -144,7 +141,6 @@ i = 1
 i = 2 
 ```
 
-</br>
 ![License Badge]({{ site.baseurl}}/images/java/03/10.png)
 
 ![License Badge]({{ site.baseurl}}/images/java/03/11.png)
@@ -177,4 +173,5 @@ i = 7
 i = 8  
 i = 9
 ```
-</br>
+
+<br>
