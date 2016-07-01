@@ -33,7 +33,7 @@ comments: false
 
 #### 3、下载安装客户端msysgit
 
-下载地址：http://msysgit.github.io/  下载后安装,一直下一步即可
+下载地址：<a href="http://msysgit.github.io/">http://msysgit.github.io/</a>  下载后安装,一直下一步即可
 
 装完msysgit后右键鼠标会多出一些选项来,在本地仓库里右键选择Git Init Here,会多出来一个.git文件夹，
 
@@ -51,7 +51,7 @@ comments: false
 
 **第一步:首先,选择一个合适的地方,创建一个空目录(本示例在D盘)：**
 
-```js
+```bath
 $ cd d:  
 $ mkdir mygithub  
 $ cd mygithub  
@@ -67,7 +67,7 @@ pwd命令用于显示当前目录。我的仓库位于/d/mygithub
 
 **第二步:通过git init命令把这个目录变成Git可以管理的仓库**
 
-```js
+```bath
 $ git init  
 Initialized empty Git repository in d:/mygithub/.git/ 
 ```
@@ -82,7 +82,7 @@ Initialized empty Git repository in d:/mygithub/.git/
 
 **第一步:用命令git add告诉Git,把文件添加到仓库：**
  
-```js
+```bath
 $ git add README.txt 
 ```
 
@@ -92,7 +92,7 @@ $ git add README.txt
 
 **第二步:用命令git commit告诉Git,把文件提交到仓库：**
 
-```javascript
+```bath
 $ git commit -m "hello github"  
 [master (root-commit) 0db7ba5]  
 1 file changed, 1 insertion(+)  
@@ -101,7 +101,7 @@ create mode 100644 README.txt
 
 **第三步:输入远程地址**
 
-```js
+```bath
 $ git remote add origin https://github.com/itmyhome2013/mygithub.git 
 ```
 
@@ -109,13 +109,13 @@ $ git remote add origin https://github.com/itmyhome2013/mygithub.git
 
 **第四步:上传到github：**
 
-```javascript
+```bath
 $ git push -u origin master  
 ```
 
 然后会提示输入用户名密码：
 
-```javascript
+```bath
 Username for 'https://github.com': yourUsername  
 Password for 'https://itmyhome2013@github.com': yourPassword  
 ```
