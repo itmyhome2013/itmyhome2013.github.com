@@ -8,17 +8,17 @@ category: jekyll
 summary: jekyll bootstrap搭建的博客默认使用的是Disqus评论插件,当然不是说Disqus不好,只是针对我们国内的用户来说,似乎并不是最好的选择。所以我们改为多说...
 comments: false
 ---
-</br>
+<br>
+
 jekyll bootstrap搭建的博客默认使用的是Disqus评论插件,当然不是说Disqus不好
 
 只是针对我们国内的用户来说,似乎并不是最好的选择。所以我们改为多说...
 
-####**首先进入多说官网创建一个站点**
+#### 首先进入多说官网创建一个站点
 
 ![License Badge]({{ site.baseurl}}/images/jekyll/jekyll-comment-system-used-to-say/1.png)
 
-</br>
-####**创建成功之后 我们会得到如下代码**
+#### 创建成功之后 我们会得到如下代码
 
 ![License Badge]({{ site.baseurl}}/images/jekyll/jekyll-comment-system-used-to-say/2.png)
 

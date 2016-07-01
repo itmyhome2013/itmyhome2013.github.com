@@ -8,13 +8,13 @@ category: Github
 summary: Coding是一个面向开发者的云端开发平台，目前提供代码托管，运行空间，质量控制，项目管理等功能。Coding提供社会化协作功能，包含了社交元素，为开发者提供技术讨论和协作平台。
 comments: false
 ---
-</br>
+<br>
+
 Coding是一个面向开发者的云端开发平台，目前提供代码托管，运行空间，质量控制，项目管理等功能。
 
 Coding提供社会化协作功能，包含了社交元素，为开发者提供技术讨论和协作平台。
 
-</br>
-###一、创建项目
+#### 一、创建项目
 
 ![License Badge]({{ site.baseurl}}/images/coding/1.png)
 
@@ -24,15 +24,13 @@ Coding提供社会化协作功能，包含了社交元素，为开发者提供�
 
 ![License Badge]({{ site.baseurl}}/images/coding/2.png)
 
-</br>
-###二、Clone项目到本地
+#### 二、Clone项目到本地
 
 ```bash
 $ git clone https://coding.net/itmyhome/blog.git blog
 ```
 
-</br>
-###三、推送代码
+#### 三、推送代码
 
 如果已有hexo博客代码 放在blog目录下(.deploy .git除外),其他不变 修改根目录下_config.yml配置文件
 
@@ -51,8 +49,7 @@ $ hexo generate
 $ hexo deploy
 ```
 
-</br>
-###四、部署项目
+#### 四、部署项目
 
 代码推送成功之后点击`[演示]` 然后点`"开始检测"`(不管提示，强制开启)
 
@@ -70,4 +67,4 @@ $ hexo deploy
 
 本文只是以Hexo博客迁移到Coding为基础介绍Coding部署项目的方法
 
-</br>
+<br>

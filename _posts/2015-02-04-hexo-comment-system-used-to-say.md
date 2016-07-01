@@ -8,12 +8,13 @@ category: hexo
 summary: 一、注册一个多说，设置自己的网站信息，获得以下通用代码。二、替换模板。三、修改模板
 comments: false
 ---
-</br>
+<br>
+
 之前用jekyll搭建博客的时候搞过jekyll中使用多说评论系统
 
 以为通用代码是通用的，没想到不通用，稍微改一下即可
 
-###一、注册一个多说，设置自己的网站信息，获得以下通用代码
+#### 一、注册一个多说，设置自己的网站信息，获得以下通用代码
 
 ```bash
 <!-- 多说评论框 start -->
@@ -35,8 +36,7 @@ var duoshuoQuery = {short_name:"itmyhome1900"};
 <!-- 多说公共JS代码 end -->
 ```
 
-</br>
-###二、替换模板
+#### 二、替换模板
 
 找到自己使用的theme的文件夹里面的comment.ejs的文件，例如我的主题是light，
 
@@ -52,8 +52,7 @@ var duoshuoQuery = {short_name:"itmyhome1900"};
 
 然后将第一步多说提供的通用代码替换为上面中文所说明的地方
 
-</br>
-###三、修改模板
+#### 三、修改模板
 
 将data-thread-key="请将此处替换成文章在你的站点中的ID" 替换成data-thread-key=”<%= page.path %>”
 

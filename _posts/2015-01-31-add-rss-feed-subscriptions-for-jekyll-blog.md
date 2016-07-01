@@ -8,15 +8,15 @@ category: jekyll
 summary: 我们都知道,很多人经常会在博客里面分享很多有价值的东西。我们通过别人的博客,获取知识,找到问题的解决办法,寻求真理。但是,如果别人的博客有了更新的时候,我们如何第一时间获取到更新的消息呢？
 comments: false
 ---
-</br>
+<br>
+
 我们都知道,很多人经常会在博客里面分享很多有价值的东西。我们通过别人的博客,获取知识,找到问题的解决办法,
 
 寻求真理。但是,如果别人的博客有了更新的时候,我们如何第一时间获取到更新的消息呢？
 
 RSS订阅是站点用来和其他站点之间共享内容的一种简易方式,即Really Simple Syndication(简易信息聚合)。
 
-</br>
-###1、在_config.yml文件 添加(如果没有)下列属性：
+#### 1、在_config.yml文件 添加(如果没有)下列属性：
 
 ```diff
 name:         blog Name  
@@ -26,8 +26,7 @@ url:          http://your-blog-url.com
 
 {% raw %}这些值{{ site.name }}，{{ site.description }}，{{ site.url }}会在你的feed文件里用到。{% endraw %}
 
-</br>
-###2、在网站根目录下添加 feed.xml
+#### 2、在网站根目录下添加 feed.xml
 
 我的feed.xml,代码如下：
 
@@ -58,8 +57,7 @@ layout: none
 {% endraw %}
 ```
 
-</br>
-###3、发布
+#### 3、发布
 
 在你网站的合适地方添加如下代码：
 

@@ -8,12 +8,13 @@ category: Git
 summary: 配置个人信息 Window > Preferences > Team > Git > Configuration
 comments: false
 ---
-</br>
-###一、安装EGit插件
+<br>
+
+### 一、安装EGit插件
 
 参考：[MyEclipse8.5整合Git](http://itmyhome.com/2015/01/git-integration-myeclipse8.5/)
 
-###二、EGit配置
+### 二、EGit配置
 
 配置个人信息 Window > Preferences > Team > Git > Configuration
 
@@ -30,22 +31,19 @@ $ git config --global user.email "youEmail@example.com"
 
 再进入$USER下就可以看到该.gitconfig文件了
 
-</br>
-###三、将本地仓库推送到远程仓库
+### 三、将本地仓库推送到远程仓库
 
-####1：MyEclipse新建一个项目(mygit)
+#### 1：MyEclipse新建一个项目(mygit)
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/2.png)
 
-</br>
-####2：GitHub新建一个仓库
+#### 2：GitHub新建一个仓库
 
 创建成功之后跳转到如下页面,记住该HTTP地址：`https://github.com/itmyline/mygit.git`
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/3.png)
 
-</br>
-####3：创建仓库
+#### 3：创建仓库
 
 项目右键：Team > ShareProject > Git    Next之后出现如下页面
 
@@ -57,8 +55,7 @@ $ git config --global user.email "youEmail@example.com"
 
 创建仓库后,在$workspace\mygit目录下的.git文件夹,就是git的仓库地址。
 
-</br>
-####4、提交
+#### 4、提交
 
 有了本地仓库之后 我们就可以上传到远程仓库了
 
@@ -66,8 +63,7 @@ $ git config --global user.email "youEmail@example.com"
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/6.png)
 
-</br>
-####5：推送
+#### 5：推送
 
 项目右键：Team > Remote > Push
 
@@ -79,8 +75,7 @@ $ git config --global user.email "youEmail@example.com"
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/9.png)
 
-</br>
-###四、将远程仓库克隆到本地
+### 四、将远程仓库克隆到本地
 
 Import > Git > Projects from Git > Next > Clone
 

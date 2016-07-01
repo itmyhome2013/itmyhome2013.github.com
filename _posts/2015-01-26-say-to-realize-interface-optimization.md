@@ -8,7 +8,7 @@ category: duoshuo
 summary: 之前就感觉这个默认的界面有点丑(当然是我自认为)，但又指不出来是哪里。本来的初衷只是想改一下评论框里的提示文字，Google百度了很多资料 楞是没找到。
 comments: false
 ---
-</br>
+<br>
 
 之前就感觉这个默认的界面有点丑(当然是我自认为)，但又指不出来是哪里。
 
@@ -20,11 +20,9 @@ comments: false
 
 查资料的过程中，发现了别人的一些样式风格，于是借鉴一下，就这样顺便也把我这个给改了...
 
-</br>
-###**完善了以下内容**
+### 完善了以下内容
 
-</br>
-####修改评论框背景色
+#### 修改评论框背景色
 
 ```css
 #ds-thread #ds-reset .ds-textarea-wrapper {
@@ -32,8 +30,7 @@ comments: false
 }
 ```
 
-</br>
-####修改评论框文字格式
+#### 修改评论框文字格式
 
 ```css
 #ds-thread #ds-reset .ds-textarea-wrapper textarea,#ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text{
@@ -45,8 +42,7 @@ comments: false
 }
 ```
 
-</br>
-####自定义头像css效果
+#### 自定义头像css效果
 
 ```css
 #ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover{   
@@ -112,8 +108,7 @@ comments: false
 } 
 ```
 
-</br>
-####修改发布按钮
+#### 修改发布按钮
 
 ```css
 #ds-thread #ds-reset .ds-post-button {
@@ -128,14 +123,12 @@ comments: false
 }
 ```
 
-</br>
 来窥视一下修改之前和之后的对比
 
 ![License Badge]({{ site.baseurl}}/images/duoshuo/modifyago.png)
 
 ![License Badge]({{ site.baseurl}}/images/duoshuo/modifyafter.png)
 
-</br>
 多少还算是有一点改观的(对于有洁癖的本博主 必须要有所改观o(╯□╰)o)
 
 参考资料：[多说自定义CSS 让你的多说评论动感起来](http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html)

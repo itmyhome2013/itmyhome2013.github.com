@@ -8,27 +8,27 @@ category: jekyll
 summary: jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器,它会根据网页源码生成静态文件。它提供了模板、变量、插件等功能,所以实际上可以用来编写整个网站。
 comments: false
 ---
-</br>
+<br>
+
 **Run Jekyll on Windows**
 
 目录
 
-   + Jekyll介绍
++ Jekyll介绍
    
-   + 安装Ruby
++ 安装Ruby
    
-   + 安装DevKit
++ 安装DevKit
    
-   + 安装Jekyll
++ 安装Jekyll
    
-   + 安装Python
++ 安装Python
    
-   + 安装pip
++ 安装pip
    
-   + 运行Jekyll
++ 运行Jekyll
 
-</br>
-###Introduction Jekyll
+### Introduction Jekyll
 
 jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器,它会根据网页源码生成静态文件。它提供了模板、变量、插件等
 
@@ -38,8 +38,7 @@ jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器
 
 `！重要：本文使用环境为Windows7  64位操作系统,如有不同,安装过程中不保证与本文完全一致`
 
-</br>
-###Install Ruby
+### Install Ruby
 
 首先下载 [Ruby](http://rubyinstaller.org/downloads/),下载的是Ruby 2.0.0-p598 (x64)
 
@@ -51,8 +50,7 @@ jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器
 
 **PS:打开命令行工具即为cmd(下同)**
 
-</br>
-###Install DevKit
+### Install DevKit
 
 选择适合系统版本,我的是DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe
 
@@ -64,8 +62,7 @@ jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器
 
 ![License Badge]({{ site.baseurl}}/images/jekyll/jekyll-installed-on-windows/4.png)
 
-</br>
-###Install Jekyll
+### Install Jekyll
 
 打开命令行输入以下命令
 
@@ -81,13 +78,12 @@ jekyll是一个简单的免费的Blog生成工具,是一个静态站点生成器
 
 检查jekyll是否安装成功
 
-```html
+```bath
 C:\>jekyll -v
 jekyll 3.0.1
 ```
 
-</br>
-###Install Python
+### Install Python
 
 下载 [Python](https://www.python.org/downloads/)
 
@@ -97,8 +93,7 @@ jekyll 3.0.1
 
 ![License Badge]({{ site.baseurl}}/images/jekyll/jekyll-installed-on-windows/7.png)
 
-</br>
-###Install pip
+### Install pip
 
 pip是一个Python包的安装和管理工具。你会需要它的安装pygments,pygments.rb突出你的代码,使用Python包。
 
@@ -112,8 +107,7 @@ pip是一个Python包的安装和管理工具。你会需要它的安装pygments
 
 在C:\RubyDevKit\_config.yml中添加如下：highlighter: pygments
 
-</br>
-###Run Jekyll
+### Run Jekyll
 
 OK 一切准备就绪,现在就可以在我们本地搭建一个jekyll博客了
 
@@ -155,4 +149,4 @@ PS：如果是第一次安装jekyll,过程中可能会出现很多问题
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2015-12-30 更新
 
-</br>
+<br>

@@ -8,15 +8,15 @@ category: jekyll
 summary: 一台电脑上有一个ssh key，在github上提交代码，由于其他原因,你可能会在一台电脑上提交到不同的github上，怎么办呢...
 comments: false
 ---
-</br>
+<br>
+
 一台电脑上有一个ssh key，在github上提交代码，由于其他原因
 
 你可能会在一台电脑上提交到不同的github上，怎么办呢...
 
 假设你电脑上一个ssh key都没有,如果有默认的一个了，请直接生成第二个
 
-</br>
-###一、生成并添加第一个ssh key
+#### 一、生成并添加第一个ssh key
 
 ```diff
 $ ssh-keygen -t rsa -C "youremail@xxx.com" 
@@ -28,8 +28,7 @@ $ ssh-keygen -t rsa -C "youremail@xxx.com"
 
 不明白的请参考[GitHub创建SSH Keys](http://localhost:4000/2015/01/github-create-SSH-Keys/)
 
-</br>
-###二、生成并添加第二个ssh key
+#### 二、生成并添加第二个ssh key
 
 ```diff
 $ ssh-keygen -t rsa -C "youremail@xxx.com"  
@@ -45,8 +44,7 @@ $ ssh-keygen -t rsa -C "youremail@xxx.com"
 
 如果生成的第二个ssh key不在.ssh/下，可移动到此目录
 
-</br>
-###三、在.ssh/下创建config文件 内容如下：
+#### 三、在.ssh/下创建config文件 内容如下：
 
 ```diff
 Host github.com  
@@ -62,8 +60,7 @@ Host my.github.com
 
 Host名字随意，接下来会用到。
 
-</br>
-###四、测试配置是否正确
+#### 四、测试配置是否正确
 
 ![License Badge]({{ site.baseurl}}/images/git/multiple-github-account-ssh-key-switch/sshkey3.png)
 
@@ -71,10 +68,9 @@ Host名字随意，接下来会用到。
 
 如果出现Hi xxx!You've successfully authenticated 就说明连接成功了
 
-</br>
-###现在就以下种情况给出不同的做法：
-</br>
-####1、本地已经创建或已经clone到本地：
+#### **现在就以下种情况给出不同的做法：**
+
+#### 1、本地已经创建或已经clone到本地：
 
 如下两种解决方法：
 
@@ -93,8 +89,8 @@ Host名字随意，接下来会用到。
 $ git remote rm origin  
 $ git remote add origin git@my.github.com:itmyline/blog.git  
 ```
-</br>
-####2、clone仓库时对应配置host对应的账户
+
+#### 2、clone仓库时对应配置host对应的账户
 
 ```diff
 #my.github.com对应一个账号  

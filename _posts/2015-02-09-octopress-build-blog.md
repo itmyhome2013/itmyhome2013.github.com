@@ -8,7 +8,8 @@ category: Octopress
 summary: Octopress是个非常好的Jekyll-blog解决方案,尤其是在Jekyll0.x时代,Octopress有不错的模版,丰富的扩展功能,缺点就是麻烦,需要在本地生成页面。
 comments: false
 ---
-</br>
+<br>
+
 环境：基于Windows
 
 需要准备以下工作：
@@ -23,13 +24,11 @@ comments: false
 
 以上软件如果是初次安装，可能还是有一些麻烦的，特别是版本的选择。
 
-因为之前搭建过jekyll，也要求安装以上软件，在此就不介绍了，可参考[Windows上安装Jekyll](http://itmyhome.com/2015/01/jekyll-installed-on-windows/)
+因为之前搭建过jekyll，也要求安装以上软件，在此就不介绍了，可参考[Windows上安装Jekyll](http://blog.itmyhome.com/2015/01/jekyll-installed-on-windows)
 
-</br>
-###安装Octopress
+#### **安装Octopress**
 
-</br>
-####一：clone Octopress
+#### 一：clone Octopress
 
 进入任意盘(比如D盘),打开Git Bash 将Octopress代码clone到本地
 
@@ -37,8 +36,7 @@ comments: false
 git clone git://github.com/imathis/octopress.git octopress
 ```
 
-</br>
-####二：安装依赖项
+#### 二：安装依赖项
 
 在刚才的Git Bash中进入到octopress目录，输入下面命令进行依赖项的安装
 
@@ -68,8 +66,7 @@ ps://rubygems.org/latest_specs.4.8.gz)
 1 gem installed
 ```
 
-</br>
-####三、更换gem的更新源
+#### 三、更换gem的更新源
 
 安装Octopress的依赖项，安装依赖项需要用到Ruby的gem，
 
@@ -83,15 +80,13 @@ gem sources -l
 
 修改Octopress目录下的Gemfile文件，将第一行的`http://rubygems.org/` 修改为`http://ruby.taobao.org/`
 
-</br>
-####四、安装默认Octopress主题
+#### 四、安装默认Octopress主题
 
 ```bash
 rake install
 ```
 
-</br>
-####五、本地预览
+#### 五、本地预览
 
 到此所有的安装工作已经结束，输入下面的命令可以在本地进行预览。
 
@@ -101,8 +96,7 @@ rake preview
 
 `http://localhost:4000/`进行预览
 
-</br>
-####六、发布文章
+#### 六、发布文章
 
 使用下面命令可以在Octopress中添加文章
 
@@ -116,8 +110,7 @@ rake new_post['my blog']
 
 **注：如出现编码错误请注意编码格式**
 
-</br>
-####七、发布到Github
+#### 七、发布到Github
 
 首先有个Github账号，新建一个名为username.github.com的repository
 
@@ -150,22 +143,19 @@ git push origin source
 
 OK,完成
 
-
-</br>
-###总结：
+#### 总结：
 
 这次对Octopress的体验不是很好。
 
-一、目录结构相对比较复杂(相比jekyll)
++ 一、目录结构相对比较复杂(相比jekyll)
 
-二、安装步骤和shell命令比较繁琐(相对而言)
++ 二、安装步骤和shell命令比较繁琐(相对而言)
 
-二、Octopress默认主题实在是有点丑(个人认为)
++ 二、Octopress默认主题实在是有点丑(个人认为)
 
-三、博客访问速度太慢(可能是我没进行优化)
++ 三、博客访问速度太慢(可能是我没进行优化)
 
-四、最重要的可能是我心已有所属
++ 四、最重要的可能是我心已有所属
 
-</br>
-最后附上成果：http://itgreen.github.io/
+最后附上成果：<a href="http://itgreen.github.io/">http://itgreen.github.io/</a>
 

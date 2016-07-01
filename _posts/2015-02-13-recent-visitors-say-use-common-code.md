@@ -8,7 +8,8 @@ category: duoshuo
 summary: 对于通用代码,可以通过添加代码来调用【最近访客】,添加代码 然后修改您的多说二级域名
 comments: false
 ---
-</br>
+<br>
+
 添加[最近访客],请在页面中添加如下代码：
 
 ```html
@@ -29,8 +30,7 @@ var duoshuoQuery = {short_name:"您的多说二级域名"};
 
 **注意修改您的多说二级域名：short_name**(在多说后台设置中找到,格式如 abcd.duoshuo.com ,只需填 abcd 即可)
 
-</br>
-####参数说明
+#### 参数说明
 
 data-num-items="10"    //显示访客的数量
 
@@ -42,4 +42,4 @@ data-avatar-size="30"  //头像大小,单位px
 <ul class="ds-recent-visitors" data-num-items="10" data-avatar-size="30"></ul>
 ```
 
-</br>
+<br>

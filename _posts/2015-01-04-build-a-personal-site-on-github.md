@@ -8,35 +8,35 @@ category: Git
 summary: 1、注册Git账号 2、创建SSH keys
 comments: false
 ---
-</br>
+<br>
+
 大致如下步骤：
 
-1、注册Git账号
++ 1、注册Git账号
 
-2、创建SSH keys
++ 2、创建SSH keys
 
-3、新建repository
++ 3、新建repository
 
-4、设置网站
++ 4、设置网站
 
-5、clone库到本地
++ 5、clone库到本地
 
-6、提交、上传
++ 6、提交、上传
 
-7、预览
++ 7、预览
 
 本教程默认你了解GitHub的基础之上 会使用基本命令，如果不了解 前三步可参考文章：
 
-[GitHub入门教程](http://itmyhome.com/2015/01/git-tutorial/)   [GitHub创建SSH Keys](http://itmyhome.com/2015/01/github-create-SSH-Keys/)
+[GitHub入门教程](http://blog.itmyhome.com/2015/01/git-tutorial)    [GitHub创建SSH Keys](http://blog.itmyhome.com/2015/01/github-create-SSH-Keys)
 
-###一、新建repository(仓库),如下
+### 一、新建repository(仓库),如下
 
 ![License Badge]({{ site.baseurl}}/images/git/build a personal site on GitHub/1.png)
 
 填写名称,描述信息 其他默认 然后提交即可。
 
-</br>
-###二、设置网站
+### 二、设置网站
 
 Create之后跳转新页面,点击右方Settings设置
 
@@ -68,7 +68,7 @@ Google Analytics Tracking ID：搜索引擎抓取关键字
 
 ![License Badge]({{ site.baseurl}}/images/git/build a personal site on GitHub/6.png)
 
-接下来我们就可以在浏览器中输入http://itmyline.github.io/blog 来预览一下
+接下来我们就可以在浏览器中输入 <a href="http://itmyline.github.io/blog">http://itmyline.github.io/blog</a> 来预览一下
 
 **itmyline:用户名, blog:项目名**
 
@@ -86,12 +86,11 @@ PS:等了漫长的十分钟,刷新页面 我们blob的主页面就显示出来�
 
 下面以一个简单的Bootstrap网站模板为例...
 
-</br>
-###三、clone(克隆)代码、修改
+### 三、clone(克隆)代码、修改
 
 在任意盘根目录下(本例为D盘)把代码clone下来
 
-```diff
+```bath
 $ git clone git@github.com:itmyline/blog.git  
 ```
 
@@ -107,12 +106,11 @@ $ git clone git@github.com:itmyline/blog.git
 
 本例中新增了css、js文件夹及覆盖index.html
 
-</br>
-###四、提交、上传
+### 四、提交、上传
 
 进入D\blog目录,右键Git Bash 打开命令行
 
-```diff
+```bath
 $ git branch  
 * gh-pages  
 ```
@@ -121,7 +119,7 @@ $ git branch
 
 接下来：
 
-```diff
+```bath
 $ git add .  
 $ git commit -m "blog"  
 $ git remote add origin git@github.com:itmyline/blog.git  
@@ -132,6 +130,6 @@ $ git push -u origin gh-pages
 
 ![License Badge]({{ site.baseurl}}/images/git/build a personal site on GitHub/12.png)
 
-浏览器输入地址 http://itmyline.github.io/blog/ 即可预览我们搭建的网站。
+浏览器输入地址 <a href="http://itmyline.github.io/blog">http://itmyline.github.io/blog</a> 即可预览我们搭建的网站。
 
 ![License Badge]({{ site.baseurl}}/images/git/build a personal site on GitHub/14.png)
