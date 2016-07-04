@@ -8,7 +8,8 @@ category: springMVC
 summary: 如果你的DispatcherServlet拦截的是*.do这样的URL,就不存在访问不到静态资源的问题.如果你的DispatcherServlet拦截了"/"所有的请求,那同时对.js,.jpg的访问也就被拦截了。
 comments: false
 ---
-</br>
+<br>
+
 如果你的DispatcherServlet拦截的是*.do这样的URL，就不存在访问不到静态资源的问题
 
 如果你的DispatcherServlet拦截了"/"所有的请求，那同时对*.js,*.jpg的访问也就被拦截了。
@@ -19,8 +20,7 @@ comments: false
 
 同时，会在web.xml文件中配置拦截所有请求。这样就造成了页面无法访问到js、img和css文件夹中的文件了
 
-</br>
-####方法一：在web.xml中配置defaultServlet来处理静态文件
+#### 方法一：在web.xml中配置defaultServlet来处理静态文件
 
 ```xml
 <servlet-mapping>  
@@ -37,8 +37,7 @@ comments: false
 </servlet-mapping>
 ```
 
-</br>
-####方法二：在Springmvc中可以利用mvc:resources
+#### 方法二：在Springmvc中可以利用mvc:resources
 
 springmvc的<mvc:resources location="**" mapping="**"/>标签是在spring3.0.4出现的,主要是用来进行静态资源的访问。
 
@@ -50,8 +49,7 @@ springmvc的<mvc:resources location="**" mapping="**"/>标签是在spring3.0.4�
 
 location指定静态资源的位置
 
-</br>
-####方法三：使用\<mvc:default-servlet-handler/\>
+#### 方法三：使用\<mvc:default-servlet-handler/\>
 
 ```xml
 <mvc:default-servlet-handler/> 
@@ -59,5 +57,5 @@ location指定静态资源的位置
 
 最后再说明一下,如何你的DispatcherServlet拦截*.do这样的URL,就不存上述问题了。
 
-</br>
+<br>
 

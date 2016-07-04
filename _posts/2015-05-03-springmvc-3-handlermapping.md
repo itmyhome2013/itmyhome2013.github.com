@@ -8,13 +8,13 @@ category: springMVC
 summary: BeanNameUrlHandlerMapping:表示将请求的URL和Bean名字映射SimpleControllerHandlerAdapter:表示所有实现了org.springframework.web.servlet.mvc.Controller接口的Bean可以作为Spring Web MVC中的处理器
 comments: false
 ---
-</br>
+<br>
+
 基本结构和 [springMVC3学习(一)--框架搭建](http://itmyhome.com/2015/05/springmvc-1-frame-to-build/) 差不多,这里不再用Annotation注解的方式
 
-</br>
 以下只说明需要修改的部分：
 
-####1、在Spring配置文件中配置HandlerMapping、HandlerAdapter
+#### 1、在Spring配置文件中配置HandlerMapping、HandlerAdapter
 
 ```xml
 <!-- HandlerMapping -->  
@@ -31,8 +31,7 @@ comments: false
 
 Spring Web MVC中的处理器。如果需要其他类型的处理器可以通过实现HadlerAdapter来解决。
 
-</br>
-####2、修改页面控制器Login
+#### 2、修改页面控制器Login
 
 ```java
 package com.itmyhome;  
@@ -68,8 +67,7 @@ mv.addObject("message", "Hello World!"); 表示添加模型数据， 此处可�
 
 mv.setViewName("hello"); 表示设置逻辑视图名为"hello" , 视图解析器会将其解析为具体的视图。
 
-</br>
-####3、我们还需要将其添加到Spring配置文件springMVC.xml，让其接受SpringIoC容器管理
+#### 3、我们还需要将其添加到Spring配置文件springMVC.xml，让其接受SpringIoC容器管理
 
 ```xml
 <!-- 处理器 -->  
@@ -80,5 +78,5 @@ name="/login"：前边配置的BeanNameUrlHandlerMapping，表示如果请求的
 
 则将会交给该Bean进行处理。
 
-</br>
+<br>
 	

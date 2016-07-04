@@ -8,7 +8,7 @@ category: jQuery
 summary: 本篇文章主要介绍jQuery选择器之属性过滤选择器,包括:[attribute]、[attribute=value]、[attribute!=value]、[attribute^=value]...
 comments: false
 ---
-</br>
+<br>
 
 ```css
 <style type="text/css">  
@@ -32,8 +32,7 @@ comments: false
 </body>  
 ```
 
-</br>
-####1、[attribute]用法
+#### 1、[attribute]用法
 
 定义：匹配包含给定属性的元素
 
@@ -41,8 +40,7 @@ comments: false
 $("div[id]").addClass("highlight"); //查找所有含有ID属性的div元素
 ```
 
-</br>
-####2、[attribute=value]用法
+#### 2、[attribute=value]用法
 
 定义：匹配给定的属性是某个特定值的元素
 
@@ -50,8 +48,7 @@ $("div[id]").addClass("highlight"); //查找所有含有ID属性的div元素
 $("input[name='basketball']").attr("checked",true);   //name属性值为basketball的input元素选中
 ```
 
-</br>
-####3、[attribute!=value]用法
+#### 3、[attribute!=value]用法
 
 定义：匹配给定的属性是不包含某个特定值的元素
 
@@ -61,8 +58,7 @@ $("input[name!='basketball']").attr("checked",true);   //name属性值不为bask
 $("input:not(input[name='basketball'])").attr("checked",true); 
 ```
 
-</br>
-####4、[attribute^=value]用法
+#### 4、[attribute^=value]用法
 
 定义：匹配给定的属性是以某些值开始的元素
 
@@ -70,8 +66,7 @@ $("input:not(input[name='basketball'])").attr("checked",true);
 $("input[name^='foot']").attr("checked",true);  //查找所有 name 以 'foot' 开始的 input 元素
 ```
 
-</br>
-####5、[attribute$=value]用法
+#### 5、[attribute$=value]用法
 
 定义：匹配给定的属性是以某些值结尾的元素
 
@@ -79,8 +74,7 @@ $("input[name^='foot']").attr("checked",true);  //查找所有 name 以 'foot' �
 $("input[name$='ball']").attr("checked",true); //查找所有 name 以 'ball' 结尾的 input 元素  
 ```
 
-</br>
-####6、[attribute*=value]用法
+#### 6、[attribute*=value]用法
 
 定义：匹配给定的属性是以包含某些值的元素
 
@@ -88,8 +82,7 @@ $("input[name$='ball']").attr("checked",true); //查找所有 name 以 'ball' �
 $("input[name*='sket']").attr("checked",true);  //查找所有 name 包含 'sket' 的 input 元素 
 ```
 
-</br>
-####7、[selector1][selector2][selectorN]用法
+#### 7、[selector1][selector2][selectorN]用法
 
 定义：复合属性选择器，需要同时满足多个条件时使用
 
@@ -97,4 +90,4 @@ $("input[name*='sket']").attr("checked",true);  //查找所有 name 包含 'sket
 $("input[id][name$='ball']").attr("checked",true);  //找到所有含有 id属性，并且它的 name属性是以 ball结尾的  
 ```	
 
-</br>
+<br>

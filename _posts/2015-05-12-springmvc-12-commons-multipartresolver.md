@@ -8,7 +8,7 @@ category: springMVC
 summary: springMVC会使用一个支持文件处理的MultipartHttpServletRequest来包裹当前的HttpServletRequest,然后使用MultipartHttpServletRequest就可以对文件进行处理了
 comments: false
 ---
-</br>
+<br>
 
 基于上一篇文件上传发现效率很慢，我们应该对它进行优化  使用springMVC对文件上传的解析器
 
@@ -20,7 +20,6 @@ springMVC会使用一个支持文件处理的MultipartHttpServletRequest来包�
 
 然后使用MultipartHttpServletRequest就可以对文件进行处理了
 
-</br>
 此处只改动FileController类 其他配置参考上一篇 [文件上传CommonsMultipartFile](http://blog.itmyhome.com/2015/05/springmvc-11-commons-multipartfile/)
 
 ```java
@@ -62,4 +61,4 @@ public class FileController{
 
 可见差别之悬殊。
 
-</br>
+<br>

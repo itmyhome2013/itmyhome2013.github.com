@@ -8,7 +8,8 @@ category: springMVC
 summary: 通过SimpleMappingExceptionResolver我们可以将不同的异常映射到不同的jsp页面,同时我们也可以为所有的异常指定一个默认的异常提示页面
 comments: false
 ---
-</br>
+<br>
+
 在springMVC的配置文件中：
 
 ```xml
@@ -43,7 +44,6 @@ comments: false
 
 如果所抛出的异常在exceptionMappings中没有对应的映射，则Spring将用此默认配置显示异常信息。
 
-</br>
 **Login.java测试类**
 
 ```java
@@ -94,4 +94,4 @@ public class Login {
 
 `http://localhost:8080/spring_exception/default`
 
-</br>
+<br>

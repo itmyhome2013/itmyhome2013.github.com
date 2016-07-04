@@ -8,8 +8,9 @@ category: Ant
 summary: copy主要用来对文件和目录的复制功能，delete命令对文件或目录进行删除，mkdir命令创建目录，move命令移动文件或目录
 comments: false
 ---
-</br>
-###一、copy命令
+<br>
+
+#### 一、copy命令
 
 copy主要用来对文件和目录的复制功能。例子如下：
 
@@ -33,8 +34,7 @@ copy主要用来对文件和目录的复制功能。例子如下：
 <copy file="source.txt" todir="dest_dir"/>
 ```
 
-</br>
-###二、delete命令
+#### 二、delete命令
 
 对文件或目录进行删除。例子如下：
 
@@ -58,8 +58,7 @@ copy主要用来对文件和目录的复制功能。例子如下：
 </delete>
 ```
 
-</br>
-###三、mkdir命令
+#### 三、mkdir命令
 
 创建目录：
 
@@ -67,8 +66,7 @@ copy主要用来对文件和目录的复制功能。例子如下：
 <mkdir dir="home/src/bin"/>
 ```
 
-</br>
-###四、move命令
+#### 四、move命令
 
 移动文件或目录。例子如下：
 
@@ -92,8 +90,7 @@ copy主要用来对文件和目录的复制功能。例子如下：
 </move>
 ```
 
-</br>
-###五、echo命令
+#### 五、echo命令
 
 该任务的作用是根据日志或监控器的级别输出信息。
 
@@ -103,4 +100,4 @@ copy主要用来对文件和目录的复制功能。例子如下：
 <echo message="hello ant" file="home/msg.log" append="true" />
 ```
 
-</br>
+<br>

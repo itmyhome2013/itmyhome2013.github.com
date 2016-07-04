@@ -8,15 +8,15 @@ category: Ant
 summary: Ant的构建文件都写在XML中。每个构建文件包含一个project和至少一个(默认值)target。target包含了一些task元素。每一个task元素可以有一个id属性(attribute)可以被引用。
 comments: false
 ---
-</br>
-###一、编写一个简单的构建文件
+<br>
+
+#### 一、编写一个简单的构建文件
 
 Ant的构建文件都写在XML中。每个构建文件包含一个project和至少一个(默认值)target。
 
 target包含了一些task元素。每一个task元素可以有一个id属性(attribute)可以被引用。
 
-</br>
-###二、Project
+#### 二、Project
 
 一个project有如下三个属性(attribute)：
 
@@ -30,8 +30,7 @@ target包含了一些task元素。每一个task元素可以有一个id属性(att
 
 当开始运行ant,你可以选择哪一个任务组被执行。当没有目标下达后,则project的默认值被执行。
 
-</br>
-###三、Target
+#### 三、Target
 
 target可能依赖于其它的target而存在。你可能用一个target用来编译,用另一个target且用来布署。
 
@@ -74,8 +73,7 @@ target之间的前后执行关系，并不表示真正的依赖性。依赖的�
 
 执行顺序依次为：A --> B --> C --> D
 
-</br>
-###四、property
+#### 四、property
 
 property类似于变量,可以提供给build.xml中的其他元素使用,project的属性可以通过property元素来设定
 
@@ -112,4 +110,4 @@ Ant提供了一些内置的属性
     </tr>
 </table>
 
-</br>
+<br>

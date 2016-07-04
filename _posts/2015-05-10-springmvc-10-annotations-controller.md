@@ -8,7 +8,7 @@ category: springMVC
 summary: Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注解定义我们的处理器类。并且提供了一组强大的注解
 comments: false
 ---
-</br>
+<br>
 
 Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注解定义
 
@@ -18,7 +18,6 @@ Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注�
 
 来开启支持@Controller和@RequestMapping注解的处理器。
 
-</br>
 @Controller：用于标识是处理器类；
 
 @RequestMapping：请求到处理器功能方法的映射规则；
@@ -29,8 +28,7 @@ Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注�
 
 @InitBinder：自定义数据绑定注册支持,用于将请求参数转换到命令对象属性的对应类型；
 
-</br>
-####一、简单例子
+#### 一、简单例子
 
 **1、控制器实现**
 
@@ -62,7 +60,6 @@ public class Login{
 
 现在的处理器无需实现/继承任何接口/类，只需要在相应的类/方法上放置相应的注解说明下即可。
 
-</br>
 **2、spring配置文件springMVC.xml**
 
 ```xml
@@ -83,7 +80,6 @@ public class Login{
 </bean>
 ```
 
-</br>
 **3、视图页面(login.jsp)**
 
 ```html
@@ -92,8 +88,7 @@ public class Login{
 </body>
 ```
 
-</br>
-####二、处理器定义
+#### 二、处理器定义
 
 **1、@Controller**
 
@@ -106,7 +101,6 @@ public class Login{
 
 推荐使用这种方式声明处理器,它和我们的@Service、@Repository很好的对应了我们常见的三层开发架构的组件。
 
-</br>
 **2、@RequestMapping**
 
 ```java
@@ -118,7 +112,6 @@ public class Login{
 
 这种方式也是可以的,但如果在类上使用@RequestMapping注解一般是用于窄化功能处理方法的映射的详见下面
 
-</br>
 **3、窄化请求映射**
 
 ```java
@@ -138,14 +131,12 @@ public class Login{
 
 此时URL就应该为：`http://localhost:8080/springMVC/login/login2.do`
 
-</br>
-####三、请求映射
+#### 三、请求映射
 
 **1、普通URL路径映射**
 
 @RequestMapping(value={"/login.do","/user/login.do"}):多个URL路径可以映射到同一个处理器的功能处理方法。
 
-</br>
 **2、URL模板模式映射**
 
 @RequestMapping(value="/users/{userId}")：{xxx}占位符,请求的URL可以是"/users/123456"或"/users/abcd"。
@@ -154,7 +145,6 @@ public class Login{
 
 @RequestMapping(value="/users/{userId}/channel/{channelId}"):这样也是可以的,请求的URL可以是"/users/123/channel/456"。
 
-</br>
 **3、Ant风格的URL路径映射**
 
 @RequestMapping(value="/users/**"):可以匹配"/users/abc/abc"。
@@ -169,7 +159,6 @@ public class Login{
 
 也就是Ant风格和URI模板变量风格可混用;
 
-</br>
 **4、正则表达式风格的URL路径映射**
 
 从Spring3.0开始支持正则表达式风格的URL路径映射,格式为{变量名:正则表达式}
@@ -178,12 +167,11 @@ public class Login{
 
 "/login/123.do",但不能匹配"/login/abc.do",这样可以设计更加严格的规则。
 
-</br>
 **5、组合使用是"或"的关系**
 
 如@RequestMapping(value={"/login.do","/user/login.do"})组合使用是或的关系，即"/login.do"或
 
 "/user/login.do"请求URL路径都可以映射到@RequestMapping指定的功能处理方法。
 
-</br>
+<br>
 	

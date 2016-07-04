@@ -8,18 +8,17 @@ category: springMVC
 summary: SpringMVC属于SpringFrameWork的后续产品,已经融合在Spring Web Flow里面。Spring框架提供了构建Web应用程序的全功能MVC模块。
 comments: false
 ---
-</br>
-####一：新建web工程，spring001
+<br>
+
+#### 一：新建web工程，spring001
 
 忽略
 
-</br>
-####二：添加springframework依赖jar包
+#### 二：添加springframework依赖jar包
 
 将dist下的jar全部加进去  然后另加一个commons-logging.jar
 
-</br>
-####三：修改web.xml
+#### 三：修改web.xml
 
 ```xml
 <servlet>  
@@ -55,8 +54,7 @@ comments: false
 </init-param>
 ```
 
-</br>
-####四：添加springMVC配置文件
+#### 四：添加springMVC配置文件
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -97,8 +95,7 @@ PS:`<context:component-scan base-package="com.itmyhome" />`
 
 <span style="color:red">警告: No mapping found for HTTP request with URI [/spring001/login] in DispatcherServlet with name 'springMVC'</span>
 
-</br>
-####五：后台Action
+#### 五：后台Action
 
 ```java
 package com.itmyhome;  
@@ -117,8 +114,7 @@ public class Login {
 }
 ```
 
-</br>
-####六：返回JSP
+#### 六：返回JSP
 
 新建welcome.jsp 里面随便写点内容 如：Hello springMVC!
 
@@ -130,4 +126,4 @@ public class Login {
 
 ![License Badge]({{ site.baseurl}}/images/springmvc/01/2.png)
 
-</br>
+<br>

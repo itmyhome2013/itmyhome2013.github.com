@@ -8,7 +8,7 @@ category: jQuery
 summary: 本篇文章主要介绍jQuery选择器之内容过滤选择器,包括:empty、contains(text)、has(selector)、parent...
 comments: false
 ---
-</br>
+<br>
 
 先写出DOM元素的HTML结构：
 
@@ -31,8 +31,7 @@ comments: false
 <div><p>Has p</p></div> 
 ```
 
-</br>
-####一、:contains(text)
+#### 一、:contains(text)
 
 选取含有文本内容为"text"的元素
 
@@ -42,8 +41,7 @@ $("div:contains('John')").addClass("highlight"); //查找所有包含 "John" 的
 
 ![License Badge]({{ site.baseurl}}/images/jquery/content-filter-selector/1.png)
 
-</br>
-####二、:empty
+#### 二、:empty
 
 选取不含任何子元素或文本的空元素
 
@@ -55,8 +53,7 @@ $("div:empty").addClass("highlight");
 
 ![License Badge]({{ site.baseurl}}/images/jquery/content-filter-selector/2.png)
 
-</br>
-####三、:has(selector)
+#### 三、:has(selector)
 
 选取含有选择器所匹配的元素的元素
 
@@ -66,8 +63,7 @@ $("div:has(p)").addClass("highlight"); //查找所有包含p的div元素
 
 ![License Badge]({{ site.baseurl}}/images/jquery/content-filter-selector/3.png)
 
-</br>
-####四、:parent
+#### 四、:parent
 
 选取含有子元素或者文本的元素标签
 
@@ -77,4 +73,4 @@ $("div:parent").addClass("highlight");  //查找所有含有子元素或者文�
 
 ![License Badge]({{ site.baseurl}}/images/jquery/content-filter-selector/4.png)
 
-</br>
+<br>

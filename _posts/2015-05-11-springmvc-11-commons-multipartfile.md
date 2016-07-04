@@ -8,14 +8,13 @@ category: springMVC
 summary: 使用springMVC提供的CommonsMultipartFile类进行读取文件,需要用到上传文件的两个jar包 commons-logging.jar、commons-io-xxx.jar
 comments: false
 ---
-</br>
+<br>
 
 使用springMVC提供的CommonsMultipartFile类进行读取文件
 
 需要用到上传文件的两个jar包 **commons-logging.jar、commons-io-xxx.jar**
 
-</br>
-####1、在spring配置文件中配置文件上传解析器
+#### 1、在spring配置文件中配置文件上传解析器
 
 ```xml
 <!-- 文件上传解析器 -->  
@@ -26,8 +25,7 @@ comments: false
 </bean> 
 ```
 
-</br>
-####2、文件上传页面(index.jsp)
+#### 2、文件上传页面(index.jsp)
 
 ```xml
 <!-- method必须为post 及enctype属性-->  
@@ -37,8 +35,7 @@ comments: false
 </form>
 ```
 
-</br>
-####3、FileController类
+#### 3、FileController类
 
 ```java
 @Controller  
@@ -78,7 +75,6 @@ public class FileController{
 
 上面计算了上传文件所使用时间，目的为了和下篇另一种上传方法进行比较 看哪个效率更高
 
-</br>
 测试URL:  `http://localhost:8080/spring/`
 
-</br>
+<br>

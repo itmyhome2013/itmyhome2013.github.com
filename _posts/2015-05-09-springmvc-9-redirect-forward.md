@@ -8,7 +8,7 @@ category: springMVC
 summary: forward跳转后地址栏URL不会改变 而redirect会改变.
 comments: false
 ---
-</br>
+<br>
 
 ```java
 import javax.servlet.http.HttpServletRequest;
@@ -49,4 +49,4 @@ public class Login {
 
 `http://localhost:8080/spring_forward/logout.do`
 
-</br>
+<br>

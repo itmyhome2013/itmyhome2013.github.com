@@ -8,7 +8,7 @@ category: jQuery
 summary: 本篇文章主要介绍jQuery选择器之层级过滤选择器，包括:$("ancestor descendant")、$("parent > child")、$("prev + next")、$("prev ~ siblings")...
 comments: false
 ---
-</br>
+<br>
 
 ```js
 $("ancestor descendant"); //选取parent元素后所有的child元素  
@@ -24,7 +24,6 @@ $("prev + next")等价于next()
 $("prev ~ siblings")等价于nextAll()
 ```
 
-</br>
 实例
 
 ```css
@@ -62,38 +61,38 @@ $("prev ~ siblings")等价于nextAll()
 </body>
 ```
 
-</br>
-####一、$("ancestor descendant");
+#### 一、$("ancestor descendant");
+
 ```js
 $("div p").addClass("highlight"); //选取div后面的所有p元素   结果为：p1,p3,p4  
 ```
 
 ![License Badge]({{ site.baseurl}}/images/jquery/level-filter-selector/1.png)
 
-</br>
-####二、$("parent > child");
+#### 二、$("parent > child");
+
 ```js
 $("div > p").addClass("highlight"); //选取div后 所有第一级p元素   结果为：p1,p3。p4不会选取,因为p4不是div的直属元素
 ```
 
 ![License Badge]({{ site.baseurl}}/images/jquery/level-filter-selector/2.png)
 
-</br>
-####三、$("prev + next");
+#### 三、$("prev + next");
+
 ```js
 $("div + p").addClass("highlight");   //选取div后面紧邻的p元素  结果为：p2。p5不会选取,因为p5不紧邻div  
 ```
 
 ![License Badge]({{ site.baseurl}}/images/jquery/level-filter-selector/3.png)
 
-</br>
-####四、$("prev ~ siblings");
+#### 四、$("prev ~ siblings");
+
 ```js
 $("div ~ p").addClass("highlight");     //选取div后面所有紧邻的p元素  结果为：p2,p5  
 ```
 
 ![License Badge]({{ site.baseurl}}/images/jquery/level-filter-selector/4.png)
 
-</br>
+<br>
 	
     

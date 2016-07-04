@@ -8,7 +8,8 @@ category: springMVC
 summary: 当控制器处理完请求时，通常会将包含视图名称或视图对象以及一些模型属性的ModelAndView对象返回到DispatcherServlet。
 comments: false
 ---
-</br>
+<br>
+
 当控制器处理完请求时，通常会将包含视图名称或视图对象以及一些模型属性的ModelAndView对象返回到DispatcherServlet。
 
 因此，经常需要在控制器中构造ModelAndView对象。ModelAndView类提供了几个重载的构造器和一些方便的方法，
@@ -17,7 +18,8 @@ comments: false
 
 当你只有一个模型属性要返回时，可以在构造器中指定该属性来构造ModelAndView对象
 
-</br>
+<br>
+
 **在上篇的基础上，只修改Login类**
 
 ```java
@@ -87,8 +89,7 @@ public ModelAndView logout(){
 
 前提是你还没有把webapps下面的一些无用项目删掉。
 
-</br>
-welcome.jsp
+**welcome.jsp**
 
 ```html
 <body>  
@@ -111,9 +112,8 @@ welcome.jsp
 </body>
 ```
 
-</br>
 结果如图：
 
 ![License Badge]({{ site.baseurl}}/images/springmvc/02/1.png)
 
-</br>
+<br>

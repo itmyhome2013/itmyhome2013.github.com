@@ -8,7 +8,8 @@ category: springMVC
 summary: Spring为我们提供了：HandlerInterceptor接口,HandlerInterceptorAdapter适配器.实现这个接口或继承此类,可以非常方便的实现自己的拦截器。
 comments: false
 ---
-</br>
+<br>
+
 Spring为我们提供了：org.springframework.web.servlet.HandlerInterceptor接口，
 
 org.springframework.web.servlet.handler.HandlerInterceptorAdapter适配器，
@@ -17,7 +18,6 @@ org.springframework.web.servlet.handler.HandlerInterceptorAdapter适配器，
 
 有以下三个方法：
 
-</br>
 **Action之前执行**
 
 ```java
@@ -25,7 +25,6 @@ public boolean preHandle(HttpServletRequest request,
             HttpServletResponse response, Object handler)
 ```
 
-</br>
 **生成视图之前执行**
 
 ```java
@@ -33,7 +32,6 @@ public void postHandle(HttpServletRequest request,
             HttpServletResponse response, Object handler, ModelAndView modelAndView)
 ```
 
-</br>
 **最后执行，可用于释放资源**
 
 ```java
@@ -51,7 +49,6 @@ public void afterCompletion(HttpServletRequest request,
 
 参数中的Object handler是下一个拦截器。
 
-</br>
 **如何使用拦截器**
 
 自定义一个拦截器，要实现HandlerInterceptor接口：
@@ -60,7 +57,6 @@ public void afterCompletion(HttpServletRequest request,
 public class MyInterceptor implements HandlerInterceptor {...}  
 ```
 
-</br>
 在springMVC的配置文件中配置有三种方法
 
 **一、拦截所有URL**
@@ -71,7 +67,6 @@ public class MyInterceptor implements HandlerInterceptor {...}
 </mvc:interceptors>
 ```
 
-</br>
 **二、拦截匹配的URL**
 
 ```xml
@@ -83,7 +78,6 @@ public class MyInterceptor implements HandlerInterceptor {...}
 </mvc:interceptors> 
 ```
 
-</br>
 **三、HandlerMappint上的拦截器**
 
 ```xml
@@ -104,7 +98,6 @@ AnnotationMethodHandlerAdapter 这两个bean,所以就没有机会再给它注�
 
 就可以给interceptors属性注入拦截器了。
 
-</br>
 **拦截器MyInterceptor类**
 
 ```java
@@ -143,7 +136,6 @@ public class MyInterceptor implements HandlerInterceptor {
 }
 ```
 
-</br>
 **spring配置文件**
 
 ```xml
@@ -198,4 +190,4 @@ public class MyInterceptor implements HandlerInterceptor {
 
 查看后台会执行拦截器代码
 
-</br>
+<br>

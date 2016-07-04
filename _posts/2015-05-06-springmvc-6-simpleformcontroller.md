@@ -8,12 +8,12 @@ category: springMVC
 summary: 大多数Web应用都会遇到需要填写表单的页面，当表单提交成功后，表单的数据被传送给Web服务器中处理。
 comments: false
 ---
-</br>
+<br>
+
 SimpleFormController提交表单流程如下：
 
 ![License Badge]({{ site.baseurl}}/images/springmvc/06/1.png)
 
-</br>
 **login.jsp**
 
 ```html
@@ -24,7 +24,6 @@ SimpleFormController提交表单流程如下：
 </form> 
 ```
 
-</br>
 **springMVC.xml**
 
 ```xml
@@ -47,7 +46,6 @@ SimpleFormController提交表单流程如下：
 </bean>
 ```
 
-</br>
 **UserModel.java**
 
 ```java
@@ -73,7 +71,6 @@ public class UserModel {
 }
 ```
 
-</br>
 **Login.java**
 
 ```java
@@ -98,7 +95,6 @@ public class Login extends SimpleFormController {
 }
 ```
 
-</br>
 **success.jsp**
 
 ```html
@@ -107,7 +103,6 @@ public class Login extends SimpleFormController {
 </body> 
 ```
 
-</br>
 测试：
 
 浏览器中输入：`http://localhost:8080/spring_SimpleFormController/login.jsp` 进入登录页面
@@ -116,4 +111,4 @@ public class Login extends SimpleFormController {
 
 ![License Badge]({{ site.baseurl}}/images/springmvc/06/2.png)
 
-</br>
+<br>
