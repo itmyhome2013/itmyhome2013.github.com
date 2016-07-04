@@ -8,7 +8,7 @@ category: 百度地图
 summary: GeoUtils类提供若干几何算法，用来帮助用户判断点与矩形、圆形、多边形线,并提供计算折线长度和多边形的面积的公式。
 comments: false
 ---
-</br>
+<br>
 
 ```js
 /**
@@ -476,4 +476,4 @@ if(BMapLib.GeoUtils.isPointInCircle(point,circle)){
 }
 ```
 
-</br>
+<br>

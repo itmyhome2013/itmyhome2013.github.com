@@ -8,17 +8,16 @@ category: Maven
 summary: MyEclipse设置本地Maven及仓库、修改pom.xml、改web.xml 添加Struts配置
 comments: false
 ---
-</br>
+<br>
+
 #### 1、MyEclipse设置本地Maven及仓库
 
 ![License Badge]({{ site.baseurl}}/images/maven/7.png)
 
-</br>
 #### 2、新建Web Project
 
 ![License Badge]({{ site.baseurl}}/images/maven/8.png)
 
-</br>
 #### 3、修改pom.xml
 
 删除原有pom.xml内容，添加如下struts依赖
@@ -48,7 +47,6 @@ comments: false
 
 ![License Badge]({{ site.baseurl}}/images/maven/9.png)
 
-</br>
 #### 4、修改web.xml 添加Struts配置
 
 ```xml
@@ -62,7 +60,6 @@ comments: false
 </filter-mapping>
 ```
 
-</br>
 #### 5、添加struts.xml
 
 ```xml
@@ -82,4 +79,4 @@ comments: false
 
 ![License Badge]({{ site.baseurl}}/images/maven/10.png)
 
-</br>
+<br>

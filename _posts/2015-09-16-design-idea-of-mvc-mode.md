@@ -8,7 +8,8 @@ category: Java
 summary: MVC模式将交互式应用分成模型(Model)、视图(View)和控制器(Controller)三部分
 comments: false
 ---
-</br>
+<br>
+
 MVC模式是一种近年来使用比较广泛的为许多IT厂家和开发者所认可的一种设计模式，它和Web应用程序并没有直接的
 
 关系(事实上，它在很多非WEB应用程序中得到了使用)，它不仅使得系统层次分明、职责清晰，而且使得系统更易于维护。
@@ -61,7 +62,7 @@ JSP Model2
 JSP Model2即JSP+Servlet+JavaBean的模式，它和模式1的最大不同是它多了Servlet层，用于控制用户的请求和将JavaBean的
 
 业务输出传递给JSP来展现，这样就将数据展现、业务控制、业务逻辑实现分离开来，这就是早期的MVC(Model－View－Control)模式。显然，这种模式相对于jsp+bean的模式来说应用程序更具扩展性和灵活性，并且更易于维护。但是这种简单的MVC模式也有缺点，
-</br>
+
 第一、没有成熟的MVC框架中所带有的各种强大和实用的功能，第二、配置文件不好管理，成熟的MVC框架支持多配置文件，
 
 而servlet的配置都写在web.xml中，这会导致web.xml文件难以管理。因此有必要掌握一种成熟的MVC的开发框架。
@@ -76,7 +77,6 @@ JSP Model2即JSP+Servlet+JavaBean的模式，它和模式1的最大不同是它�
 
 + <span style="color:red">将结果数据对象中的数据与预先设计的表现层相融合并展现给用户。</span>
 
-</br>
 MVC模式将交互式应用分成模型（Model）、视图（View）和控制器（Controller）三部分。
 
 模型是指<span style="color:red">从现实世界中挖掘出来的对象模型，是应用逻辑的反映</span>。模型封装了数据和对数据的操作，是实际进行数据处理的计算
@@ -86,4 +86,5 @@ MVC模式将交互式应用分成模型（Model）、视图（View）和控制�
 MVC将这些对象分离以提高灵活性和复用性。MVC模式的结构如下图所示：
 
 ![License Badge]({{ site.baseurl}}/images/article/design-idea-of-mvc-mode/1.jpg)
-</br>
+
+<br>

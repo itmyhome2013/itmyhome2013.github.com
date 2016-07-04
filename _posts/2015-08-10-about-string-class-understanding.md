@@ -8,9 +8,9 @@ category: Java
 summary: String是一个特殊的类
 comments: false
 ---
-</br>
+<br>
 
-####**java中的数据类型有两种**
+#### **java中的数据类型有两种**
 
 一种是基本类型(primitive types)共有8种 即byte short int long float double  char  boolean(并没有String类型)
 
@@ -32,7 +32,6 @@ System.out.println(e==f); //false
 
 Integer类型赋不同值的值返回的结果却不同
 
-</br>
 **原因：**
 
 <span style="color:red">自动装箱是对于从 -128 到 127 之间的信息值,它们在被装箱为 对象数据后会在内存中被重用.所以上面两个是不相同的.</span>
@@ -53,7 +52,6 @@ System.out.println(str1==str2);
 
 <span style="color:red">结果说明，JVM创建了两个引用str1和str2，但只创建了一个对象，而且两个引用都指向了这个对象。</span>
 
-</br>
 接着看如下代码：
 
 ```java
@@ -64,7 +62,6 @@ System.out.println(str3==str4);//false
 
 <span style="color:red">创建了两个引用。创建了两个对象。两个引用分别指向不同的两个对象。</span>
 
-</br>
 **结论：**
 
 使用String str = "abc"；的方式，可以在一定程度上提高程序的运行速度，因为JVM会自动根据栈中数据的实际情况来决定是否
@@ -73,8 +70,7 @@ System.out.println(str3==str4);//false
 
 是否有必要创建新对象，从而加重了程序的负担。
 
-</br>
-####**附：StringBuffer  StringBuilder  String的区别**
+#### **附：StringBuffer  StringBuilder  String的区别**
 
 String是固定长度的字符串，如果要发生变化必须重新生成新的实例。
 
@@ -120,7 +116,6 @@ String S1 = S2 +S3 + S4;
 
 <span style="color:red">在大部分情况下 StringBuffer > String</span>
 
-</br>
 <span style="color:red">**Java.lang.StringBuffer线程安全的可变字符序列**。</span>一个类似于 String 的字符串缓冲区，但不能修改。虽然在任意时间点上它都
 
 包含某种特定的字符序列，但通过某些方法调用可以改变该序列的长度和内容。可将字符串缓冲区安全地用于多个线程。可以在
@@ -133,11 +128,10 @@ String S1 = S2 +S3 + S4;
 
 缓冲区的末端；而 insert 方法则在指定的点添加字符。
 
-</br>
 <span style="color:red">**java.lang.StringBuilder一个可变的字符序列是5.0新增的**。</span>此类提供一个与 StringBuffer 兼容的 API，但不保证同步。
 
 该类被设计用作 StringBuffer的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，
 
 建议优先采用该类，因为在大多数实现中，它比 StringBuffer要快。两者的方法基本相同
 
-</br>
+<br>

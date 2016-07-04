@@ -8,7 +8,7 @@ category: Java
 summary: 
 comments: false
 ---
-</br>
+<br>
 
 ```java
 package com.itmyhome;  
@@ -40,4 +40,4 @@ public class T {
 	}  
 }
 ```
-</br>
+<br>

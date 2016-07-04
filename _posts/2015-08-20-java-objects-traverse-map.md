@@ -8,12 +8,11 @@ category: Java
 summary: 介绍一些最常用的Java遍历Map对象的方法
 comments: false
 ---
-</br>
+<br>
 
 下面列出一些最常用的Java遍历Map对象的方法.
 
-</br>
-####**1、在for-each中使用entrySet遍历**
+#### **1、在for-each中使用entrySet遍历**
 
 这是最常用的遍历方式。在键值都需要时使用。
 
@@ -25,8 +24,7 @@ for(Map.Entry<String, String> entry : map.entrySet()){
 }
 ```
 
-</br>
-####**2、在for-each循环中遍历keys或values**
+#### **2、在for-each循环中遍历keys或values**
 
 如果只需要map中的键或者值，可以通过keySet或values来实现遍历，而不是用entrySet。
 
@@ -41,8 +39,7 @@ for(String value : map.values()){
 }
 ```
 
-</br>
-####**3、使用Iterator遍历**
+#### **3、使用Iterator遍历**
 
 ```java
 Map<String,String> map = new HashMap<String,String>();
@@ -56,8 +53,7 @@ while(iterator.hasNext()){
 
 使用此方法在遍历时调用iterator.remove()可以删除entries，其他方法则不能，可能会产生意想不到的结果。
 
-</br>
-####**4、通过key遍历value**
+#### **4、通过key遍历value**
 
 ```java
 Map<String,String> map = new HashMap<String,String>();
@@ -68,7 +64,6 @@ for(String key : map.keySet()){
 }
 ```
 
-</br>
 举个栗子
 
 ```java
@@ -114,4 +109,4 @@ public class T {
 }
 ```
 
-</br>
+<br>

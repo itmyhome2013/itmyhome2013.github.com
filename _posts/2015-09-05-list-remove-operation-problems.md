@@ -8,7 +8,7 @@ category: Java
 summary: List每remove掉一个元素以后，后面的元素都会向前移动
 comments: false
 ---
-</br>
+<br>
 
 ```java
 public static void main(String[] args) {  
@@ -39,10 +39,9 @@ public static void main(String[] args) {
 
 <span style="color:red">原因：List每remove掉一个元素以后，后面的元素都会向前移动，此时如果执行i=i+1，则刚刚移过来的元素没有被读取。</span>
 
-</br>
-####解决方法：
+#### **解决方法：**
 
-#####一、每移除一个元素以后再把 i 移回来
+#### 一、每移除一个元素以后再把 i 移回来
 
 ```
 for(int i = 0;i<list.size();i++){  
@@ -53,8 +52,7 @@ for(int i = 0;i<list.size();i++){
 }
 ```
 
-</br>
-#####二、使用iterator.remove()方法删除
+#### 二、使用iterator.remove()方法删除
 
 ```java
 for(Iterator ite = list.iterator();ite.hasNext();){  
@@ -64,8 +62,7 @@ for(Iterator ite = list.iterator();ite.hasNext();){
 }
 ```
 
-</br>
-#####三、倒过来遍历list
+#### 三、倒过来遍历list
 
 ```java
 for(int i = list.size()-1;i>=0;i--){  
@@ -75,7 +72,6 @@ for(int i = list.size()-1;i>=0;i--){
 }
 ```
 
-</br>
 注意：
 
 如果 for-each 遍历时删除元素将报
@@ -89,4 +85,5 @@ for(String s:list){
 	}  
 }
 ```
-</br>
+
+<br>

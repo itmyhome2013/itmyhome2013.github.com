@@ -8,7 +8,7 @@ category: 百度地图
 summary: 在将原始坐标批量转换的时候，回调的时候发现 data.status = 25
 comments: false
 ---
-</br>
+<br>
 
 在将原始坐标批量转换的时候，回调的时候发现 data.status = 25
 
@@ -133,4 +133,4 @@ translateCallback = function (data){
 
 演示：<a href="http://itmyhome.com/baidu_map_batch_conversion/" target="_blank">baidu_map_batch_conversion/</a>
 
-</br>
+<br>

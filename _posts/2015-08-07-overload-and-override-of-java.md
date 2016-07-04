@@ -8,7 +8,7 @@ category: Java
 summary: Java支持方法重载,这种机制为类似功能的方法提供了统一的名称,但可根据参数行的不同而自动调用对应的方法
 comments: false
 ---
-</br>
+<br>
 
 Java支持方法重载，这种机制为类似功能的方法提供了统一的名称，但可根据参数行的不同而自动调用对应的方法。
 
@@ -27,8 +27,7 @@ static String valueOf(double d);
 
 因为10.12是double类型，则会执行的方法是valueOf(double  d)的版本。
 
-</br>
-####**重载**
+#### **重载**
 
 方法重载的功能使得程序设计人员能较少苦恼于方法名称的设计，以统一的名称来调用相同功能的方法。
 
@@ -53,7 +52,6 @@ class A{
 } 
 ```
 
-</br>
 要注意的是<span style="color:red">**返回值类型不可用作为方法重载的区别根据**</span>。例如如下的方法重载是不正确的。
 
 ```java
@@ -67,7 +65,6 @@ class A{
 }
 ```
 
-</br>
 在J2SE5.0后当使用方法重载时，要注意到autoboxing和unboxing的问题。
 
 看下面的例子结果会是什么？
@@ -90,9 +87,7 @@ public static void someMethod(int i){
 
 例如someMethod(new Integer(10));
 
-</br>
-
-####**重写**
+#### **重写**
 
 在继承的关系中也存在着方法重写的概念，所谓的方法重写就是指子类定义了与父类中同名的方法，
 
@@ -126,7 +121,6 @@ class Student extends Person{  //定义继承关系
 }
 ```
 
-</br>
 <span style="color:red">问题：如果现在将父类的一个方法定义成private访问权限，在子类中将此方法声明为default访问权限，那么这样还叫重写吗？</span>
 
 ```java
@@ -160,5 +154,5 @@ public class T {
 
 ![License Badge]({{ site.baseurl}}/images/java/overload.png)
 
-</br>
+<br>
 

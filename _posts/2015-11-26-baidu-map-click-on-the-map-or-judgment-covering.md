@@ -8,7 +8,8 @@ category: 百度地图
 summary: 在百度地图上圆形区域检索，返回圆形覆盖范围内的"公司"检索结果，并展示在地图上
 comments: false
 ---
-</br>
+<br>
+
 在百度地图上圆形区域检索，返回圆形覆盖范围内的"公司"检索结果，并展示在地图上
 
 当点击检索结果(标注)进行查看的时候会再次以此为原点进行检索
@@ -19,15 +20,13 @@ comments: false
 
 所以要判断点击的是地图还是覆盖物。
 
-</br>
-####查看地图事件
+#### 查看地图事件
 
 ![License Badge]({{ site.baseurl}}/images/baidumap/2.png)
 
 我们看到click事件有以上参数，通过这些参数就能判断所点击为何物。
 
-</br>
-####举个栗子：
+#### 举个栗子：
 
 先创建一个Marker
 
@@ -52,7 +51,6 @@ map.addEventListener("click", function(e){
 
 ![License Badge]({{ site.baseurl}}/images/baidumap/3.png)
 
-</br>
 到此时我们只是判断了是覆盖物还是地图，而覆盖物又分为好多种
 
 有**Marker、Polygon、Circle**等等
@@ -61,7 +59,6 @@ map.addEventListener("click", function(e){
 
 再次判断是何种覆盖物
 
-</br>
 如下代码即可点击Marker不触发click事件
 
 ```js
@@ -78,6 +75,6 @@ if(e.overlay && e.overlay.toString() != '[object Circle]'){
 }
 ```
 
-效果演示：http://itmyhome.com/baidu_map/
+效果演示：<a href="http://itmyhome.com/baidu_map/">http://itmyhome.com/baidu_map/</a>
 
-</br>
+<br>

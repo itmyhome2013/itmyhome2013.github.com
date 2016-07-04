@@ -8,7 +8,7 @@ category: Java
 summary: Collection层次结构中的根接口。Collection 表示一组对象，这些对象也称为collection的元素
 comments: false
 ---
-</br>
+<br>
 
 <span style="color:red">ArrayList和Vector是采用数组方式存储数据</span>
 
@@ -22,15 +22,13 @@ comments: false
 
 按序号索引数据需要进行向前或向后遍历，但是插入数据时只需要记录本项的前后项即可，所以插入速度较快。
 
-</br>
 Collection 层次结构中的根接口。Collection 表示一组对象，这些对象也称为 collection 的元素。一些collection允许有重复的元素，
 
 而另一些则不允许。一些collection是有序的，而另一些则是无序的。JDK 不提供此接口的任何直接实现：它提供更具体的子接口
 
 (如 Set 和 List)实现。此接口通常用来传递 collection，并在需要最大普遍性的地方操作这些 collection。
 
-</br>
-####**List接口**
+#### **List接口**
 
 <span style="color:red">List是有序的Collection</span>，使用此接口能够精确的控制每个元素插入的位置。用户能够使用索引(元素在List中的位置，
 
@@ -38,20 +36,17 @@ Collection 层次结构中的根接口。Collection 表示一组对象，这些�
 
 实现List接口的常用类有<span style="color:red">ArrayList LinkedList Vector和Stack</span>
 
-</br>
-####**Set接口**
+#### **Set接口**
 
 Set是一种不包含重复的元素的Collection,即任意的两个元素e1和e2都有e1.equals(e2)=false Set最多有一个null元素
 
-</br>
-####**Map接口**
+#### **Map接口**
 
 <span style="color:red">Map没有继承Collection接口</span>，Map提供key到value的映射。一个Map中不能包含相同的key,每个key只能映射一个value。
 
 Map接口提供3种集合的视图，Map的内容可以被当做一组key集合,一组value集合,或者一组key-value映射。
 
-</br>
-####**总结**
+#### **总结**
 
 如果涉及到堆栈，队列等操作，应该考虑用List，对于需要快速插入，删除元素，应该使用LinkedList，如果需要快速随机访问
 
@@ -63,10 +58,9 @@ Map接口提供3种集合的视图，Map的内容可以被当做一组key集合,
 
 不用改变。这就是针对抽象编程。
 
-</br>
-####**附：**
+#### **附：**
 
-####**Hashtable和HashMap的区别**
+#### **Hashtable和HashMap的区别**
 
 HashMap是Hashtable的轻量级实现(非线程安全的实现)，他们都完成了Map接口，主要区别在于HashMap允许空(null)键值(key),
 
@@ -92,8 +86,7 @@ Hashtable和HashMap采用的hash/rehash算法都大概一样，所以性能不�
 
 <span style="color:red">三、值：只有HashMap可以让你将空值作为一个表的条目的key或value</span>
 
-</br>
-####**heap和stack有什么区别**
+#### **heap和stack有什么区别**
 
 Java的内存分为两类，一类是栈内存，一类是堆内存。栈内存是指程序进入一个方法时，会为这个方法单独分配一块私属
 
@@ -103,4 +96,4 @@ Java的内存分为两类，一类是栈内存，一类是堆内存。栈内存�
 
 所以，它不会随方法的结束而消失。方法中的局部变量使用final修饰后，放在堆中，而不是栈中。 
 
-</br>
+<br>
