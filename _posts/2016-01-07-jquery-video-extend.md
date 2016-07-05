@@ -20,7 +20,7 @@ comments: false
 
 #### 使用方法：
 
-下载：http://andchir.github.io/jquery-video-extend/
+下载：<a href="http://andchir.github.io/jquery-video-extend/">http://andchir.github.io/jquery-video-extend/</a>
 
 ```js
 <script src="js/jquery-2.1.4.min.js"></script>
@@ -58,7 +58,7 @@ $(document).bind('ready',function() {
 </video>
 ```
 
-演示：http://video.pushu.me
+演示：<a href="http://video.pushu.me">http://video.pushu.me</a>
 
 PS: MP4其他之外格式能否播放没有验证。
 

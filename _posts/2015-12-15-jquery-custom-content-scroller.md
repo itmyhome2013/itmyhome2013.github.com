@@ -8,10 +8,11 @@ category: jQuery
 summary: 高度可定制的自定义滚动条jQuery插件。功能包括垂直和/或水平滚动条,可调节的滚动势头,鼠标滚轮
 comments: false
 ---
-</br>
+<br>
+
 #### 使用方法：
 
-首先下载插件：http://manos.malihu.gr/jquery-custom-content-scroller/
+首先下载插件：<a href="http://manos.malihu.gr/jquery-custom-content-scroller/">http://manos.malihu.gr/jquery-custom-content-scroller/</a>
 
 #### 一、HTML
 
@@ -23,7 +24,6 @@ comments: false
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 ```
 
-</br>
 #### 二、CSS
 
 首先必须要有滚动条出现，给DIV限定高度,并指定overflow样式为auto,
@@ -40,7 +40,6 @@ comments: false
 </style>
 ```
 
-</br>
 #### 三、初始化HTML
 
 ```html
@@ -49,7 +48,6 @@ comments: false
 </div>
 ```
 
-</br>
 #### 四、初始化JS
 
 ```js
@@ -60,9 +58,8 @@ comments: false
 </script>
 ```
 
-</br>
-效果演示：http://itmyhome.com/jquery_scroller/
+效果演示：<a href="http://itmyhome.com/jquery_scroller/">http://itmyhome.com/jquery_scroller/</a>
 
-官网：http://manos.malihu.gr/jquery-custom-content-scroller/
+官网：<a href="http://manos.malihu.gr/jquery-custom-content-scroller/">http://manos.malihu.gr/jquery-custom-content-scroller/</a>
 
-</br>
+<br>

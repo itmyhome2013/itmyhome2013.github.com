@@ -43,6 +43,6 @@ border-collapse属性加上border-spacing属性就可以设置tr行间距
 </table>
 ```
 
-演示：http://itmyhome.com/table-spacing
+演示：<a href="http://itmyhome.com/table-spacing">http://itmyhome.com/table-spacing</a>
 
 <br>

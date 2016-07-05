@@ -8,14 +8,15 @@ category: Oracle
 summary: REGEXP_REPLACE让你搜索的字符串的正则表达式模式REPLACE函数的功能
 comments: false
 ---
-</br>
+<br>
+
 REGEXP_REPLACE让你搜索的字符串的正则表达式模式REPLACE函数的功能。默认情况下，
 
 该函数返回source_char与replace_string取代了正则表达式模式的每个实例。
 
 返回的字符串是在相同的字符集source_char。
 
-### 语法
+#### 语法
 
 Oracle数据库中的REGEXP_REPLACE函数的语法是：
 
@@ -23,7 +24,7 @@ Oracle数据库中的REGEXP_REPLACE函数的语法是：
 REGEXP_REPLACE(source_char, pattern [, replace_string [, position [, occurrence [, match_parameter ] ] ] ] )
 ```
 
-### 参数
+#### **参数**
 
 #### *source_char*
 
@@ -175,6 +176,7 @@ REGEXP_REPLACE(source_char, pattern [, replace_string [, position [, occurrence 
 可选。在字符串中的开始位置搜索。如果省略，则默认为1。
 
 #### *occurrence*
+
 可选。是一个非负整数默认为1，指示替换操作的发生：
 
 如果指定0，那么所有出现将被替换字符串。
@@ -257,4 +259,4 @@ Result: '2, 5, and # are numbers in this example'
 
 这个例子将替换具有两个数字并排指定的`(\d)(\d)`模式。在这种情况下，它将跳过2和5个数字值和用#字符替换10。
 
-</br>
+<br>
