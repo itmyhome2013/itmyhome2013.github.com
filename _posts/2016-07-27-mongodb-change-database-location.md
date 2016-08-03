@@ -20,7 +20,7 @@ MongoDB在Windows中默认的数据库目录是 `C:\data`。如果在没有该�
 
 首先创建数据库目录，例如 d:\data 然后运行命令
 
-```ruby
+```txt
 mongod –dbpath d:\data
 ```
 
@@ -30,7 +30,7 @@ mongod –dbpath d:\data
 
 内容为 **dbpath=d:\data**。然后运行命令
 
-```ruby
+```txt
 mongod –config d:\mongo.cfg
 ```
 
