@@ -21,11 +21,11 @@ Activiti 引擎启动时默认会检测数据库版本与程序版本是否相�
     <property name="dataSource" ref="dataSource" />
     <property name="transactionManager" ref="TransactionManager" />
     <!-- 
-        databaseSchemaUpdate:允许在流程引擎启动和关闭时设置处理数据库模式的策略。
-        false(默认):创建流程引擎时检查数据库模式的版本是否与函数库要求的匹配，如果版本不匹配就会抛出异常。
-        true:构建流程引擎时，执行检查，如果有必要会更新数据库模式。如果数据库模式不存在，就创建一个。
-        create:引擎启动时创建表
-        create-drop:创建流程引擎时创建数据库模式，关闭流程引擎时删除数据库模式.
+        databaseSchemaUpdate - 允许在流程引擎启动和关闭时设置处理数据库模式的策略。
+        false(默认) - 创建流程引擎时检查数据库模式的版本是否与函数库要求的匹配，如果版本不匹配就会抛出异常。
+        true - 构建流程引擎时，执行检查，如果有必要会更新数据库模式。如果数据库模式不存在，就创建一个。
+        create - 引擎启动时创建表
+        create-drop - 创建流程引擎时创建数据库模式，关闭流程引擎时删除数据库模式.
         drop-create - 引擎启动时先删除表再重新创建表。
      -->
     <property name="databaseSchemaUpdate" value="true" />
@@ -37,3 +37,5 @@ Activiti 引擎启动时默认会检测数据库版本与程序版本是否相�
 
 </bean>
 ```
+
+databaseSchemaUpdate 参数值见上面代码注释
