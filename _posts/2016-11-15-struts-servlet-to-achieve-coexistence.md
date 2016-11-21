@@ -5,7 +5,7 @@ title: "Struts2和Servlet实现共存"
 date: 2016-11-15 00:00:00 -0700
 tags: Struts2
 category: Struts2
-summary: 在项目中,如果我们用到了Struts2和Servlet,项目运行时有可能无法正常访问Servlet
+summary: 在项目中，如果我们用到了Struts2和Servlet，项目运行时有可能无法正常访问Servlet
 comments: false
 ---
 <br>
