@@ -44,11 +44,11 @@ comments: false
 
 此XML文件分两层结构，分别为：
 
-+ <root>节点，下面包含多个<person>节点
++ `<root>`节点，下面包含多个`<person>`节点
 
-+ <person>节点，下面包含各信息节点，如<username>、<age>等
++ `<person>`节点，下面包含各信息节点，如`<username>、<age>`等
 
-我们的目的是把<person>节点里面的信息提取出来，所以可以把person看做一个对象
+我们的目的是把`<person>`节点里面的信息提取出来，所以可以把person看做一个对象
 
 里面的信息节点就是对象的属性
 
