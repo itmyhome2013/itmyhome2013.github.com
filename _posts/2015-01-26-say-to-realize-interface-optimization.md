@@ -11,9 +11,7 @@ comments: false
 <br>
 
 之前就感觉这个默认的界面有点丑(当然是我自认为)，但又指不出来是哪里。
-
 本来的初衷只是想改一下评论框里的提示文字，Google百度了很多资料 楞是没找到。
-
 最后发现在多说的后台管理里是可以自定义的 ⊙﹏⊙b汗
 
 ![License Badge]({{ site.baseurl}}/images/duoshuo/1.png)
@@ -130,5 +128,4 @@ comments: false
 ![License Badge]({{ site.baseurl}}/images/duoshuo/modifyafter.png)
 
 多少还算是有一点改观的(对于有洁癖的本博主 必须要有所改观o(╯□╰)o)
-
 参考资料：[多说自定义CSS 让你的多说评论动感起来](http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html)

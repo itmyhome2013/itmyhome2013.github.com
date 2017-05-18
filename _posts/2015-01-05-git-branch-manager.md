@@ -32,9 +32,7 @@ $ git branch
 ```
 
 git branch 命令会列出所有分支,当前分支前面会标一个*号
-
 然后 我们就可以在dev分支上正常提交,比如新建一个hello.txt文件
-
 进行提交
 
 ```diff
@@ -45,7 +43,6 @@ $ git push -u origin dev
 
 现在dev分支工作完成,我们进入GitHub
 
-
 #### dev分支
 
 ![License Badge]({{ site.baseurl}}/images/git/Git Branch Manager/1.png)
@@ -55,11 +52,8 @@ $ git push -u origin dev
 ![License Badge]({{ site.baseurl}}/images/git/Git Branch Manager/2.png)
 
 测试环境为：我们在本地仓库先用master分支提交内容到远程仓库,然后切换分支dev提交修改的内容再到远程仓库
-
 我们发现dev分支上hello.txt内容为hello git dev  而切换到master分支上,hello.txt内容依然为
-
 hello git
-
 现在我们把dev分支的工作成果合并到master分支上
 
 ```diff
@@ -97,15 +91,10 @@ $ git push origin :dev
 #### 总结：
 
 + 查看分支：git branch
-
 + 创建分支：git branch name
-
 + 切换分支：git checkout name
-
 + 创建+切换分支：git checkout -b name
-
 + 合并指定分支到当前分支：git merge name
-
 + 删除分支：git branch -d name
 
 注：name为分支名

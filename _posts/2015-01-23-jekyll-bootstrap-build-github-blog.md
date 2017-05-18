@@ -15,14 +15,13 @@ comments: false
 #### 一、创建一个新的仓库
 
 去你的 https://github.com 主页新建一个仓库 名字为USERNAME.github.com
-
 USERNAME为你的用户名(下同)
 
 #### 二、安装Jekyll-Bootstrap
 
 在Git Bash中输入如下命令 将代码clone到你本地
 
-```diff 
+```java 
 git clone https://github.com/plusjade/jekyll-bootstrap.git USERNAME.github.com  
 cd USERNAME.github.com  
 git remote set-url origin https://github.com/itmyline/USERNAME.github.com.git  
@@ -42,10 +41,9 @@ PS:如果想clone到指定目录,则使用如下格式 git clone xxx.git "指定
 #### 如果你已经有blog在Github上？
 
 假设你机器上安装有jekyll,如果没有请参考Windows上安装Jekyll。
-
 在本地运行Jekyll-Bootstrap,打开命令行工具 输入如下命令:
 
-```diff
+```java
 $ git clone https://github.com/plusjade/jekyll-bootstrap.git  
 $ cd jekyll-bootstrap  
 $ jekyll serve  

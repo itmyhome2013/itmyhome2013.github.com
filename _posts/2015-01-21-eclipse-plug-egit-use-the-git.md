@@ -21,10 +21,9 @@ comments: false
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/1.png)
 
 Location会自动查找~/.gitconfig文件(在Windows系统中对于多数人来说 位于C:\Documents and Settings\$USER下)。
-
 如何没有此文件,可打开Git Bash进行设置：
 
-```diff
+```java
 $ git config --global user.name "youName"  
 $ git config --global user.email "youEmail@example.com"  
 ```
@@ -58,7 +57,6 @@ $ git config --global user.email "youEmail@example.com"
 #### 4、提交
 
 有了本地仓库之后 我们就可以上传到远程仓库了
-
 项目右键：Team > Commit
 
 ![License Badge]({{ site.baseurl}}/images/git/eclipse-plug-egit-use-the-git/6.png)

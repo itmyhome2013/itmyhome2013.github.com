@@ -15,18 +15,15 @@ comments: false
 介绍：
 
 由于JB版本0.2.X的主题,现在完全是模块化的。他们跟踪和单独版本的主题包。这让每个人都可以自由发布和共享主题。
-
 Jekyll-Bootstrap v 0.2.x只附带twitter主题,其他主题需要被安装。
-
 直接浏览当前主题包在GitHub上：<a href="https://github.com/jekyllbootstrap">https://github.com/jekyllbootstrap</a>
-
 可以看到可供我们使用的主题有**the-minimum、tom、mark-reid、twitter、the-program**
 
 #### 安装主题
 
 通过使用rake命令,并通过该主题在git的URL安装一个主题。
 
-```diff
+```java
 $ rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git"  
 ```
 
@@ -39,10 +36,9 @@ $ rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.g
 ![License Badge]({{ site.baseurl}}/images/jekyll/jekyll-bootstrap-change-theme/theme2.png)
 
 安装程序使用的git下载主题包,如果你已经获得了另一种方式的主题包,如通过Download ZIP下载下来的
-
 你可以手动把它放到你的 **./_theme_packages**文件夹下,然后运行带有该主题名称
 
-```diff
+```java
 $ rake theme:install name="THEME-NAME"  
 ```
 
@@ -52,14 +48,12 @@ $ rake theme:install name="THEME-NAME"
 
 一旦你的主题安装,您可以通过rake来进行他们之间的切换
 
-```diff
+```java
 $ rake theme:switch name="the-program"  
 ```
 
 #### 自定义主题
 
 主题的布局包含再 ./_includes/themes/THEME-NAME。您可以编辑在该主题目录中的文件
-
 而不是_layouts,因为改变主题将覆盖_layout目录中的文件，你可以在_layouts中自由添加额外的模板文件
-
 以自定义您的博客

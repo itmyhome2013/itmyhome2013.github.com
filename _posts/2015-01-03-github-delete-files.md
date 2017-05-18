@@ -14,13 +14,13 @@ comments: false
 
 一般情况下，通常可直接在文件管理器中直接把文件删了，或者用**rm**命令删了
 
-```bath
+```java
 $ rm README.txt 
 ```
 
 这个时候,工作区是删除了,可版本库还没有。**git status**命令会立刻告诉你哪些文件被删除了
 
-```bath
+```java
 $ git status  
 On branch master  
 Your branch is up-to-date with 'origin/master'.  
@@ -36,7 +36,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 现在有两个选择，一是确实要从版本库中删除该文件，那就用命令**git rm**删掉，并**且commit**，并且**push**
 
-```bath
+```java
 $ git rm README.txt  
 rm 'README.txt'  
 $ git commit -m "remove README.txt"  
@@ -57,7 +57,7 @@ Branch master set up to track remote branch master from origin.
 
 另一种情况是删除了，因为版本库里还有呢，所以可以把误删的文件恢复到最新版本
 
-```bath
+```java
 $ git checkout -- README.txt  
 ```
 ![License Badge]({{ site.baseurl}}/images/git/github-delete-files1.png)
@@ -66,7 +66,7 @@ $ git checkout -- README.txt
 
 可先直接在文件管理器中把要删除的文件夹删掉(以WEB-INF文件夹为例)
 
-```bath
+```java
 $ git add --all  
 $ git commit -m "remove WEB-INF"  
 $ git push -u origin master  
