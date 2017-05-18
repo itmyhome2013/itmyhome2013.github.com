@@ -51,6 +51,6 @@ public static Integer valueOf(int i) {
 
 对于-128到127之间的数，会进行缓存，Integer i2 = 127时，会将127进行缓存，下次再写Integer i4 = 127时，
 就会直接从缓存中取，就不会new了。所以③的结果为true,而④为false。
-而⑤⑥两个都不是同一个对象 所以都是false
+而⑤⑥两个都不是同一个对象 所以都是false。
 
 
