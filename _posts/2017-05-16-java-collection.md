@@ -31,7 +31,10 @@ comments: false
 
 在Java2之前，Java是没有完整的集合框架的。它只有一些简单的可以自扩展的容器类，比如Vector，Stack，Hashtable等。这些容器类在使用的过程中由于效率问题饱受诟病，因此在Java2中，Java设计者们进行了大刀阔斧的整改，重新设计，于是就有了现在的集合框架。需要注意的是，之前的那些容器类库并没有被弃用而是进行了保留，主要是为了向下兼容的目的，但我们在平时使用中还是应该尽量少用。
 
-![License Badge]({{ site.baseurl}}/images/java-collection/1.gif)
+<div class="image-package">
+	<img src="{{ site.baseurl}}/images/java-collection/1.gif">
+	<div class="image-caption">Java集合框架</div>
+</div>
 
 从上面的集合框架图可以看到，Java集合框架主要包括两种类型的容器，一种是集合（Collection），存储一个元素集合，另一种是图（Map），存储键/值对映射。Collection接口又有3种子类型，List、Set和Queue，再下面是一些抽象类，最后是具体实现类，常用的有ArrayList、LinkedList、HashSet、LinkedHashSet、HashMap、LinkedHashMap等等。
 
@@ -39,7 +42,10 @@ comments: false
 
 Collection接口是处理对象集合的根接口，其中定义了很多对元素进行操作的方法，AbstractCollection是提供Collection部分实现的抽象类。下图展示了Collection接口中的全部方法。
 
-![License Badge]({{ site.baseurl}}/images/java-collection/2.png)
+<div class="image-package">
+	<img src="{{ site.baseurl}}/images/java-collection/2.png">
+	<div class="image-caption">Collection接口结构</div>
+</div>
 
 其中，有几个比较常用的方法，比如方法add()添加一个元素到集合中，addAll()将指定集合中的所有元素添加到集合中，contains()方法检测集合中是否包含指定的元素，toArray()方法返回一个表示集合的数组。Collection接口有三个子接口，下面详细介绍。
 
@@ -179,7 +185,10 @@ public class TestSet {
 
 队列是一种先进先出的数据结构，元素在队列末尾添加，在队列头部删除。Queue接口扩展自Collection，并提供插入、提取、检验等操作。
 
-![License Badge]({{ site.baseurl}}/images/java-collection/3.png)
+<div class="image-package">
+	<img src="{{ site.baseurl}}/images/java-collection/3.png">
+	<div class="image-caption">Queue接口结构</div>
+</div>
 
 上图中，方法offer表示向队列添加一个元素，poll()与remove()方法都是移除队列头部的元素，两者的区别在于如果队列为空，那么poll()返回的是null，而remove()会抛出一个异常。方法element()与peek()主要是获取头部元素，不删除。
 
@@ -211,7 +220,10 @@ public class TestQueue {
 
 Map，图，是一种存储键值对映射的容器类，在Map中键可以是任意类型的对象，但不能有重复的键，每个键都对应一个值，真正存储在图中的是键值构成的条目。下面是接口Map的类结构。
 
-![License Badge]({{ site.baseurl}}/images/java-collection/4.png)
+<div class="image-package">
+	<img src="{{ site.baseurl}}/images/java-collection/4.png">
+	<div class="image-caption">接口Map的结构</div>
+</div>
 
 从上面这张图中我们可以看到接口Map提供了很多查询、更新和获取存储的键值对的方法，更新包括方法clear()、put()、putAll()、remove()等等，查询方法包括containsKey、containsValue等等。Map接口常用的有三个具体实现类，分别是HashMap、LinkedHashMap、TreeMap。
 
@@ -219,7 +231,10 @@ Map，图，是一种存储键值对映射的容器类，在Map中键可以是�
 
 HashMap是基于哈希表的Map接口的非同步实现，继承自AbstractMap，AbstractMap是部分实现Map接口的抽象类。在平时的开发中，HashMap的使用还是比较多的。我们知道ArrayList主要是用数组来存储元素的，LinkedList是用链表来存储的，那么HashMap的实现原理是什么呢？先看下面这张图：
 
-![License Badge]({{ site.baseurl}}/images/java-collection/5.jpg)
+<div class="image-package">
+	<img src="{{ site.baseurl}}/images/java-collection/5.jpg">
+	<div class="image-caption">HashMap原理</div>
+</div>
 
 在之前的版本中，HashMap采用数组+链表实现，即使用链表处理冲突，同一hash值的链表都存储在一个链表里。但是当链表中的元素较多，即hash值相等的元素较多时，通过key值依次查找的效率较低。而JDK1.8中，HashMap采用数组+链表+红黑树实现，当链表长度超过阈值（8）时，将链表转换为红黑树，这样大大减少了查找时间。
 

@@ -5767,7 +5767,27 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
  .post-content h4 {
     font-weight: bold;
  }
+  
+  /*Í¼Æ¬ÎÄ×ÖËµÃ÷*/
+ .image-package {
+	padding-bottom: 25px;
+    width: 700px;
+    margin-left: -40px;
+    text-align: center;
+ }
 
+ .image-caption {
+    min-width: 20%;
+    max-width: 30%;
+    min-height: 22px;
+    /*display: inline-block;*/
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 14px;
+    color: #969696;
+    line-height: 1.7;
+ }
  /*end*/
 
 .well blockquote {
