@@ -1472,10 +1472,12 @@ abbr[title],abbr[data-original-title] {
 	text-transform: uppercase
 }
 
+/*20170518*/
 blockquote {
 	padding: 10px 20px;
-	margin: 0 0 20px;
+	margin: 30px 0 20px;
 	font-size: 17.5px;
+	background-color: rgba(245, 245, 245, 0.52);
 	border-left: 5px solid #eee
 }
 
@@ -5746,10 +5748,27 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 	margin: 0 0 10px;
  }
  /*修改行间距*/
+ /*20170518 start*/
  .post-content p{
-	line-height: 22px;  /*28*/
+	line-height: 28px; 
+	font-size: 15px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 	/* margin:0 auto; */
  } 
+
+ .post-content ul li{
+	line-height: 28px; 
+ } 
+
+ .highlight { /*代码背景色*/
+	background: rgba(245, 245, 245, 0.16);
+ }
+
+ .post-content h4 {
+    font-weight: bold;
+ }
+
+ /*end*/
 
 .well blockquote {
 	border-color: #ddd;
