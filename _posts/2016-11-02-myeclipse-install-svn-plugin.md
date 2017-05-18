@@ -22,7 +22,6 @@ copy 'D:\MyEclipse2015\ithome'; please get a newer Subversion client
 ![License Badge]({{ site.baseurl}}/images/myeclipse-svn/1.png)
 
 忘了之前Subversion是哪个版本了，也不知道是不是啥时候更新过
-
 解决方法是将 **site-1.6.5 替换为 site-1.8.22**(估计1.7也行，没试)
 
 ##### **一、下载 site-1.8.22.zip**

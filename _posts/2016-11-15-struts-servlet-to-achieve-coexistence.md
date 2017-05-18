@@ -10,9 +10,7 @@ comments: false
 ---
 <br>
 
-在一个项目中，如果我们既用到了Struts2又用到了Servlet，项目运行时有可能无法正常访问Servlet
-
-原因是在配置Struts的过滤器的时候，拦截了所有请求。
+在一个项目中，如果我们既用到了Struts2又用到了Servlet，项目运行时有可能无法正常访问Servlet，原因是在配置Struts的过滤器的时候，拦截了所有请求。
 
 ```xml
 <filter-mapping>
@@ -36,9 +34,7 @@ comments: false
 ```
 
 当我们在页面发出请求时，struts2将会拦截所有请求，对于servlet请求将不能够正常响应
-
 报错信息为：`HTTP Status 404 - There is no Action mapped for namespace / and action name MyServlet.`
-
 **这是因为struts2把servlet当成action了，因为servlet和action都是没有后缀的.**
 
 #### 解决方法：
@@ -67,13 +63,11 @@ comments: false
 ```
 
 该属性指定需要Struts2处理的请求后缀，该属性的默认值是action，即所有匹配*.action的请求都由Struts2处理。 
-
 如果用户需要指定多个请求后缀，则多个后缀之间以英文逗号(,)隔开。 
 
 #### **方法3：**
 
 在web.xml中修改struts2拦截页面请求的配置：
-
 原来的
 
 ```xml

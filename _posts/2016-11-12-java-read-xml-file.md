@@ -13,9 +13,7 @@ comments: false
 步骤概括如下：
 
 + 1、获取DocumentBuilderFactory
-
 + 2、通过DocumentBuilder工厂产生一个DocumentBuilder
-
 + 3、利用DocumentBuilder产生Document
 
 下面通过简单的代码来实现上面描述的过程：

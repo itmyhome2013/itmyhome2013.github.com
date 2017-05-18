@@ -11,7 +11,6 @@ comments: false
 <br>
 
 在用PL/SQL Developer连接Oracle 11g时报错"ORA-12541: TNS: 无监听程序"，
- 
 如下图所示。解决方法如下步骤：
 
 ![License Badge]({{ site.baseurl}}/images/ora-12541/1.png)

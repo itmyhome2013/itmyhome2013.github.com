@@ -10,11 +10,7 @@ comments: false
 ---
 <br>
 
-为了满足将XML转换为JavaBean的特殊需求，Apache旗下的一个名为Digester的工具为我们提供了这么一个选择。
-
-将XML转化为JavaBean存储在内存当中， 解析的关键在于用以匹配XML的模式以及规则等
-
-以解析下面XML为例介绍Digester
+为了满足将XML转换为JavaBean的特殊需求，Apache旗下的一个名为Digester的工具为我们提供了这么一个选择。将XML转化为JavaBean存储在内存当中， 解析的关键在于用以匹配XML的模式以及规则等，以解析下面XML为例介绍Digester
 
 ```xml
 <root>
@@ -45,12 +41,9 @@ comments: false
 此XML文件分两层结构，分别为：
 
 + `<root>`节点，下面包含多个`<person>`节点
-
 + `<person>`节点，下面包含各信息节点，如`<username>、<age>`等
 
-我们的目的是把`<person>`节点里面的信息提取出来，所以可以把person看做一个对象
-
-里面的信息节点就是对象的属性
+我们的目的是把`<person>`节点里面的信息提取出来，所以可以把person看做一个对象里面的信息节点就是对象的属性
 
 ##### **Person类如下：**
 
@@ -195,22 +188,10 @@ public class DigesterDriver {
 }
 ```
 
-上述代码展示了Digester处理XML 的一些基本要点，主要是说明了一些模式以及规则的匹配。 
-
-简言之，Digester就是一种用来把一个XML转化为一个与该XML结构类似的 JavaBean。
-
-你可以把XML根元素想象成一个JavaBean， 该根元素的attribute就是这个JavaBean的各种 Field，
-
-当该根元素有其他子tag时，又要把这个子tag想象成一个个新的XML，将其视为一个新的JavaBean，
-
-并作为一个Field加入到父Bean当中，然后以此类推，通过循环的方式将整个XML进行解析。
-
-<br>
+上述代码展示了Digester处理XML 的一些基本要点，主要是说明了一些模式以及规则的匹配。 简言之，Digester就是一种用来把一个XML转化为一个与该XML结构类似的 JavaBean。你可以把XML根元素想象成一个JavaBean， 该根元素的attribute就是这个JavaBean的各种 Field，当该根元素有其他子tag时，又要把这个子tag想象成一个个新的XML，将其视为一个新的JavaBean，并作为一个Field加入到父Bean当中，然后以此类推，通过循环的方式将整个XML进行解析。
 
 **所需JAR包：**
 
 + commons-digester3-3.2.jar
-
 + commons-logging-1.0.4.jar
-
 + commons-beanutils-1.7.0.jar

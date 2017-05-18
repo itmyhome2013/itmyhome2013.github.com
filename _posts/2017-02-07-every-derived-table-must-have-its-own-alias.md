@@ -26,11 +26,7 @@ SELECT * FROM
 Every derived table must have its own alias
 ```
 
-Every derived table must have its own alias 意思是说 **每个派生出来的表都必须有一个自己的别名** ,
-
-因为进行嵌套查询的时候子查询出来的的结果是作为一个派生表来进行上一级的查询的，
-
-所以子查询的结果必须要有一个别名，把MySQL语句改为如下即可
+Every derived table must have its own alias 意思是说 **每个派生出来的表都必须有一个自己的别名** ,因为进行嵌套查询的时候子查询出来的的结果是作为一个派生表来进行上一级的查询的，所以子查询的结果必须要有一个别名，把MySQL语句改为如下即可
 
 ```sql
 SELECT * FROM 
