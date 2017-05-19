@@ -18,4 +18,5 @@ document.frames 等同于 window.frames，用来取得当前页面内 window 对
 #### 解决方法
 
 使用window.frames[‘framename‘] 代替 document.framename。
+
 注意：window.frames['framename']不可写成window.frames('framename')
