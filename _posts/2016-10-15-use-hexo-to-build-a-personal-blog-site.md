@@ -19,28 +19,25 @@ Hugo是个什么东东这里直接忽略，想了解的请查阅其他资料，�
 ![License Badge]({{ site.baseurl}}/images/hugo/1.png)
 
 解压后得到 hugo_0.17_windows_amd64.exe 可以将其改名为 hugo.exe
-
 按理双击exe即可安装，不知为何在我这里不行
 
 ![License Badge]({{ site.baseurl}}/images/hugo/2.png)
 
 于是改为其他方法：
-
 C盘新建文件夹 hugo\bin ,将hugo.exe放在bin目录下
-
 `在path中设置环境变量 C:\hugo\bin;`
 
 ### 生成站点
 
 使用Hugo快速生成站点，进入到 C:\hugo
 
-```bath
+```java
 $ hugo new site mysite
 ```
 
 这样就在hugo目录里生成了初始站点，进去目录
 
-```bath
+```java
 $ cd mysite
 ```
 
@@ -49,17 +46,14 @@ $ cd mysite
 ![License Badge]({{ site.baseurl}}/images/hugo/3.png)
 
 简要介绍一下，config.toml是网站的总配置文件，content目录里放的是markdown文章，
-
 layouts目录里放的是网站的模板文件，static目录里放的是一些图片、css、js等资源。
-
 创建一篇日志文件
 
-```bath
+```java
 $ hugo new post/first.md
 ```
 
 执行完后，会在content/post目录自动生成一个markdown格式的first.md文件：
-
 可以简单修改一下里面的内容，比如：
 
 ```ruby
@@ -76,10 +70,9 @@ title = "第一篇Hugo文章"
 ### 安装皮肤
 
 到 <a href="http://www.gohugo.org/theme/">皮肤列表</a> 挑选一个喜欢的皮肤，找到相应的Github地址，
-
 以 https://github.com/allnightgrocery/hugo-theme-blueberry-detox.git 为例，将主题clone到themes目录下
 
-```bath
+```java
 $ cd themes
 $ git clone https://github.com/allnightgrocery/hugo-theme-blueberry-detox.git detox
 ```
@@ -88,7 +81,7 @@ $ git clone https://github.com/allnightgrocery/hugo-theme-blueberry-detox.git de
 
 在 \mysite 目录下启动 hugo server
 
-```bath
+```java
 $ hugo server --theme=detox --buildDrafts --watch
 ```
 
@@ -99,18 +92,16 @@ $ hugo server --theme=detox --buildDrafts --watch
 ### 部署Github
 
 首先在GitHub上创建一个Repository，命名为：`itbirds1900.github.io` (itbirds1900替换为你的github用户名)。
-
 在站点根目录执行 Hugo 命令生成最终页面：
 
-```bath
+```java
 $ hugo --theme=detox --baseUrl="https://itbirds1900.github.io/"
 ```
 
 (注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 **draft=true** 再重新生成。)
-
 如果一切顺利，所有静态页面都会生成到 public 目录，将pubilc目录里所有文件 push 到刚创建的Repository的 master 分支。
 
-```bath
+```java
 $ cd public
 $ git init
 $ git remote add origin https://github.com/itbirds1900/itbirds1900.github.io.git

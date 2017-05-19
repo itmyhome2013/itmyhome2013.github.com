@@ -11,9 +11,7 @@ comments: false
 <br>
 
 Activiti 引擎启动时默认会检测数据库版本与程序版本是否相符，不相符就会抛出异常停止引擎的初始化。 
-
 这一策略可以通过引擎的初始化配置参数databaseSchemaUpdate来控制， 
-
 如下图的spring创建流程引擎的配置文件：
 
 ```xml

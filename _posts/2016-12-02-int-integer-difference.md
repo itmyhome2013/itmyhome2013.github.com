@@ -36,11 +36,8 @@ System.out.println(i8 == i9); // ⑥ false
 ```
 
 ①②③结果都为true,因为int会自动装箱为Integer(jdk1.5以上)
-
 而④却为false，③和④只是数字127和128的区别，为什么④为false呢
-
 因为Java在编译Integer i5 = 128的时候,被翻译成 Integer i5 = Integer.valueOf(128);让我们看看这个valueOf()方法，
-
 JDK源码的valueOf方法这样的：
 
 ```java
@@ -53,9 +50,7 @@ public static Integer valueOf(int i) {
 ```
 
 对于-128到127之间的数，会进行缓存，Integer i2 = 127时，会将127进行缓存，下次再写Integer i4 = 127时，
-
 就会直接从缓存中取，就不会new了。所以③的结果为true,而④为false。
-
 而⑤⑥两个都不是同一个对象 所以都是false。
 
 
