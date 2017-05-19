@@ -8,9 +8,8 @@ category: Java
 summary: 在JDK1.5之后提供了静态导入(Static import)功能,可以直接使用import static的方式导入
 comments: false
 ---
-<br>
-在JDK1.5之后提供了静态导入(Static import)功能。如果一个类中的方法全部是使用static声明的静态方法或变量，
 
+在JDK1.5之后提供了静态导入(Static import)功能。如果一个类中的方法全部是使用static声明的静态方法或变量，
 则在导入时就可以直接使用 **import static** 的方式导入，格式如下：
 
 ```bash
@@ -59,7 +58,7 @@ public class StaticImportTest {
 
 可直接使用静态变量 *URL* 无需前缀类名Constant
 
-##### 优点：
+#### <span style="color:red">优点：</span>
 
 减少代码输入，提高效率
 

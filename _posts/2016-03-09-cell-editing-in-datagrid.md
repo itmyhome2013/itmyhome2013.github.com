@@ -33,9 +33,7 @@ comments: false
 也可以指定
 
 + 小数位数：editor:{type:'numberbox',options:{precision:1}}
-
 + 文本类型：editor:'text'
-
 + checkbox：editor:{type:'checkbox',options:{on:'启动',off:'关闭'}}
 
 效果如下：

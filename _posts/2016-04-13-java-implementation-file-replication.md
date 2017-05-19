@@ -12,9 +12,7 @@ comments: false
 Java复制文件 下面介绍两种方法
 
 一种是使用传统的缓冲输入输出流(InputStream、OutputStream)来实现
-
 另外一种使用文件通道(FileChannel)来实现，效率上FileChannel会比InputStream快
-
 而且文件越大对比越明显
 
 
@@ -159,7 +157,6 @@ public static void main(String[] args) {
 ![License Badge]({{ site.baseurl}}/images/java/filecopy.png)
 
 所测试文件大小为65M，由此可见FileChannel复制文件的速度比FileInputStream快很多。
-
 而且FileChannel是多并发线程安全的。
 
 <br>

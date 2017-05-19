@@ -8,7 +8,7 @@ category: Java
 summary: 在Java中一共存在四种访问控制权限，即 private、default(默认)、protected和public
 comments: false
 ---
-<br>
+
 在Java中一共存在四种访问控制权限，即 private、default(默认)、protected和public
 
 ##### **1、private 访问权限**
@@ -17,9 +17,7 @@ private属于私有访问权限，可以用在属性的定义、方法的声明�
 
 ##### **2、default(默认)访问权限**
 
-如果一个类中的属性或方法没有使用任何的访问权限声明，则就是默认的访问权限，默认的访问权限可以被
-
-本包中的其他类所访问，但是不能被其他包的类所访问。
+如果一个类中的属性或方法没有使用任何的访问权限声明，则就是默认的访问权限，默认的访问权限可以被本包中的其他类所访问，但是不能被其他包的类所访问。
 
 ##### **3、protected 访问权限**
 
@@ -110,9 +108,7 @@ public class ProtectedTest {
 访问受保护属性： http://itmyhome.com
 ```
 
-以上程序中在不同包的子类里访问了 protected 属性，而如果现在由不同包的类直接访问HelloDemo类中的
-
-protected 属性，则会出现编译错误。
+以上程序中在不同包的子类里访问了 protected 属性，而如果现在由不同包的类直接访问HelloDemo类中的protected 属性，则会出现编译错误。
 
 ```java
 package com.home.b;
@@ -126,5 +122,3 @@ public class ProtectedTest {
 	}
 }
 ```
-
-<br>

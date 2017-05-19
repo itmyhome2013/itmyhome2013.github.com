@@ -59,9 +59,7 @@ comments: false
 ```
 
 以上步骤即可实现最简单的鼠标拖动调整表格列宽
-
 在线演示: <a href="http://blog.itmyhome.com/colresizable">http://blog.itmyhome.com/colresizable</a>
-
 更多信息参考: <a href="http://www.bacubacu.com/colresizable">http://www.bacubacu.com/colresizable</a>
 
 <br>
