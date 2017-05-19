@@ -10,11 +10,12 @@ comments: false
 ---
 
 document.frames 等同于 window.frames，用来取得当前页面内 window 对象的集合。
+
 <span style="color:red">不支持Firefox</span>，其他浏览器(chrome、opera、IE、360)均支持。
 
 **frames**为<iframe name="">的name属性值
 
 #### 解决方法
 
-使用window.frames[‘framename‘] 代替 document.framename
+使用window.frames[‘framename‘] 代替 document.framename。
 注意：window.frames['framename']不可写成window.frames('framename')
