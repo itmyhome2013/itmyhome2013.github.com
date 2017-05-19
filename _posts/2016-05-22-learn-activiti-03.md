@@ -12,9 +12,7 @@ comments: false
 
 #### 1、ProcessEngine
 
-ProcessEngine是Activiti中最核心的类，其他的类都是由他而来。Activiti流程引擎的配置文件是名为 activiti.cfg.xml 的XML文件。
-
-获得 ProcessEngine 最简单的办法是 使用 org.activiti.engine.ProcessEngines 类：
+ProcessEngine是Activiti中最核心的类，其他的类都是由他而来。Activiti流程引擎的配置文件是名为 activiti.cfg.xml 的XML文件。获得 ProcessEngine 最简单的办法是 使用 org.activiti.engine.ProcessEngines 类：
 
 ```java
 ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine()
@@ -62,34 +60,8 @@ repositoryService.deleteDeployment(deploymentId);
 
 #### 7、ProcessInstance
 
-代表流程定义的执行实例。一个流程实例包括了所有的运行节点。
-
-我们可以利用这个对象来了解当前流程实例的进度等信息。流程实例就表示一个流程从开始到结束的最大的流程分支，即一个流程中流程实例只有一个。
+代表流程定义的执行实例。一个流程实例包括了所有的运行节点。我们可以利用这个对象来了解当前流程实例的进度等信息。流程实例就表示一个流程从开始到结束的最大的流程分支，即一个流程中流程实例只有一个。
 
 #### 8、Execution
 
-Activiti用这个对象去描述流程执行的每一个节点。在没有并发的情况下，Execution就是同ProcessInstance。
-
-流程按照流程定义的规则执行一次的过程，就可以表示执行对象Execution。
-
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Activiti用这个对象去描述流程执行的每一个节点。在没有并发的情况下，Execution就是同ProcessInstance。流程按照流程定义的规则执行一次的过程，就可以表示执行对象Execution。

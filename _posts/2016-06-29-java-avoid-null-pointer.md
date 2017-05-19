@@ -13,7 +13,6 @@ comments: false
 #### equals
 
 Object类中的equals 方法在非空对象引用上实现相等关系，具有对称性
-
 x.equals(y) 和 y.equals(x) 结果是一样的，但当x == null时会抛出空指针异常
 
 例如：
@@ -31,7 +30,6 @@ if(x.equals(y)){ // java.lang.NullPointerException
 #### valueOf()和toString()
 
 调用null对象的toString()会抛出空指针异常，使用valueOf()可以获得相同的值，传递一个null给valueOf()将会返回null
-
 例如：
 
 ```java

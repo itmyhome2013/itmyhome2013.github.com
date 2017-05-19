@@ -12,12 +12,9 @@ comments: false
 
 #### 安装
 
-开始在 Java 中使用 Redis 前， 我们需要确保已经安装了 redis 服务(<a href="http://blog.csdn.net/itmyhome1990/article/details/51555324">Windows 64位下安装Redis教程</a>)及 Java redis 驱动，
-
-且你的机器上能正常使用 Java。接下来让我们安装 Java redis 驱动：
+开始在 Java 中使用 Redis 前， 我们需要确保已经安装了 redis 服务(<a href="http://blog.csdn.net/itmyhome1990/article/details/51555324">Windows 64位下安装Redis教程</a>)及 Java redis 驱动，且你的机器上能正常使用 Java。接下来让我们安装 Java redis 驱动：
 
 + 首先你需要下载驱动包，下载 <a href="http://mvnrepository.com/artifact/redis.clients/jedis">jedis.jar</a>，确保下载最新驱动包。
-
 + 将该驱动包引入到classpath中
 
 #### 连接到Redis服务器
@@ -39,7 +36,7 @@ public class RedisJava {
 
 运行上面的程序来测试连接Redis服务器。运行前确保Redis服务器已启动
 
-```bath
+```java
 Connection to server sucessfully
 Server is running: PONG
 ```
@@ -65,7 +62,7 @@ public class RedisJava {
 
 运行上面程序
 
-```bath
+```java
 Connection to server sucessfully
 Stored string in redis:: 麦田技术博客
 ```
@@ -97,7 +94,7 @@ public class RedisJava {
 
 运行上面程序
 
-```bath
+```java
 Connection to server sucessfully
 Stored string in redis:: PHP
 Stored string in redis:: Redis
@@ -131,7 +128,7 @@ public class RedisJava {
 
 运行上面程序
 
-```bath
+```java
 Connection to server sucessfully
 stored keys:: language-list
 stored keys:: itmyhome

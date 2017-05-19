@@ -15,7 +15,6 @@ comments: false
 MongoDB的 remove() 方法用于从集合中删除文档。remove() 方法接受两个参数。第一个是删除criteria ，第二是justOne标志：
 
 + deletion criteria :(可选)删除标准，根据文件将被删除。
-
 + justOne : (可选)如果设置为true或1，然后只删除一个文件。
 
 #### 语法:

@@ -13,25 +13,18 @@ comments: false
 ##### 开发环境
 
 + 操作系统：Windows7
-
 + IDE: MyEclipse
-
 + Database: MongoDB
 
 ##### 开发依赖库
 
 + bson-3.0.1.jar
-
 + mongodb-driver-3.0.1.jar
-
 + mongodb-driver-core-3.0.1.jar
-
 + junit-4.12.jar
-
 + hamcrest-core-1.3.jar
 
 PS：前三个必须引入(版本可不同)，后两个为junit测试所用
-
 
 #### 一、准备环境
 
@@ -70,7 +63,6 @@ PS：前三个必须引入(版本可不同)，后两个为junit测试所用
 ##### **1、建立连接**
 
 连接数据库，需要指定数据库名，如果数据库不存在，MongoDB会自动创建它。
-
 使用 MongoClient 来连接 MongoDB,代码片段如下：
 
 ```ruby
@@ -104,7 +96,6 @@ while (ite.hasNext()) {
 ##### **4、获取/选择一个集合**
 
 要从数据库中获得/选择一个集合，使用 com.mongodb.client.MongoDatabase 类的 getCollection() 方法。
-
 代码片段获取/选择一个集合
 
 ```ruby
@@ -114,7 +105,6 @@ MongoCollection<Document> collection = mongoDatabase.getCollection("person");
 ##### **5、插入文档**
 
 为了将文档插入MongoDB中，使用 com.mongodb.client.MongoCollection 类的 insertOne() 方法。
-
 代码片段插入一个文件
 
 ```ruby
@@ -143,7 +133,6 @@ while (ite.hasNext()) {
 ##### **7、更新文件**
 
 从集合中更新文件，使用 com.mongodb.client.MongoCollection 类的 updateMany() 和 updateOne() 方法。
-
 下面代码片段是将name为zhangsan的mobile信息修改为11011
 
 ```ruby
@@ -154,7 +143,6 @@ collection.updateOne(Filters.eq("name", "zhangsan"), new Document("$set", new Do
 ##### **8、删除文件**
 
 从集合中删除文件，使用 com.mongodb.client.MongoCollection 类的 deleteMany() 和 deleteOne() 方法。
-
 下面代码片段是删除title为MongoDB的所有文件
 
 ```ruby

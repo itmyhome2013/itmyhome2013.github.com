@@ -29,16 +29,13 @@ SELECT * FROM dual;
 #### 参数
 
 MYTABLE 向该表中插入记录
-
 column1, column2, column_n 该表中插入的列
-
 expr1, expr2, ... expr_n 该表中插入的值
 
 
 #### 示例 - 插入到一个表
 
 可以使用 INSERT INTO 语句多个记录插入到一个表。
-
 例如，如果你想插入3行到成绩表，你可以运行下面的SQL语句：
 
 ```sql
@@ -60,7 +57,6 @@ INSERT INTO score (s_id, s_name) VALUES (3000, 'WZ');
 #### 示例 - 插入到多个表
 
 也可以使用 INSERT ALL 语句将多个行插入多个表中的一个命令。
-
 例如，如果你想插入两条记录到成绩表一条记录到课程表，可以运行下面的SQL语句：
 
 ```sql

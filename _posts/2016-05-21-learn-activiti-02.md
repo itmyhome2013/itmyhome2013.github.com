@@ -13,7 +13,6 @@ comments: false
 ##### **1、添加jar包**
 
 在activiti-5.13 -> wars 目录下 解压 activiti-rest.war ，导入WEB-INF\lib下所有包添加到classpath中。
-
 由于使用的是Oracle数据库,还需手动导入ojdbc14.jar 添加到classpath下
 
 ##### **2、初始化数据库(使用代码)**
@@ -43,10 +42,7 @@ public void createTable(){
 ```
 
 **configuration.setDatabaseSchema("ACTIVITI")** 详见 <a href="http://blog.itmyhome.com/2016/05/activiti-configuration-oracle">Activiti 配置Oracle不能自动创建表解决方法</a>
-
-
 使用jUnit测试，Run As -> Junit Test
-
 查看数据库 Activiti 23张表初始化完成
 
 ![License Badge]({{ site.baseurl}}/images/activiti/learn-activiti-01.png)
@@ -89,25 +85,3 @@ public void createTable_2() {
 	System.out.println("23张表创建成功：processEngine: " + processEngine);
 }
 ```
-
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,13 +13,9 @@ comments: false
 #### 一、开发环境
 
 + spring版本：4.0.6.RELEASE
-
 + spring-data-mongodb版本：1.4.1.RELEASE
-
 + junit版本 4.11
-
 + maven版本:3.0.5
-
 
 #### 二、pom.xml
 

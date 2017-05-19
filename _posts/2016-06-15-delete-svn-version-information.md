@@ -15,9 +15,7 @@ comments: false
 #### 问题描述：
 
 在MyEclipse中当我们需要将一个文件夹(包含若干文件或嵌套文件夹)拷贝到另一个文件夹时，
-
 此时文件内容虽然拷贝过去了，但其下面的.svn文件夹也会跟着拷贝过去，就会导致无法提交
-
 其实我们真正需要的只是内容，所以需要先删除.svn文件 再进行提交
 
 #### 解决方法：
@@ -30,7 +28,7 @@ comments: false
 
 将以下代码在任意地方保存为 deleteSVN.reg 文件 双击执行导入注册表
 
-```bash
+```java
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN] 
@@ -51,15 +49,12 @@ Windows Registry Editor Version 5.00
 ![License Badge]({{ site.baseurl}}/images/svn/3.png)
 
 在使用完之后我们应该去掉该右键功能，毕竟我们不会天天去删除.svn的，万一哪天一不小心在项目的根目录误删了
-
 所有的.svn 那就很蛋疼了。所以最好还是先去掉，等需要的时候再添加到注册表
 
 #### 去除该右键功能方法：
 
 + 打开注册表
-
 + 找到[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\DeleteSVN]
-
 + 删除 DeleteSVN 即可
 
 ![License Badge]({{ site.baseurl}}/images/svn/4.png)

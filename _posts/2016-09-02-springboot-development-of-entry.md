@@ -12,9 +12,7 @@ comments: false
 
 #### 准备工作
 
-我们将使用Java开发一个简单的"hello spring boot" web应用，项目采用Maven进行构建
-
-在开始前，打开终端检查下安装的Java和Maven版本是否可用：
+我们将使用Java开发一个简单的"hello spring boot" web应用，项目采用Maven进行构建在开始前，打开终端检查下安装的Java和Maven版本是否可用：
 
 ```ruby
 C:\Users>java -version
@@ -33,7 +31,6 @@ Java home: C:\Program Files (x86)\Java\jdk1.7.0_79\jre
 ```
 
 PS：SpringBoot 需要 `Java7` 以上版本支持
-
 新建 Java Maven Project
 
 ![License Badge]({{ site.baseurl}}/images/springboot/2.png)
@@ -130,7 +127,6 @@ public class FirstController {
 ```
 
 直接run  main方法就可以了，如果没报错，说明启动成功
-
 使用浏览器打开localhost:8080，就可以访问了
 
 ![License Badge]({{ site.baseurl}}/images/springboot/3.png)

@@ -12,7 +12,7 @@ comments: false
 
 #### Limit() 方法
 
-要限制 MongoDB 中的记录，需要使用 limit() 方法。 limit() 方法接受一个数字型的参数，这是要显示的文档数。
+要限制 MongoDB 中的记录，需要使用 limit() 方法。 limit()方法接受一个数字型的参数，这是要显示的文档数。
 
 #### 语法:
 

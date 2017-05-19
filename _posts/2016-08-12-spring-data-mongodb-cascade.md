@@ -13,7 +13,6 @@ comments: false
 #### DBRef 方式关联
 
 DBRef 就是在两个Collection之间定义的一个关联关系，暂不支持级联的保存功能
-
 例子：一个Person对象有多个Book对象，一对多关系
 
 **实体Person**

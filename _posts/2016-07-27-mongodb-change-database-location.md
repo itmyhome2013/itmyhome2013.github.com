@@ -27,7 +27,6 @@ mongod –dbpath d:\data
 #### 2、配置文件方式
 
 在任意位置创建一个配置文件，例如D盘根目录下创建一个名为mongo.cfg的文件，
-
 内容为 **dbpath=d:\data**。然后运行命令
 
 ```txt
