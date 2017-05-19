@@ -8,7 +8,7 @@ category: EasyUI
 summary: 使用EasyUI做一个报表统计，需要合并表头为多级表头
 comments: false
 ---
-<br>
+
 使用EasyUI做一个报表统计，需要合并表头为多级表头，核心代码如下: 
 
 ```js
@@ -53,7 +53,6 @@ $('#dg').datagrid({
 ![License Badge]({{ site.baseurl}}/images/easyui/1.png)
 
 从以上代码和图中可以看出表头共有4行9列, 画单元格就和HTML中一样，主要利用 **rowspan**、**colspan** 属性
-
 在将要显示内容的列上添加 **field** 属性
 
 <br>

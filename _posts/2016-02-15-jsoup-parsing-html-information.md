@@ -25,15 +25,12 @@ comments: false
 <a name="major"></a>
 
 jsoup是一款Java的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，
-
 可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
 
 #### jsoup的主要功能如下
 
 + 1、从一个URL，文件或字符串中解析HTML
-
 + 2、使用DOM或CSS选择器来查找、取出数据
-
 + 3、可操作HTML元素、属性、文本
 
 jsoup的主要类层次结构如图所示：
@@ -61,11 +58,7 @@ File input = new File("D:/index.html");
 Document doc = Jsoup.parse(input, "UTF-8","http://itmyhome.com");
 ```
 
-第三种方式parse方法也可以不指定第三个参数，因为HTML文档中会有很多例如链接、图片以及所引用的外部脚本、css文件等，
-
-而第三个名为baseURL的参数的意思就是当HTML文档使用相对路径方式引用外部文件时，
-
-jsoup会自动为这些URL加上一个前缀，也就是这个 baseURL。
+第三种方式parse方法也可以不指定第三个参数，因为HTML文档中会有很多例如链接、图片以及所引用的外部脚本、css文件等，而第三个名为baseURL的参数的意思就是当HTML文档使用相对路径方式引用外部文件时，jsoup会自动为这些URL加上一个前缀，也就是这个 baseURL。
 
 <a name="extract"></a>
 
@@ -105,45 +98,31 @@ Elements这个对象提供了一系列类似于DOM的方法来查找元素，抽
 **查找元素**
 
 + getElementById(String id)
-
 + getElementsByTag(String tag)
-
 + getElementsByClass(String className)
-
 + getElementsByAttribute(String key) (and related methods)
-
 + Element siblings: siblingElements(), firstElementSibling(), lastElementSibling(); nextElementSibling(), previousElementSibling()
-
 + Graph: parent(), children(), child(int index)
 
 **元素数据**
 
 + attr(String key)获取属性 attr(String key, String value)设置属性
-
 + attributes()获取所有属性
-
 + id(), className() and classNames()
-
 + text()获取文本内容text(String value) 设置文本内容
-
 + html()获取元素内HTMLhtml(String value)设置元素内的HTML内容
-
 + outerHtml()获取元素外HTML内容
-
 + data()获取数据内容（例如：script和style标签)
-
 + tag() and tagName()
 
 **操作HTML和文本**
 
 + append(String html), prepend(String html)
-
 + appendText(String text), prependText(String text)
 
 <a name="selected"></a>
 
 + appendElement(String tagName), prependElement(String tagName)
-
 + html(String value)
 
 #### 使用选择器语法来查找元素
@@ -157,7 +136,6 @@ Elements resultLinks = doc.select("#header p"); // id为header元素之后的p�
 ```
 
 从以上可以看出jsoup使用跟jQuery一模一样的选择器对元素进行检索，jsoup的选择器还支持表达式功能
-
 下表是jsoup选择器的所有语法详细列表。
 
 **表1. 基本用法：**
@@ -395,9 +373,7 @@ Elements resultLinks = doc.select("#header p"); // id为header元素之后的p�
 #### 从元素抽取属性，文本和HTML
 
 + 要取得一个属性的值，可以使用Node.attr(String key) 方法
-
 + 对于一个元素中的文本，可以使用Element.text()方法
-
 + 对于要取得元素或属性中的HTML内容,可以使用Element.html(),或Node.outerHtml()方法
 
 示例:
@@ -434,9 +410,7 @@ blog
 上述方法是元素数据访问的核心办法。此外还其它一些方法可以使用：
 
 + Element.id()
-
 + Element.tagName() <a name="update"></a>
-
 + Element.className() and Element.hasClass(String className)
 
 #### 修改数据
@@ -456,15 +430,12 @@ doc.select("input[type=text]").val(""); // 清空所有文本输入框中的文�
 <a name="clean"></a>
 
 道理很简单，你只需要利用jsoup的选择器找出元素，然后就可以通过以上的方法来进行修改，
-
 修改完直接调用 Element(s)的 html()方法就可以获取修改完的HTML文档。
 
 #### HTML文档清理
 
 在做网站的时候，经常会提供用户评论的功能。有些不坏好意的用户，会搞一些脚本到评论内容中，
-
 而这些脚本可能会破坏整个页面的行为，更严重的是获取一些机要信息，例如XSS跨站点攻击之类的。
-
 使用jsoup HTML Cleaner 方法进行清除，看看下面这段代码：
 
 ```java

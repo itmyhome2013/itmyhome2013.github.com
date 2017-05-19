@@ -8,7 +8,6 @@ category: jQuery
 summary: 高度可定制的自定义滚动条jQuery插件。功能包括垂直和/或水平滚动条,可调节的滚动势头,鼠标滚轮
 comments: false
 ---
-<br>
 
 #### 使用方法：
 
@@ -27,7 +26,6 @@ comments: false
 #### 二、CSS
 
 首先必须要有滚动条出现，给DIV限定高度,并指定overflow样式为auto,
-
 这样当内容超出后就会自动出现滚动条了
 
 ```css
@@ -59,7 +57,4 @@ comments: false
 ```
 
 效果演示：<a href="http://itmyhome.com/jquery_scroller/">http://itmyhome.com/jquery_scroller/</a>
-
 官网：<a href="http://manos.malihu.gr/jquery-custom-content-scroller/">http://manos.malihu.gr/jquery-custom-content-scroller/</a>
-
-<br>

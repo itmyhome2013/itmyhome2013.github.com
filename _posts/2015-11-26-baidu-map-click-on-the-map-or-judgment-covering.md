@@ -8,16 +8,13 @@ category: 百度地图
 summary: 在百度地图上圆形区域检索，返回圆形覆盖范围内的"公司"检索结果，并展示在地图上
 comments: false
 ---
-<br>
 
 在百度地图上圆形区域检索，返回圆形覆盖范围内的"公司"检索结果，并展示在地图上
-
 当点击检索结果(标注)进行查看的时候会再次以此为原点进行检索
 
 ![License Badge]({{ site.baseurl}}/images/baidumap/1.png)
 
 原因是该覆盖物在地图之上，点击覆盖物也就是点击了地图
-
 所以要判断点击的是地图还是覆盖物。
 
 #### 查看地图事件
@@ -52,13 +49,9 @@ map.addEventListener("click", function(e){
 ![License Badge]({{ site.baseurl}}/images/baidumap/3.png)
 
 到此时我们只是判断了是覆盖物还是地图，而覆盖物又分为好多种
-
 有**Marker、Polygon、Circle**等等
-
 而如开题所说Marker在Circle之内，如果不想点击Marker触发click事件就需要
-
 再次判断是何种覆盖物
-
 如下代码即可点击Marker不触发click事件
 
 ```js

@@ -8,7 +8,6 @@ category: 百度地图
 summary: 在将原始坐标批量转换的时候，回调的时候发现 data.status = 25
 comments: false
 ---
-<br>
 
 在将原始坐标批量转换的时候，回调的时候发现 data.status = 25
 
@@ -54,7 +53,6 @@ translateCallback = function (data){
 </table>
 
 解决方法可以每十个点为一组，然后一次转换
-
 以下代码可全部复制到HTML中直接运行查看
 
 ```html

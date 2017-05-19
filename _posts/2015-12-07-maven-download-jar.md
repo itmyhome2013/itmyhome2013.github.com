@@ -8,10 +8,8 @@ category: Maven
 summary: 使用 mvn clean install 命令把生成的jar包，安装到"本地仓库"中
 comments: false
 ---
-<br>
 
 进入Spring官网 <a href="http://projects.spring.io/spring-framework/">http://projects.spring.io/spring-framework/</a> 如果我们想下载Spring发现只能
-
 通过Maven或Cradle进行下载了。
 
 ![License Badge]({{ site.baseurl}}/images/maven/5.png)
@@ -21,9 +19,7 @@ comments: false
 #### 方法:
 
 **1、任意目录下创建一个文件夹，其下创建一个pom.xml文件(本例为：D:\maven-jar)**
-
 **2、修改Maven默认的下载位置**
-
 打开 D:\apache-maven-3.0.5\conf\settings.xml
 
 ```xml

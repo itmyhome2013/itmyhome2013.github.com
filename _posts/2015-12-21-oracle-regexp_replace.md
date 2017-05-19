@@ -8,12 +8,9 @@ category: Oracle
 summary: REGEXP_REPLACE让你搜索的字符串的正则表达式模式REPLACE函数的功能
 comments: false
 ---
-<br>
 
 REGEXP_REPLACE让你搜索的字符串的正则表达式模式REPLACE函数的功能。默认情况下，
-
 该函数返回source_char与replace_string取代了正则表达式模式的每个实例。
-
 返回的字符串是在相同的字符集source_char。
 
 #### 语法
@@ -178,9 +175,7 @@ REGEXP_REPLACE(source_char, pattern [, replace_string [, position [, occurrence 
 #### *occurrence*
 
 可选。是一个非负整数默认为1，指示替换操作的发生：
-
 如果指定0，那么所有出现将被替换字符串。
-
 如果指定了正整数n，那么将替换第n次出现。
 
 #### *match_parameter*
@@ -217,7 +212,6 @@ REGEXP_REPLACE(source_char, pattern [, replace_string [, position [, occurrence 
 #### EXAMPLE - 匹配第一个字
 
 让我们开始使用REGEXP_REPLACE函数替换字符串中的第一个字。
-
 For example:
 
 ```sql
@@ -228,13 +222,11 @@ Result: luck is my network id
 ```
 
 这个例子会返回"luck is my network id"，
-
 因为它会再字符串的开始找到第一个匹配的字符，然后替换为"luck"
 
 #### EXAMPLE - 匹配数字字符
 
 我们将使用REGEXP_REPLACE函数来匹配单个数字字符模式。
-
 For example:
 
 ```sql
@@ -245,9 +237,7 @@ Result: '#, #, and ## are numbers in this example'
 ```
 
 此示例将所指定的`\d`数字将以#字符替换
-
 我们可以改变我们的正则模式来搜索仅两位数字。
-
 For example:
 
 ```sql

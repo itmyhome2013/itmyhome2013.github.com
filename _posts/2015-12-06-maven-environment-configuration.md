@@ -8,7 +8,6 @@ category: Maven
 summary: Maven 是一个基于 Java 的工具，所以要做的第一件事情就是安装 JDK。
 comments: false
 ---
-<br>
 
 Maven 是一个基于Java的工具，所以要做的第一件事情就是安装JDK。
 
@@ -25,9 +24,7 @@ Maven 是一个基于Java的工具，所以要做的第一件事情就是安装J
 ![License Badge]({{ site.baseurl}}/images/maven/2.png)
 
 将Java编译器地址添加到系统路径path中。
-
 变量名：Path
-
 变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 
 #### 3、下载Maven文件
@@ -35,11 +32,8 @@ Maven 是一个基于Java的工具，所以要做的第一件事情就是安装J
 地址：http://maven.apache.org/download.cgi 本例版本为3.0.5
 
 <span style="color:red">PS：Maven对应JDK版本</span>
-
 <span style="color:red">Maven 3.3 要求 JDK 1.7 或以上</span>
-
 <span style="color:red">Maven 3.2 要求 JDK 1.6 或以上</span>
-
 <span style="color:red">Maven 3.0/3.1 要求 JDK 1.5 或以上</span>
 
 #### 4、解压Maven文件
@@ -51,7 +45,6 @@ Maven 是一个基于Java的工具，所以要做的第一件事情就是安装J
 使用系统属性设置环境变量。
 
 MAVEN_HOME=D:\apache-maven-3.0.5
-
 Path=%MAVEN_HOME%\bin;
 
 #### 6、验证Maven安装

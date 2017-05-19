@@ -8,14 +8,12 @@ category: 其他
 summary: 由于历史的原因,各个浏览器在对页面的渲染上存在差异,甚至同一浏览器在不同版本中,对页面的渲染也不同
 comments: false
 ---
-<br>
 
 项目在IE浏览器中打开默认是Quirks模式，导致兼容性不太好
 
 ![License Badge]({{ site.baseurl}}/images/ie/1.png)
 
 当然可以手动修改为Internet Explorer8 以上模式，但我们不可能引导用户这样去做
-
 可以在代码里通过**设置DTD**声明让浏览器决定用何种模式
 
 将

@@ -8,7 +8,6 @@ category: Java
 summary: List每remove掉一个元素以后，后面的元素都会向前移动
 comments: false
 ---
-<br>
 
 ```java
 public static void main(String[] args) {  
@@ -32,11 +31,8 @@ public static void main(String[] args) {
 ```
 
 上面代码是要删除List集合中内容不为A的值
-
 输出结果应该为A
-
 可竟然是A C E
-
 <span style="color:red">原因：List每remove掉一个元素以后，后面的元素都会向前移动，此时如果执行i=i+1，则刚刚移过来的元素没有被读取。</span>
 
 #### **解决方法：**
@@ -73,9 +69,7 @@ for(int i = list.size()-1;i>=0;i--){
 ```
 
 注意：
-
 如果 for-each 遍历时删除元素将报
-
 Exception in thread "main" java.util.ConcurrentModificationException 异常
 
 ```java

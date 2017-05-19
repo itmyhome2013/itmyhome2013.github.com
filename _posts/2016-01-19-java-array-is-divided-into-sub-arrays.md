@@ -10,7 +10,6 @@ comments: false
 ---
 <br>
 有这样一个需求，循环数组输出动态表单为一行两列
-
 分隔数组每两个为一组，如果单数最后一个为一组
 
 ![License Badge]({{ site.baseurl}}/images/java/fengeshuzu.png)

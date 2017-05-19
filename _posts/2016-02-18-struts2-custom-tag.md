@@ -12,15 +12,12 @@ comments: false
 自定义标签主要包括三个步骤：
 
 + 1、编写java类，继承TagSupport类；
-
 + 2、创建tld文件，影射标签名和标签的java类；
-
 + 3、jsp页面引入tld。
 
 #### 例子：自定义下拉框标签
 
 如果页面上有下拉选择框，通常最好的解决方法是使用数据字典，因为有可能多个页面
-
 使用同一个下拉框，便于后台统一维护。 
 
 #### **自定义Tag类**
@@ -106,7 +103,6 @@ public class DictionaryOptionTaget extends TagSupport {
 ```
 
 需要注意的是：`<rtexprvalue>true</rtexprvalue>` 时候，可以使用JSP表达式
-
 表示该自定义标签的属性值可以使用 **${}** 方式动态传值。
 
 #### **使用自定义的标签**

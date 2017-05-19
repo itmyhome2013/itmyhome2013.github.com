@@ -8,10 +8,8 @@ category: Oracle
 summary: REGEXP_SUBSTR延伸SUBSTR函数的功能，让你搜索一个正则表达式模式字符串。
 comments: false
 ---
-<br>
 
 REGEXP_SUBSTR延伸SUBSTR函数的功能，让你搜索一个正则表达式模式字符串。
-
 这也类似于REGEXP_INSTR，而是返回子字符串的位置，它返回的子字符串本身。
 
 #### 语法

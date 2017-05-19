@@ -8,10 +8,8 @@ category: Oracle
 summary: REGEXP_INSTR函数让你搜索一个正则表达式模式字符串,它返回一个整数，指示开始或结束匹配的子位置。
 comments: false
 ---
-<br>
 
 REGEXP_INSTR函数让你搜索一个正则表达式模式字符串。函数使用输入字符集定义的字符进行字符串的计算。
-
 它返回一个整数，指示开始或结束匹配的子位置，这取决于return_option参数的值。如果没有找到匹配，则函数返回0。
 
 #### 语法
@@ -175,9 +173,7 @@ REGEXP_INSTR (source_char, pattern [, position [, occurrence [, return_option [,
 #### *return_option*
 
 可选  指定Oracle返回的位置：
-
 如果指定0，那么Oracle将返回出现的第一个字符的位置。这是默认的。
-
 如果指定1，则Oracle返回字符之后发生的位置。
 
 #### *match_parameter*
@@ -244,7 +240,6 @@ FROM dual;
 ```
 
 这个例子将字符串中返回'with'的第一次出现,它将匹配一个词组。
-
 我们可以改变搜索的开始位置，以便我们执行搜索从字符串的中间开始。
 
 For example:
@@ -259,7 +254,6 @@ FROM dual;
 #### Examples 匹配多个备选
 
 下面的例子,我们将使用 | 模式。该|模式用于像一个"或"指定多个替代方案。
-
 For example:
 
 ```sql
@@ -270,7 +264,6 @@ FROM dual;
 ```
 
 这个例子将返回6，因为它是搜索的第一个元音(a,i,o,e或u)字符串。由于我们没有指定match_parameter值时，
-
 REGEXP_INSTR函数将执行区分大小写的搜索，这意味着在"Itmyhome"的'I'将不匹配。
 
 <br>

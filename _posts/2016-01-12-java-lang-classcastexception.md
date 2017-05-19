@@ -19,9 +19,7 @@ List<FrmField> fields = sqlquery.list();
 ```
 
 上面的查询是返回标量值的，<font color="red">Object类型</font>，也就是从resultset中返回的"裸"数据。
-
 如果使用原生sql语句进行query查询时，hibernate是不会自动把结果包装成实体的。
-
 下面通过加上 <font color="red">addEntity()</font> 让原生查询返回实体对象。
 
 ```java

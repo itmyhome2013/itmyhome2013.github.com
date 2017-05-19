@@ -8,12 +8,10 @@ category: jQuery
 summary: HTML5视频扩展插件,可以添加Logo,添加标记
 comments: false
 ---
-<br>
 
 #### HTML5视频扩展插件
 
 + 可以添加Logo
-
 + 添加标记
 
 ![License Badge]({{ site.baseurl}}/images/pushu/pushu.png)
@@ -59,11 +57,6 @@ $(document).bind('ready',function() {
 ```
 
 演示：<a href="http://video.pushu.me">http://video.pushu.me</a>
-
 PS: MP4其他之外格式能否播放没有验证。
-
 如果MP4视频不能被播放，可能视频的编码格式不是 <span color="red">**h264**</span>。 
-
 利用格式工厂对mp4视频，用h264视频编码格式重新编码，得到的视频就可以使用了。
-
-<br>

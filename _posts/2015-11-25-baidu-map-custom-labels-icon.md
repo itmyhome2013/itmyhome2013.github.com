@@ -8,10 +8,8 @@ category: 百度地图
 summary: 通过Icon类可实现自定义标注的图标，下面示例通过参数MarkerOptions的icon属性进行设置,也可以使用marker.setIcon()方法。
 comments: false
 ---
-<br>
 
 通过Icon类可实现自定义标注的图标，下面示例通过参数MarkerOptions的icon属性进行设置，
-
 也可以使用marker.setIcon()方法。
 
 ```js

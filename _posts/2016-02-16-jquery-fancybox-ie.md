@@ -8,9 +8,8 @@ category: fancybox
 summary: IE无法显示关闭按钮,打开jquery.fancybox-1.3.4.css 注释一行代码
 comments: false
 ---
-<br>
-如果版本是: 1.3.1  **IE无法显示关闭按钮**
 
+如果版本是: 1.3.1  **IE无法显示关闭按钮**
 如果版本是: 1.3.4  **IE6无法显示关闭按钮**
 
 #### 解决办法:

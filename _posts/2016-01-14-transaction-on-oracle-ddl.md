@@ -13,9 +13,7 @@ comments: false
 #### SQL主要程序设计语言
 
 数据定义语言DDL(Data Definition Language) 如 create、alter、drop，
-
 数据操作语言DML(Data Munipulation Language) 如 insert、update、delete，
-
 数据控制语言DCL(Data Control Language) 如 grant、revoke
 
 ```java
@@ -39,13 +37,9 @@ try {
 ```
 
 上面例子是执行修改字段名称 ①正常执行，在②语句中故意产生错误，报异常然后跳到③
-
 最后结果是 address未做修改，name已经修改为了name2
-
 &nbsp;<font color="red">Oracle在执行DDL语句时会先执行commit，所以就不能对DDL语句进行回滚</font>
-
 如果非要进行回滚的话，可进行反向操作，就是在②出错的时候再将①中的name改回去
-
 如果语句很多的话，未免太麻烦。不知道有没有方法可解决
 
 <br>
