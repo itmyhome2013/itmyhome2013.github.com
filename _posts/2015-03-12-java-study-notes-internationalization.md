@@ -10,42 +10,31 @@ comments: false
 ---
 <br>
 
-国际化的操作就是指一个程序可以同时适应多门语言，即：如果现在程序者是中国人，则会以中文为显示文字，如果现在
-
-程序的使用者是英国人，则会以英语为显示的文字，也就是说可以通过国际化操作，让一个程序适应各个国家的语言要求。
+国际化的操作就是指一个程序可以同时适应多门语言，即：如果现在程序者是中国人，则会以中文为显示文字，如果现在程序的使用者是英国人，则会以英语为显示的文字，也就是说可以通过国际化操作，让一个程序适应各个国家的语言要求。
 
 ![License Badge]({{ site.baseurl}}/images/java/12/1.png)
 
-程序根据不同的语言环境找到不同的资源文件，之后从资源文件中取出内容，资源文件中的内容都是以key->value的形式保存的，
-
-所以在读取的时候通过其key找到对应的value
+程序根据不同的语言环境找到不同的资源文件，之后从资源文件中取出内容，资源文件中的内容都是以key->value的形式保存的，所以在读取的时候通过其key找到对应的value
 
 #### 国际化实现的支持类
 
 如果要想实现java程序的国际化操作必须通过以下的三个类完成：
 
 <span style="color:red">java.util.Locale ：用于表示一个国家语言类。</span>
-
 <span style="color:red">java.util.ResourceBundle：用于访问资源文件.</span>
-
 <span style="color:red">java.text.MessageFormat：格式化资源文件的占位字符串。</span>
 
 #### Local类
 
-Local表示的是本地，实际上使用的是一个ISO编码的封装类。对于各个国家来说都存在一个唯一的编码，
-
-那么这种编码就称为ISO编码，使用Local可以指定好一个具体的国家编码。例如： 
+Local表示的是本地，实际上使用的是一个ISO编码的封装类。对于各个国家来说都存在一个唯一的编码，那么这种编码就称为ISO编码，使用Local可以指定好一个具体的国家编码。例如： 
 
 + 中国的编码：zh_CH  
-
 + 英语-美国的编码：en-US
-
 + 法语的编码：fr-FR
 
 #### ResourceBundle
 
 此类是专门完成属性文件读取操作的，读取的时候直接指定文件名即可(此文件名称一般不需要指定后缀，
-
 后缀统一为*.properties)，可以根据Locale所指定的区域码来自动选择所需要的资源文件。
 
 <table class="table table-bordered table-striped table-condensed">
@@ -93,19 +82,13 @@ Can't find bundle for base name message, locale zh_CH
 #### Java国际化程序实现
 
 可以根据不同的国家输出不同国家的你好：
-
 中文：你好！
-
 英文：Hello
-
 法语：Bonjour!
 
 分别定义不同的资源文件，此时需要定义出三个资源文件，同时在定义资源文件的时候需要指定好此资源文件对应的语言编码：
-
 中文：Message_zh_CH.properties
-
 英文：Message_en_US.properties
-
 法文：Message_fr_FR.properties
 
 ##### **Message_zh_CN.properties**
@@ -151,16 +134,10 @@ PS:<span style="color:red">以上中文属性如果是中文的话应该将其�
 
 #### 处理动态文本
 
-之前的资源文件中的所有内容实际上都是固定的，而如果现在有些内容，你好，XXX。那么此时就必须在资源文件中进行一些
-
-动态文本的配置，设置占位符，这些符号中的内容暂时不固定，而是在程序执行的时候由程序进行设置的，
-
-而要想实现这样的功能，则必须使用MessageFormat类。此类在java.text包中定义的。
+之前的资源文件中的所有内容实际上都是固定的，而如果现在有些内容，你好，XXX。那么此时就必须在资源文件中进行一些动态文本的配置，设置占位符，这些符号中的内容暂时不固定，而是在程序执行的时候由程序进行设置的，而要想实现这样的功能，则必须使用MessageFormat类。此类在java.text包中定义的。
 
 <span style="color:red">占位符使用（数字）的形式表示，如果现在表示第一个内容“{0}”、第二个内容“{1}”依次类推。</span>
-
 在MessageFormat类中主要使用format()方法，此方法定义如下：
-
 public  static  String  format(String  pattern,Object...arguments)
 
 ```diff
@@ -253,15 +230,10 @@ public class T {
 ```
 
 不管是资源类还是资源文件，找的时候都是Message，那么如果现在多种资源文件一起出来，那么最终找的是哪一个呢？
-
 实际上此时就需要区分优先级：
 
 <span style="color:red">Message_zh_CN.class</span>
-
 <span style="color:red">Message_zh_CN.properties</span>
-
 <span style="color:red">Message.properties</span>
 
 <span style="color:red">**总结：国际化程序实现的思路：程序与显示相分离，根据不同的Locale指定的区域找到不同的资源文件并根据其key取得对应的value**</span>
-
-<br>

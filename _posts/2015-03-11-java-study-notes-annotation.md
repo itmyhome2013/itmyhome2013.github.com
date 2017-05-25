@@ -11,9 +11,7 @@ comments: false
 <br>
 
 Annotation：在JDK1.5之后增加的一个新特性，这种特性被称为元数据特性，在JDK1.5之后称为注释，
-
 即：使用注释的方式加入一些程序的信息。
-
 java.lang.annotation Annotation接口是所有的Annotation都必须实现的接口。
 
 #### 系统内建的Annotation
@@ -21,9 +19,7 @@ java.lang.annotation Annotation接口是所有的Annotation都必须实现的接
 在JDK1.5之后，系统中已经建立了如下的三个内建的Annotation类型，用户直接使用即可。
 
 + <span style="color:red">@Override：覆写的Annotation</span>
-
 + <span style="color:red">@Deprecated：不赞成使用的Annotation</span>
-
 + <span style="color:red">@SuppressWarnings：压制安全警告的Annotation</span>
 
 #### 自定义Annotation
@@ -52,9 +48,7 @@ class Demo{
 ```
 
 可以在Annotation中设置一个参数，用来接收变量的内容，如上面的value，使用Annotation的时候也必须给参数赋值
-
 如：value="itmyhome"
-
 既然可以设置一个参数，则同时也就可以设置多个参数。
 
 ```java
@@ -91,10 +85,7 @@ class Demo{
 ```
 
 以上所定义的全部的Annotation中有一个特点，所有的参数内容需要在使用注释的时候设置上去，
-
-那么也可以为一个参数设置默认的内容，
-
-在声明的时候使用default即可。
+那么也可以为一个参数设置默认的内容，在声明的时候使用default即可。
 
 ```java
 public @interface Meaning {  
@@ -153,19 +144,15 @@ public @interface Meaning {
 ![License Badge]({{ site.baseurl}}/images/java/11/1.png)
 
 <span style="color:red">在三个范围中，最重要的就是RUNTIME范围，因为在执行的时候起作用。</span>
-
 内建Annotation的RetentionPolicy
 
 #### 三个内建的Annotation的定义：
 
 <span style="color:red">Override定义采用的是@Retention(RetentionPolicy.SOURCE) 只能在源文件中出现</span>
-
 <span style="color:red">Deprecated定义采用的是@Retention(RetentionPolicy.RUNTIME)，可以在执行时出现</span>
-
 <span style="color:red">SuppressWarnings定义采用的是@Retention(RetentionPolicy.SOURCE)，只能在源文件中出现</span>
 
 一个Annotation如果要是想让其变得有意义，则必须结合反射机制取得Annotaion中设置的全部内容。
-
 在Class类中存在以下几种与Annotation操作有关的方法
 
 ![License Badge]({{ site.baseurl}}/images/java/11/2.png)
@@ -240,10 +227,7 @@ public class T {
 
 #### @Target
 
-指示注释类型所适用的程序元素的种类。如果注释类型声明中不存在 Target 元注释，则声明的类型可以用在任一程序元素上。
-
-如果存在这样的元注释，则编译器强制实施指定的使用限制，如：@Target(ElementType.ANNOTATION_TYPE)
-
+指示注释类型所适用的程序元素的种类。如果注释类型声明中不存在 Target 元注释，则声明的类型可以用在任一程序元素上。如果存在这样的元注释，则编译器强制实施指定的使用限制，如：@Target(ElementType.ANNOTATION_TYPE)
 ElementType的保存范围
 
 ![License Badge]({{ site.baseurl}}/images/java/11/3.png)

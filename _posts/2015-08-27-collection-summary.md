@@ -45,9 +45,11 @@ Hashtable和HashMap采用的hash/rehash算法都大概一样，所以性能不�
 
 就HashMap与HashTable主要从三方面来说。
 
-<span style="color:red">一、历史原因:Hashtable是基于陈旧的Dictionary类的，HashMap是Java 1.2引进的Map接口的一个实现</span>
-<span style="color:red">二、同步性:Hashtable是线程安全的，也就是说是同步的，而HashMap是线程序不安全的，不是同步的</span>
-<span style="color:red">三、值：只有HashMap可以让你将空值作为一个表的条目的key或value</span>
+<span style="color:red">
+一、历史原因:Hashtable是基于陈旧的Dictionary类的，HashMap是Java 1.2引进的Map接口的一个实现<br>
+二、同步性:Hashtable是线程安全的，也就是说是同步的，而HashMap是线程序不安全的，不是同步的<br>
+三、值：只有HashMap可以让你将空值作为一个表的条目的key或value
+</span>
 
 #### **heap和stack有什么区别**
 

@@ -21,9 +21,7 @@ public interface InvocationHandler{
 参数说明：
 
 <span style="color:red">Object  proxy：被代理的对象</span>
-
 <span style="color:red">Method  method：要调用的方法</span>
-
 <span style="color:red">Object   args[]：方法调用时所需要的参数</span>
 
 #### Proxy类
@@ -40,9 +38,7 @@ public static Object newProxyInstance(ClassLoader loader,
 参数说明：
 
 <span style="color:red">ClassLoader  loader：类加载器</span>
-
 <span style="color:red">Class<?>[]  interfaces：得到全部的接口</span>
-
 <span style="color:red">InvocationHandler  h：得到InvocationHandler接口的子类实例</span>
 
 #### 动态代理：

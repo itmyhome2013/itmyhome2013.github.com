@@ -11,9 +11,7 @@ comments: false
 <br>
 
 数组复制的方法是使用System类提供的`arraycopy()`方法，其语法如下：
-
 System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
-
 System.arraycopy(`源数组，源数组中的起始位置，目标数组，目标数据中的起始位置，要复制的数组元素的数量`);
 
 ```java
@@ -32,17 +30,11 @@ public class T {
 #### Arrays类
 
 对数组的一些基本操作，像排序、搜索与比较等都是很常见的。在java中提供了Array是类可以协助您作这几个操作，
-
 Array是类位于java.util包中，他提供了几个方法可以直接使用。
 
 * `sort()` 帮助您对指定的数组排序，所使用的是快速排序法
-
 * `binarySearch()`  让您对已排序的数组进行二元搜索，如果找到指定的值就返回该值所在的索引，否则就返回负值
-
-* `fill()` 当您配置一个数组之后，会依据数据类型来给定默认值。例如整数数组就初始值为0，
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用Arrays.fill()方法将所有的元素设置为指定的值
-
+* `fill()` 当您配置一个数组之后，会依据数据类型来给定默认值。例如整数数组就初始值为0，可以使用Arrays.fill()方法将所有的元素设置为指定的值
 * `equals()` 比较两个数组中的元素值是否全部相等，如果是将返回true，否则返回false
 
 ```java

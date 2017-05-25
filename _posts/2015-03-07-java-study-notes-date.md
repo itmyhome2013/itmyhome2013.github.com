@@ -26,13 +26,9 @@ public class T {
 #### 二、Calendar类
 
 使用此类可以将日期精确到毫秒
-
 public abstract class Calendar extends Object
- 
 Calendar类是一个抽象类，既然是一个抽象类则肯定无法直接使用，
-
 此时就要利用对象多态性的概念，通过向上的转型关系实例化本类对象。
-
 通过Calendar类取得一个完整的日期，使用其子类。
 
 ```java
@@ -54,17 +50,11 @@ public class T {
 #### 三、DateFormat类
 
 此类是一个日期的格式化类，专门格式化日期的操作，因为java.util.Date类本身就已经包含了完整的日期，
-
 所以只需要将此日期安装一些好的格式格式化一下显示就好了。
-
 <span style="color:red">public abstract class DateFormat</span>
-
 此类也是一个抽象类，DateFormat类本身内部提供了可以直接为其实例化的操作。
-
 <span style="color:red">得到日期的DateFormat对象  public  static  final  DateFormat  getDateInstance()</span>
-
 <span style="color:red">得到日期和时间的DateFormat对象  public static  final  DateFormat  getDateTimeInstance()</span>
-
 直接使用DateFormat类完成Date的的转换功能。
 
 public  final  String  format(Date  date)

@@ -17,26 +17,21 @@ comments: false
 #### Comparable接口
 
 <span style="color:red">可以直接使用java.util.Arrays类进行数组的排序操作，但对象所在的类必须实现Comparable接口，用于指定排序接口。</span>
-
 Comparable接口的定义如下：
 
+```java
 public  interface  Comparable<T>{
-
-&nbsp;&nbsp;&nbsp;&nbsp;public  int compareTo(T  o);
-
+    public  int compareTo(T  o);
 }
+```
 
 此方法返回一个int类型的数据，但是此int的值只能是一下三种：
 
 + <span style="color:red">1：表示大于</span>
-
 + <span style="color:red">-1：表示小于</span>
-
 + <span style="color:red">0：表示相等</span>
 
-<br>
-
-要求：定义一个学生类，里面有姓名,年龄,成绩三个属性,要求按成绩由高到低排序,如果成绩相等,则按照年龄由低到高排序。
+要求：定义一个学生类，里面有姓名，年龄，成绩三个属性，要求按成绩由高到低排序，如果成绩相等，则按照年龄由低到高排序。
 
 ```java
 package com.itmyhome;  
@@ -115,9 +110,7 @@ public class T {
 #### 分析比较器的排序原理
 
 实际上比较器的操作，就是经常听到的二叉树的排序算法。
-
 排序的基本原理：使用第一个元素作为根节点，之后如果后面的内容比根节点小，
-
 则放在左子树，如果内容比根节点的内容要大，则放在右子树。
 
 ```java
@@ -198,8 +191,7 @@ public class T2 {
 #### 另一种比较器：Compartor
 
 如果一个类已经开放完成，但是在此类建立的初期并没有实现Comparable接口，此时肯定是无法进行对象排序操作的，
-
-所以为了解决这一的问题，java又定义了另一个比较器的操作接口 Comparator 此接口定义在java.util包中，接口定义如下：
+所以为了解决这一的问题,java又定义了另一个比较器的操作接口 Comparator此接口定义在java.util包中，接口定义如下：
 
 ```java
 public  interface  Comparator<T>{

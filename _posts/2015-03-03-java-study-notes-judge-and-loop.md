@@ -15,9 +15,7 @@ comments: false
 一般来说程序的结构包含有下面三种：
 
 + 顺序结构
-
 + 选择结构
-
 + 循环结构
 
 ![License Badge]({{ site.baseurl}}/images/java/03/1.png)
@@ -64,7 +62,6 @@ public class T {
 ```
 
 在以上的操作中，每个语句后面都会存在一个break，此语句表示退出整个switch()语句，
-
 如果不写上此语句，则所有的操作将在第一个满足条件之后全部输出直到遇到break为止
 
 ![License Badge]({{ site.baseurl}}/images/java/03/5.png)
