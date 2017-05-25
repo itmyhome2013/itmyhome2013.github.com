@@ -46,7 +46,6 @@ public class Login {
 测试URL：
 
 `http://localhost:8080/spring_forward/login.do`
-
 `http://localhost:8080/spring_forward/logout.do`
 
 <br>

@@ -38,9 +38,7 @@ comments: false
 ```
 
 默认DispatcherServlet会加载**WEB-INF/[DispatcherServlet的Servlet名字]-servlet.xml**配置文件，
-
 本示例为WEB-INF/springMVC-servlet.xml
-
 默认路径为WEB-INF下,也可修改为如下配置
 
 ```xml
@@ -88,11 +86,8 @@ comments: false
 ```
 
 PS:`<context:component-scan base-package="com.itmyhome" />`
-
 **base-package后的内容只是包路径**，千万不能把类名也写出来 比如com.itmyhome.Login
-
 否则会报如下错误
-
 <span style="color:red">警告: No mapping found for HTTP request with URI [/spring001/login] in DispatcherServlet with name 'springMVC'</span>
 
 #### 五：后台Action
@@ -117,7 +112,6 @@ public class Login {
 #### 六：返回JSP
 
 新建welcome.jsp 里面随便写点内容 如：Hello springMVC!
-
 最后在浏览器中输入地址 验证 如图：
 
 ![License Badge]({{ site.baseurl}}/images/springmvc/01/1.png)

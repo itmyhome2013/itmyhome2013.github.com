@@ -13,13 +13,11 @@ comments: false
 #### 一、安装
 
 下载地址: [http://ant.apache.org](http://ant.apache.org) 本文中下载的是1.9.4版本。
-
 解压到某个目录(例如D:\apache-ant-1.9.4)即可使用。
 
 #### 二、配置
 
 添加系统环境变量：ANT_HOME 该变量指向Ant解压后的根目录，本文为：D:\apache-ant-1.9.4
-
 添加Path变量 ： 在path最后面追加 %ANT_HOME%\bin; (注意分号)
 
 #### 三、测试是否成功

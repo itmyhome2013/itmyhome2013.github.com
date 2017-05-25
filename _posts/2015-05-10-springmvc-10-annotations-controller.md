@@ -10,23 +10,13 @@ comments: false
 ---
 <br>
 
-Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注解定义
+Spring2.5引入注解式处理器支持,通过@Controller和@RequestMapping注解定义我们的处理器类。并且提供了一组强大的注解，需要通过处理器映射DefaultAnnotationHandlerMapping和处理器适配器AnnotationMethodHandlerAdapter 来开启支持@Controller和@RequestMapping注解的处理器。
 
-我们的处理器类。并且提供了一组强大的注解
-
-需要通过处理器映射DefaultAnnotationHandlerMapping和处理器适配器AnnotationMethodHandlerAdapter
-
-来开启支持@Controller和@RequestMapping注解的处理器。
-
-@Controller：用于标识是处理器类；
-
-@RequestMapping：请求到处理器功能方法的映射规则；
-
-@RequestParam：请求参数到处理器功能处理方法的方法参数上的绑定；
-
-@ModelAttribute：请求参数到命令对象的绑定；
-
-@InitBinder：自定义数据绑定注册支持,用于将请求参数转换到命令对象属性的对应类型；
++ @Controller：用于标识是处理器类；
++ @RequestMapping：请求到处理器功能方法的映射规则；
++ @RequestParam：请求参数到处理器功能处理方法的方法参数上的绑定；
++ @ModelAttribute：请求参数到命令对象的绑定；
++ @InitBinder：自定义数据绑定注册支持,用于将请求参数转换到命令对象属性的对应类型；
 
 #### 一、简单例子
 
@@ -53,9 +43,7 @@ public class Login{
 ```
 
 ①可以通过在一个POJO类上放置@Controller或@RequestMapping，即可把一个POJO类变身为处理器；
-
 ②@RequestMapping(value="/login.do")请求URL(/login.do)到处理器的功能处理方法的映射；
-
 ③模型数据和逻辑视图名的返回。
 
 现在的处理器无需实现/继承任何接口/类，只需要在相应的类/方法上放置相应的注解说明下即可。
@@ -135,43 +123,32 @@ public class Login{
 
 **1、普通URL路径映射**
 
-@RequestMapping(value={"/login.do","/user/login.do"}):多个URL路径可以映射到同一个处理器的功能处理方法。
+@RequestMapping(value={"/login.do","/user/login.do"}):多个URL路径可以映射到同一个处理器的功能处理方法
 
 **2、URL模板模式映射**
 
-@RequestMapping(value="/users/{userId}")：{xxx}占位符,请求的URL可以是"/users/123456"或"/users/abcd"。
-
-@RequestMapping(value="/users/{userId}/login.do"):这样也是可以的,请求的URL可以是"/users/123/login.do"。
-
-@RequestMapping(value="/users/{userId}/channel/{channelId}"):这样也是可以的,请求的URL可以是"/users/123/channel/456"。
++ @RequestMapping(value="/users/{userId}")：{xxx}占位符,请求的URL可以是"/users/123456"或"/users/abcd"。
++ @RequestMapping(value="/users/{userId}/login.do"):这样也是可以的,请求的URL可以是"/users/123/login.do"。
++ @RequestMapping(value="/users/{userId}/channel/{channelId}"):这样也是可以的,请求的URL可以是"/users/123/channel/456"。
 
 **3、Ant风格的URL路径映射**
 
-@RequestMapping(value="/users/**"):可以匹配"/users/abc/abc"。
-
-@RequestMapping(value="/model?"):可匹配"/model1"或"/modela" ,但不匹配"/model"或"/modelaa";
-
-@RequestMapping(value="/model*"):可匹配"/modelabc"或"/model",但不匹配"/modelabc/abc";
-
-@RequestMapping(value="/model/*"):可匹配"/model/abc",但不匹配"/modelabc";
-
-@RequestMapping(value="/model/**/{modelId}")：可匹配"/model/abc/abc/123”或"/model/123",
++ @RequestMapping(value="/users/**"):可以匹配"/users/abc/abc"。
++ @RequestMapping(value="/model?"):可匹配"/model1"或"/modela" ,但不匹配"/model"或"/modelaa";
++ @RequestMapping(value="/model*"):可匹配"/modelabc"或"/model",但不匹配"/modelabc/abc";
++ @RequestMapping(value="/model/*"):可匹配"/model/abc",但不匹配"/modelabc";
++ @RequestMapping(value="/model/**/{modelId}")：可匹配"/model/abc/abc/123”或"/model/123",
 
 也就是Ant风格和URI模板变量风格可混用;
 
 **4、正则表达式风格的URL路径映射**
 
 从Spring3.0开始支持正则表达式风格的URL路径映射,格式为{变量名:正则表达式}
-
-@RequestMapping(value="/login/{userId:\\d+}.do"):可以匹配
-
-"/login/123.do",但不能匹配"/login/abc.do",这样可以设计更加严格的规则。
+@RequestMapping(value="/login/{userId:\\d+}.do"):可以匹配 "/login/123.do",但不能匹配"/login/abc.do",这样可以设计更加严格的规则。
 
 **5、组合使用是"或"的关系**
 
-如@RequestMapping(value={"/login.do","/user/login.do"})组合使用是或的关系，即"/login.do"或
-
-"/user/login.do"请求URL路径都可以映射到@RequestMapping指定的功能处理方法。
+如@RequestMapping(value={"/login.do","/user/login.do"})组合使用是或的关系，即"/login.do"或 "/user/login.do"请求URL路径都可以映射到@RequestMapping指定的功能处理方法。
 
 <br>
 	

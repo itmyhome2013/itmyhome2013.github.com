@@ -36,13 +36,7 @@ comments: false
 
 这里主要的类是SimpleMappingExceptionResolver类，和他的父类AbstractHandlerExceptionResolver类。
 
-你也可以实现HandlerExceptionResolver接口，写一个自己的异常处理程序.
-
-通过SimpleMappingExceptionResolver我们可以将不同的异常映射到不同的jsp页面（通过exceptionMappings属性的配置）。
-
-同时我们也可以为所有的异常指定一个默认的异常提示页面（通过defaultErrorView属性的配置），
-
-如果所抛出的异常在exceptionMappings中没有对应的映射，则Spring将用此默认配置显示异常信息。
+你也可以实现HandlerExceptionResolver接口，写一个自己的异常处理程序。通过SimpleMappingExceptionResolver我们可以将不同的异常映射到不同的jsp页面（通过exceptionMappings属性的配置）。同时我们也可以为所有的异常指定一个默认的异常提示页面（通过defaultErrorView属性的配置），如果所抛出的异常在exceptionMappings中没有对应的映射，则Spring将用此默认配置显示异常信息。
 
 **Login.java测试类**
 
@@ -89,9 +83,7 @@ public class Login {
 测试URL：  
 
 `http://localhost:8080/spring_exception/null`
-
 `http://localhost:8080/spring_exception/number`
-
 `http://localhost:8080/spring_exception/default`
 
 <br>

@@ -11,11 +11,8 @@ comments: false
 <br>
 
 Spring为我们提供了：org.springframework.web.servlet.HandlerInterceptor接口，
-
 org.springframework.web.servlet.handler.HandlerInterceptorAdapter适配器，
-
 实现这个接口或继承此类，可以非常方便的实现自己的拦截器。
-
 有以下三个方法：
 
 **Action之前执行**
@@ -40,13 +37,9 @@ public void afterCompletion(HttpServletRequest request,
 ```
 
 分别实现预处理、后处理（调用了Service并返回ModelAndView，但未进行页面渲染）、返回处理（已经渲染了页面）
-
 在preHandle中，可以进行编码、安全控制等处理；
-
 在postHandle中，有机会修改ModelAndView；
-
 在afterCompletion中，可以根据ex是否为null判断是否发生了异常，进行日志记录。
-
 参数中的Object handler是下一个拦截器。
 
 **如何使用拦截器**
@@ -91,11 +84,8 @@ public class MyInterceptor implements HandlerInterceptor {...}
 ```
 
 如果使用了\<mvc:annotation-driven /\>， 它会自动注册DefaultAnnotationHandlerMapping 与
-
 AnnotationMethodHandlerAdapter 这两个bean,所以就没有机会再给它注入interceptors属性，就无法指定拦截器。
-
 当然我们可以通过人工配置上面的两个Bean，不使用 \<mvc:annotation-driven /\>，
-
 就可以给interceptors属性注入拦截器了。
 
 **拦截器MyInterceptor类**
@@ -187,7 +177,6 @@ public class MyInterceptor implements HandlerInterceptor {
 ```
 
 测试URL：`http://localhost:8080/spring_Interceptor/login`
-
 查看后台会执行拦截器代码
 
 <br>

@@ -10,15 +10,8 @@ comments: false
 ---
 <br>
 
-当控制器处理完请求时，通常会将包含视图名称或视图对象以及一些模型属性的ModelAndView对象返回到DispatcherServlet。
-
-因此，经常需要在控制器中构造ModelAndView对象。ModelAndView类提供了几个重载的构造器和一些方便的方法，
-
-让你可以根据自己的喜好来构造ModelAndView对象。这些构造器和方法以类似的方式支持视图名称和视图对象。
-
-当你只有一个模型属性要返回时，可以在构造器中指定该属性来构造ModelAndView对象
-
-<br>
+当控制器处理完请求时，通常会将包含视图名称或视图对象以及一些模型属性的ModelAndView对象返回到DispatcherServlet。因此，经常需要在控制器中构造ModelAndView对象。
+ModelAndView类提供了几个重载的构造器和一些方便的方法，让你可以根据自己的喜好来构造ModelAndView对象。这些构造器和方法以类似的方式支持视图名称和视图对象。当你只有一个模型属性要返回时，可以在构造器中指定该属性来构造ModelAndView对象
 
 **在上篇的基础上，只修改Login类**
 
@@ -74,7 +67,6 @@ public ModelAndView logout(){
 ```
 
 然后修改welcome.jsp输出数据
-
 遍历集合可使用jstl表达式，需在jsp中引入头文件
 
 ```jsp
@@ -82,13 +74,9 @@ public ModelAndView logout(){
 ```
 
 **lib下导入jstl.jar和standard.jar。**
-
 首先这两个jar在哪里可以找到，当然可以在网上下载。
-
 另外在tomcat下面就有，在**\webapps\examples\WEB-INF\lib**下
-
 前提是你还没有把webapps下面的一些无用项目删掉。
-
 **welcome.jsp**
 
 ```html

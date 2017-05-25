@@ -11,13 +11,9 @@ comments: false
 <br>
 
 如果你的DispatcherServlet拦截的是*.do这样的URL，就不存在访问不到静态资源的问题
-
 如果你的DispatcherServlet拦截了"/"所有的请求，那同时对*.js,*.jpg的访问也就被拦截了。
-
 我们在进行springMVC开发时，必定会在jsp页面引入js、img和css等文件。
-
 大多数人会将这些分类存放在WebRoot文件下新建的文件夹下面。
-
 同时，会在web.xml文件中配置拦截所有请求。这样就造成了页面无法访问到js、img和css文件夹中的文件了
 
 #### 方法一：在web.xml中配置defaultServlet来处理静态文件

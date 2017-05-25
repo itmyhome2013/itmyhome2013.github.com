@@ -8,7 +8,6 @@ category: jQuery
 summary: 本篇文章主要介绍jQuery选择器之基本过滤选择器，包括:first、:last()、:not(selector)...
 comments: false
 ---
-<br>
 
 ```css
 <style type="text/css">  
@@ -123,6 +122,6 @@ $(":header").addClass("highlight");   //匹配如 h1, h2, h3之类的标题元�
 
 ![License Badge]({{ site.baseurl}}/images/jquery/basic-filter-selector/9.png)
 
-#[**效果演示**](http://itmyhome.com/jquery-basic-selector) 
+### [**效果演示**](http://itmyhome.com/jquery-basic-selector) 
 
 <br>
