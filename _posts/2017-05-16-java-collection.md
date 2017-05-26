@@ -422,3 +422,5 @@ CopyOnWriteArrayList，是一个线程安全的List接口的实现，它使用�
 + 效率上，规则集比线性表更高效。
 + ArrayList主要是用数组来存储元素，LinkedList主要是用链表来存储元素，HashMap的底层实现主要是借助数组+链表+红黑树来实现。
 + Vector、HashTable等集合类效率比较低但都是线程安全的。包java.util.concurrent下包含了大量线程安全的集合类，效率上有较大提升。
+
+摘自网络
