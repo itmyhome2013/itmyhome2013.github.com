@@ -16,9 +16,9 @@ comments: false
 
 #### 二、创建服务端
 
-** 1、新建【Web Service Project】，命名【TheService】 **
-** 2、创建Class类，命名【MyService】,放在【com.ithome】包下 **
-** 3、编写服务端代码 **
+1、新建【Web Service Project】，命名【TheService】
+2、创建Class类，命名【MyService】,放在【com.ithome】包下
+3、编写服务端代码
 
 ```java
 package com.ithome;
