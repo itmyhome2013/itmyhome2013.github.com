@@ -16,12 +16,9 @@ comments: false
 
 #### 二、创建服务端
 
-1、新建【Web Service Project】，命名【TheService】
-2、创建Class类，命名【MyService】,放在【com.ithome】包下
-3、编写服务端代码
-
-那片笑声让我想起我的那些花儿
-在我生命每个角落静静为我开着
+**1、新建【Web Service Project】，命名【TheService】** <br>
+**2、创建Class类，命名【MyService】,放在【com.ithome】包下** <br>
+**3、编写服务端代码**
 
 ```java
 package com.ithome;
@@ -62,10 +59,8 @@ public class MyService {
 
 #### 三、生成客户端
 
-**1、新建【Web Service Project】，命名【TheClient】**
-
-**2、CMD命令提示窗口执行生成命令。**
-
+**1、新建【Web Service Project】，命名【TheClient】** <br>
+**2、CMD命令提示窗口执行生成命令。** <br>
 格式：wsimport -s "src目录" -p "生成类所在包名" -keep "wsdl发布地址"
 
 示例：
