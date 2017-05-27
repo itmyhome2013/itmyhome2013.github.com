@@ -20,6 +20,9 @@ comments: false
 2、创建Class类，命名【MyService】,放在【com.ithome】包下
 3、编写服务端代码
 
+那片笑声让我想起我的那些花儿
+在我生命每个角落静静为我开着
+
 ```java
 package com.ithome;
 
