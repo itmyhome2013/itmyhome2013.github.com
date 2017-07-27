@@ -90,9 +90,7 @@ public class HashSet<E>
 }
 ```
 
-由上面源程序可以看出，HashSet的实现其实非常简单， 它只是封装了一个HashMap对象来存储所有的集合元素。所有放入HashSet中的集合元素实际上由HashMap的key来保存，而HashMap的value则由存储了一个PRESENT，它是一个静态的Object对象。
-
-HashSet的绝大部分方法都是通过调用HashMap的方法来实现的，因此HashSet和HashMap两个集合在实现本质上是相同的
+由上面源程序可以看出，HashSet的实现其实非常简单， 它只是封装了一个HashMap对象来存储所有的集合元素。所有放入HashSet中的集合元素实际上由HashMap的key来保存，而HashMap的value则由存储了一个PRESENT，它是一个静态的Object对象。HashSet的绝大部分方法都是通过调用HashMap的方法来实现的，因此HashSet和HashMap两个集合在实现本质上是相同的
 
 由于HashSet的add()方法添加集合元素时实际上转变为调用HashMap的put()方法来添加key-value对，当新放入HashMap的Entry中key与集合中原有Entry的key相同(hashCode()返回值相等，通过equals比较也返回true)时，新添加的Entry的value将覆盖原来Entry的value，但key不会有任何改变。因此，如果向HashSet中添加一个已经存在的元素，新添加的集合元素(底层由HashMap的key保存)不会覆盖已有的集合元素。
 
