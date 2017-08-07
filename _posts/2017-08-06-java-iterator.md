@@ -14,42 +14,41 @@ Iterator是一个迭代器接口，它专门用于迭代各种Collection集合�
 下面测试使用Iterator迭代各种集合所返回的Iterator对象。
 
 ```java
-enum Color {
-	RED, YELLOW
+enum Color {RED,
+    YELLOW;
 }
-
 public class T {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        HashSet<String> hashSet = new HashSet<String>();
+        System.out.println("HashSet的Iterator：" + hashSet.iterator());
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		HashSet<String> hashSet = new HashSet<String>();
-		System.out.println("HashSet的Iterator：" + hashSet.iterator());
+        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+        System.out.println("LinkedHashSet的Iterator：" +
+            linkedHashSet.iterator());
 
-		LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
-		System.out.println("LinkedHashSet的Iterator：" + linkedHashSet.iterator());
+        TreeSet<String> treeSet = new TreeSet<String>();
+        System.out.println("TreeSet的Iterator：" + treeSet.iterator());
 
-		TreeSet<String> treeSet = new TreeSet<String>();
-		System.out.println("TreeSet的Iterator：" + treeSet.iterator());
+        EnumSet<Color> enumSet = EnumSet.allOf(Color.class);
+        System.out.println("EnumSet的Iterator：" + enumSet.iterator());
 
-		EnumSet<Color> enumSet = EnumSet.allOf(Color.class);
-		System.out.println("EnumSet的Iterator：" + enumSet.iterator());
+        ArrayList<String> arrayList = new ArrayList<String>();
+        System.out.println("ArrayList的Iterator：" + arrayList.iterator());
 
-		ArrayList<String> arrayList = new ArrayList<String>();
-		System.out.println("ArrayList的Iterator：" + arrayList.iterator());
+        Vector<String> vector = new Vector<String>();
+        System.out.println("Vector的Iterator：" + vector.iterator());
 
-		Vector<String> vector = new Vector<String>();
-		System.out.println("Vector的Iterator：" + vector.iterator());
+        LinkedList<String> linkedList = new LinkedList<String>();
+        System.out.println("LinkedList的Iterator：" + linkedList.iterator());
 
-		LinkedList<String> linkedList = new LinkedList<String>();
-		System.out.println("LinkedList的Iterator：" + linkedList.iterator());
-
-		ArrayDeque<String> arrayDeque = new ArrayDeque<String>();
-		System.out.println("ArrayDeque的Iterator：" + arrayDeque.iterator());
-	}
-
+        ArrayDeque<String> arrayDeque = new ArrayDeque<String>();
+        System.out.println("ArrayDeque的Iterator：" + arrayDeque.iterator());
+    }
 }
+
 ```
 
 上面程序创建了Java的各种集合，然后调用这些集合的iterator()方法来获取各种集合对应的Iterator对象。运行上面程序，结果如下
@@ -81,31 +80,29 @@ ArrayList和Vector的实现基本相同，除了ArrayList是线程不安全的�
 
 ```java
 public class Demo {
+    /**
+     * @itmyhome
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
 
-	/**
-	 * @itmyhome
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ArrayList<String> list = new ArrayList<String>();
-		list.add("A");
-		list.add("B");
-		list.add("C");
-		list.add("D");
-		list.add("E");
+        for (Iterator<String> ite = list.iterator(); ite.hasNext();) {
+            String str = ite.next();
 
-		for (Iterator<String> ite = list.iterator(); ite.hasNext();) {
-			String str = ite.next();
-
-			if ("D".equals(str)) {  //①
-				// 删除集合中倒数第二个元素
-				list.remove(str);
-			}
-		}
-		
-	}
-
+            if ("D".equals(str)) { //①
+                // 删除集合中倒数第二个元素
+                list.remove(str);
+            }
+        }
+    }
 }
+
 ```
 
 上面程序中尝试使用Iterator遍历ArrayList集合时，直接调用List的remove()方法删除指定集合元素。运行上面程序，发现该程序完全可以正常结束，并未发生任何异常。
