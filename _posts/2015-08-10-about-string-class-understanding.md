@@ -62,9 +62,10 @@ System.out.println(str3==str4);//false
 #### **附：StringBuffer  StringBuilder  String的区别**
 
 String是固定长度的字符串，如果要发生变化必须重新生成新的实例。
-String 字符串常量
-StringBuffer 字符串常量<span style="color:red">(线程安全)</span>
-StringBuilder 字符串常量<span style="color:red">(非线程安全)(效率高)</span>
+
++ String 字符串常量
++ StringBuffer 字符串常量<span style="color:red">(线程安全)</span>
++ StringBuilder 字符串常量<span style="color:red">(非线程安全)(效率高)</span>
 
 简要的说， <span style="color:red">String 类型和 StringBuffer 类型的主要性能区别其实在于 String 是不可变的对象,</span>
 
