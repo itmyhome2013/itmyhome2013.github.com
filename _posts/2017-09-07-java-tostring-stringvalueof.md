@@ -9,7 +9,7 @@ summary: 在Java开发中，我们经常用到将对象转换成String类型这�
 comments: false
 ---
 
-在Java开发中，我们经常用到将对象转换成String类型这一功能，常用的有如下三种方式
+在Java开发中，我们经常用到将对象转换成String类型这一功能，常用的有如下三种方式 
 
 + (String)[对象]
 + [对象].toString
