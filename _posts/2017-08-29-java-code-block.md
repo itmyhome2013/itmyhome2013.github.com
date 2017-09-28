@@ -63,7 +63,7 @@ class Test {
         System.out.println(" I am 构造代码块");
     }
 	
-	static {
+    static {
         System.out.println(" I am 静态代码块");
     }
 
