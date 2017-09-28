@@ -58,16 +58,17 @@ public Test() {
 
 ```java
 class Test {
-    static {
-        System.out.println(" I am 构造函数");
-    }
-
+    
     {
+        System.out.println(" I am 构造代码块");
+    }
+	
+	static {
         System.out.println(" I am 静态代码块");
     }
 
     public Test() {
-        System.out.println(" I am 构造代码块");
+        System.out.println(" I am 构造函数");
     }
 }
 
