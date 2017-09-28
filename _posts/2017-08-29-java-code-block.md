@@ -58,13 +58,12 @@ public Test() {
 
 ```java
 class Test {
-    
-    {
-        System.out.println(" I am 构造代码块");
-    }
-	
     static {
         System.out.println(" I am 静态代码块");
+    }
+
+    {
+        System.out.println(" I am 构造代码块");
     }
 
     public Test() {
@@ -80,6 +79,7 @@ public class CodeBlock {
     public static void main(String[] args) {
         Test test1 = new Test();
         System.out.println("-------");
+
         Test test2 = new Test();
     }
 }
