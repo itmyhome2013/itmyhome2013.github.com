@@ -5,7 +5,7 @@ title: "Java线程池实现原理"
 date: 2017-10-11 00:00:00 -0700
 tags: [多线程,并发]
 category: 多线程
-summary: ThreadLocal叫做线程本地变量，也有叫线程局部变量
+summary: 在面向对象编程中,创建和销毁对象是很费时间的,因为创建一个对象要获取内存资源或者其他更多资源
 comments: false
 ---
 
