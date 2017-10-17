@@ -146,7 +146,9 @@ Future<Object> future = executor.submit(harReturnValuetask);
 
 只要调用了这两个关闭方法中的任意一个，isShutdown方法就会返回true。当所有的任务都已关闭后，才表示线程池关闭成功，这时调用isTerminaed方法会返回true。至于应该调用哪一种方法来关闭线程池，应该由提交到线程池的任务特性决定，通常调用shutdown方法来关闭线程池，如果任务不一定要执行完，则可以调用shutdownNow方法。
 
+<hr>
 
+参考文献：<a href="http://itmyhome.com/java-concurrent-programming/" target="_blank">Java并发编程的艺术</a> 方腾飞 著
 
 
 
