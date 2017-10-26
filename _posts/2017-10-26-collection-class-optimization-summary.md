@@ -97,7 +97,7 @@ RandomAccess 接口是一个标志接口，本身并没有提供任何方法，�
 LinkedList 实现了 List 接口，允许 Null 元素。此外 LinkedList 提供额外的 Get、Remove、Insert 等方法在 LinkedList 的首部或尾部操作数据。这些操作使得 LinkedList 可被用作堆栈（Stack）、队列（Queue）或双向队列（Deque）。请注意 LinkedList 没有同步方法，它不是线程同步的，即如果多个线程同时访问一个 List，则必须自己实现访问同步。一种解决方法是在创建 List 时构造一个同步的 List，方法如
 
 ```java
-List list = Collections.synchronizedList(new LinkedList(...))；
+List list = Collections.synchronizedList(new LinkedList(...));
 ```
 
 #### ArrayList 类
@@ -510,7 +510,7 @@ WeakHashMap 实现弱引用，是因为它的 Entry<K,V>是继承自 WeakReferen
 
 ```java
 private static class Entry<K,V> extends WeakReference<K> 
-		implements Map.Entry<K,V> Entry(K key, V value, ReferenceQueue<K> queue,int hash, Entry<K,V> next) { 
+	implements Map.Entry<K,V> Entry(K key, V value, ReferenceQueue<K> queue,int hash, Entry<K,V> next) { 
 	super(key, queue); 
 	this.value = value; 
 	this.hash = hash; 
@@ -535,4 +535,4 @@ WeakHashMap 类是线程不同步的，可以使用 Collections.synchronizedMap 
 综合前面的介绍和实例代码，我们可以知道，如果涉及到堆栈、队列等操作，应该考虑用 List。对于需要快速插入、删除元素等操作，应该使用 LinkedList。如果需要快速随机访问元素，应该使用 ArrayList。如果程序在单线程环境中，或者访问仅仅在一个线程中进行，考虑非同步的类，其效率较高。如果多个线程可能同时操作一个类，应该使用同步的类。要特别注意对哈希表的操作，作为 Key 的对象要正确复写 Equals 和 HashCode 方法。尽量返回接口而非实际的类型，如返回 List 而非 ArrayList，这样如果以后需要将 ArrayList 换成 LinkedList 时，客户端代码不用改变，这就是针对抽象进行编程思想。
 
 <hr>
-原文: <a href="https://www.ibm.com/developerworks/cn/java/j-lo-set-operation/index.html" target="_blank">集合类操作优化经验总结</a>
+链接: <a href="https://www.ibm.com/developerworks/cn/java/j-lo-set-operation/index.html" target="_blank">集合类操作优化经验总结</a>
