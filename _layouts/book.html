@@ -18,60 +18,26 @@
 						<div class="row">
 							{% for book in page.books %}
 							<div class="col-md-12">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										{{ book.title }}
-									</div>
+								<div class="panel panel-primary" style="border-color: #d0d4d8;">
+									
 									<div class="panel-body">
 										<div class="row">
-											<div class="col-md-4 col-xs-6 center">
+											<div class="col-md-2 col-xs-6 center">
 												<img src="{{ book.cover }}" alt="cover" class="img-thumbnail">
 											</div>
-											<div class="col-md-8 col-xs-6">
-												<table class="table table-bordered">
-													<tbody>
-														<tr>
-															<td style="width: 80px;">
-																书名
-															</td>
-															<td>
-																{{ book.title }}
+											<div class="col-md-10 col-xs-6">
+												<table class="table">
+														<tr>													
+															<td style="border-top: 0px solid #e5e5e5;font-size: 17px;">
+																<font color="#08c">{{ book.title }}</font>
 															</td>
 														</tr>														
-														<tr>
-															<td>
-																笔记
-															</td>
-															<td>
-																{% if book.link == null %}
-																	<a href="javascript:alert('还木有写笔记呢^_^');"  title="{{ book.link }}">读书笔记</a>
-																{% elsif book.link != null %}
-																	<a href="{{ book.link }}"  target="_blank" title="{{ book.link }}">读书笔记</a>
-																{% endif %}
-																
-															</td>
-														</tr>
-														<tr>
-															<td>
-																状态
-															</td>
-															<td>
-																{% if book.status == '已读' %}
-																<span class="label label-success">{{ book.status }}</span> {% elsif book.status == '在读' %}
-																<span class="label label-info">{{ book.status }}</span>
-																{% elsif book.status == '未读' %}
-																<span class="label label-default">{{ book.status }}</span> {% endif %}
-															</td>
-														</tr>
-														<tr>
-															<td>
-																心得
-															</td>
+														
+														<tr>															
 															<td>
 																{{ book.description }}
 															</td>
-														</tr>
-													</tbody>
+														</tr>													
 												</table>
 											</div>
 										</div>
