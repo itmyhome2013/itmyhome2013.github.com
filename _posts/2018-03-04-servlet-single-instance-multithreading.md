@@ -5,7 +5,7 @@ title: "Servlet单实例多线程模式"
 date: 2018-03-04 00:00:00 -0700
 tags: [Java,Servlet]
 category: [Java,Servlet]
-summary:Servlet容器默认采用单实例多线程的方式来处理请求,这样减少产生Servlet实例的开销,提升了对请求的响应时间
+summary: Servlet容器默认采用单实例多线程的方式来处理请求,这样减少产生Servlet实例的开销,提升了对请求的响应时间
 comments: false
 ---
 
