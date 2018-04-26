@@ -227,36 +227,25 @@ layout: default
 		</tr>
 	</table>
 </div>
- <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="http://itmyhome.com/{{ page.url }}"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-	var duoshuoQuery = {short_name:"itmyhome1900"};
-		(function() {
-			var ds = document.createElement('script');
-			ds.type = 'text/javascript';ds.async = true;
-			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			ds.charset = 'UTF-8';
-			(document.getElementsByTagName('head')[0] 
-			 || document.getElementsByTagName('body')[0]).appendChild(ds);
-		})();
+<!-- 评论框 start -->
+<div id="gitalk-container"></div>
+<script src="http://www.ityouknow.com/assets/js/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+	id: 'http://blog.itmyhome.com/about.html',
+	clientID: 'a7120183b4b28518ee07',
+	clientSecret: '69045e5b4c54eea6ebeaf9b54418ae4d4898de41',
+	repo: 'blog-comments',
+	owner: 'itmyhome2013',
+	admin: ['itmyhome2013'],
+	labels: ['gitment'],
+	perPage: 50,
+})
+gitalk.render('gitalk-container')
 </script>
-<!-- 多说公共JS代码 end -->
+<!-- end -->
 <script type="text/javascript">
 		 $(document).ready(function(){
 		    $("#about").addClass("active").siblings().removeClass("active");
 	     }); 
-</script>
-
-<script type="text/javascript">
-		 $(document).ready(function(){			
-			$("a[id^='simple_']").fancybox({
-				 'transitionIn'	: 'elastic',
-				 'transitionOut'	: 'elastic',
-				 'titlePosition' : 'over',
-				 'centerOnScroll' : false
-			}); //图片元素  
-			
-	     });
 </script>
