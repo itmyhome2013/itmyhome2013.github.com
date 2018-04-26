@@ -229,7 +229,7 @@ layout: default
 </div>
 <!-- 评论框 start -->
 <div id="gitalk-container"></div>
-<script src="http://www.ityouknow.com/assets/js/gitalk.min.js"></script>
+<script src="{{ site.baseurl }}/js/gitalk.min.js"></script>
 <script>
 var gitalk = new Gitalk({
 	id: 'http://blog.itmyhome.com/about.html',
@@ -244,6 +244,7 @@ var gitalk = new Gitalk({
 gitalk.render('gitalk-container')
 </script>
 <!-- end -->
+
 <script type="text/javascript">
 		 $(document).ready(function(){
 		    $("#about").addClass("active").siblings().removeClass("active");
