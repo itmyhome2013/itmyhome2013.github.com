@@ -90,9 +90,11 @@
 									 <p>
 										<span class="fa fa-wechat fa-fw"></span> itmyhome
 									 </p>
-									 <p>
+									 <p onMouseOut="hideImg()"  onmouseover="showImg()">
 										<span class="fa fa-commenting-o fa-fw"></span> 爱跑步的程序员
 									 </p>
+									 <div id="wxImg" style="display:none;height:50px;back-ground:#f00;position:absolute;"><img width="200px" 
+									       src="http://blog.itmyhome.com/images/wechat.jpg" title="爱跑步的程序员" alt="麦田技术博客"></div>
 								  </div>
 								  <div class="col-md-6">
 									 </br>
@@ -178,5 +180,13 @@
 			 });
 	        // $("#myskipper").skippr(); 
 	     }); 
+		 
+		 function  showImg(){
+			document.getElementById("wxImg").style.display='block';
+		 }
+		 function hideImg(){
+			document.getElementById("wxImg").style.display='none';
+		 }
+
   </script>
 {% include footer.html %}
