@@ -93,12 +93,17 @@
 									 <p onMouseOut="hideImg()"  onmouseover="showImg()">
 										<span class="fa fa-commenting-o fa-fw"></span> 爱跑步的程序员
 									 </p>
-									 <div id="wxImg" style="display:none;height:50px;back-ground:#f00;"><img width="200px" 
-									       src="http://blog.itmyhome.com/images/wechat.jpg" title="爱跑步的程序员" alt="麦田技术博客"></div>
+									
 								  </div>
 								  <div class="col-md-6">
 									 </br>
-									 <img src="{{ site.baseurl}}/images/index.jpg" class="img-thumbnail" width="150px;" height="80px;">
+									 <div id="logo">
+										<img src="{{ site.baseurl}}/images/index.jpg" class="img-thumbnail" width="150px;" height="80px;">
+									 </div>
+								
+									 <div id="wxImg" style="display:none;height:50px;back-ground:#f00;">
+										<img width="200px" class="img-thumbnail" src="http://blog.itmyhome.com/images/wechat.jpg">
+									 </div>
 								  </div>
 								</div>
 							</div>
@@ -121,7 +126,7 @@
 											<a href="http://ifeve.com/" target="_blank">并发编程网</a>
 										</p>
 										<p>
-											<a href="https://www.ibm.com/developerworks/cn/" target="_blank">IBM developerWorks</a>
+											<a href="https://www.ibm.com/developerworks/cn/" target="_blank">IBM Developer</a>
 										</p>
 										<p>
 											<a href="http://coolshell.cn/" target="_blank">酷壳-COOLSHELL</a>
@@ -138,10 +143,7 @@
 											<a href="http://blog.it2048.cn/" target="_blank">极客导航</a>
 										</p>
 										<p>
-											<a href="http://blog.seoui.com/" target="_blank">Home·in peach hub</a>
-										</p>
-										<p>
-											<a href="http://www.longxianwen.net/" target="_blank">资料收藏夹</a>
+											<a href="http://blog.seoui.com/" target="_blank">笑松小站</a>
 										</p>
 										<p>
 											<a href="friends.html" target="_blank">更多...</a>
@@ -182,9 +184,11 @@
 	     }); 
 		 
 		 function  showImg(){
+			document.getElementById("logo").style.display='none';
 			document.getElementById("wxImg").style.display='block';
 		 }
 		 function hideImg(){
+		    document.getElementById("logo").style.display='block';
 			document.getElementById("wxImg").style.display='none';
 		 }
 
