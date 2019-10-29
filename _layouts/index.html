@@ -87,7 +87,7 @@
 									 <p>
 										<span class="fa fa-qq fa-fw"></span> 329795485
 									 </p>
-									 <p>
+									 <p onMouseOut="hideWeChat()"  onmouseover="showWeChat()">
 										<span class="fa fa-wechat fa-fw"></span> itmyhome
 									 </p>
 									 <p onMouseOut="hidePublic()"  onmouseover="showPublic()">
@@ -104,6 +104,11 @@
 									 <div id="PublicImg" style="display:none;height:50px;back-ground:#f00;">
 										<img width="200px" class="img-thumbnail" src="http://blog.itmyhome.com/images/wechat.jpg">
 									 </div>
+									 
+									 <div id="WeChatImg" style="display:none;height:50px;back-ground:#f00;">
+										<img width="200px" class="img-thumbnail" src="http://blog.itmyhome.com/images/wechat.png">
+									 </div>
+									 
 								  </div>
 								</div>
 							</div>
@@ -190,6 +195,15 @@
 		 function hidePublic(){
 		    document.getElementById("logo").style.display='block';
 			document.getElementById("PublicImg").style.display='none';
+		 }
+		 
+		 function  showWeChat(){
+			document.getElementById("logo").style.display='none';
+			document.getElementById("WeChatImg").style.display='block';
+		 }
+		 function hideWeChat(){
+		    document.getElementById("logo").style.display='block';
+			document.getElementById("WeChatImg").style.display='none';
 		 }
 
   </script>
