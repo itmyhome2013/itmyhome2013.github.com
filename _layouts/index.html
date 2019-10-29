@@ -90,7 +90,7 @@
 									 <p>
 										<span class="fa fa-wechat fa-fw"></span> itmyhome
 									 </p>
-									 <p onMouseOut="hideImg()"  onmouseover="showImg()">
+									 <p onMouseOut="hidePublic()"  onmouseover="showPublic()">
 										<span class="fa fa-commenting-o fa-fw"></span> 爱跑步的程序员
 									 </p>
 									
@@ -101,7 +101,7 @@
 										<img src="{{ site.baseurl}}/images/index.jpg" class="img-thumbnail" width="150px;" height="80px;">
 									 </div>
 								
-									 <div id="wxImg" style="display:none;height:50px;back-ground:#f00;">
+									 <div id="PublicImg" style="display:none;height:50px;back-ground:#f00;">
 										<img width="200px" class="img-thumbnail" src="http://blog.itmyhome.com/images/wechat.jpg">
 									 </div>
 								  </div>
@@ -183,13 +183,13 @@
 	        // $("#myskipper").skippr(); 
 	     }); 
 		 
-		 function  showImg(){
+		 function  showPublic(){
 			document.getElementById("logo").style.display='none';
-			document.getElementById("wxImg").style.display='block';
+			document.getElementById("PublicImg").style.display='block';
 		 }
-		 function hideImg(){
+		 function hidePublic(){
 		    document.getElementById("logo").style.display='block';
-			document.getElementById("wxImg").style.display='none';
+			document.getElementById("PublicImg").style.display='none';
 		 }
 
   </script>
