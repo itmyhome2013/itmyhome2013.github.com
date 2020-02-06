@@ -29,7 +29,18 @@
 												<table class="table">
 														<tr>													
 															<td style="border-top: 0px solid #e5e5e5;font-size: 17px;">
-																<font color="#08c"><a href="{{ book.link }}" target="_blank">{{ book.title }}</a></font>
+																<font color="#08c"><a href="{{ book.link }}" target="_blank">{{ book.title }}</a></font>														
+																
+																<!-- 20200206新增 -->
+																{% if  book.status == '已读' %}
+																	<div style="float:right" class="btn btn-success btn-xs">{{ book.status }}</div>
+																{% endif %}
+																
+																{% if  book.status == '在读' %}
+																	<div style="float:right" class="btn btn-primary btn-xs">{{ book.status }}</div>
+																{% endif %}
+																<!-- end -->
+																
 															</td>
 														</tr>														
 														
