@@ -10,3 +10,7 @@ comments: false
 ---
 
 ![License Badge]({{ site.baseurl}}/images/java-collection/java-collection.png)
+
+<hr>
+
+![License Badge]({{ site.baseurl}}/images/java-collection/1.gif)
